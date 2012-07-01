@@ -92,4 +92,3 @@
 (print-rat (make-rat -2 -4))
 (print-rat (make-rat 2 4))
 (print-rat (make-rat 3 -6))
-
