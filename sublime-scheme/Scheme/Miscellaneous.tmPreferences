@@ -9,7 +9,7 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>^\s*(\))\b.*:</string>
+		<string>^\s*(\)).*</string>
 	</dict>
 	<key>uuid</key>
 	<string>34877934-69D3-4773-8786-9B5211012A9A</string>
