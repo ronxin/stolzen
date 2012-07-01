@@ -35,6 +35,20 @@
 		<dict>
 			<key>captures</key>
 			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.scheme</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\(((?i:cons|car|cdr|list))</string>
+			<key>name</key>
+			<string>meta.function.scheme</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
@@ -86,7 +100,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:case|do|let|loop|if|cond|else|when)\b</string>
+			<string>\b(?i:case|lambda|do|let|loop|if|cond|else|when)\b</string>
 			<key>name</key>
 			<string>keyword.control.scheme</string>
 		</dict>
@@ -101,12 +115,6 @@
 			<string>\b(?i:null|nil)\b</string>
 			<key>name</key>
 			<string>constant.language.scheme</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:cons|car|cdr|lambda|format|setq|setf|quote|eval|append|list|listp|memberp|t|load|progn)\b</string>
-			<key>name</key>
-			<string>support.function.scheme</string>
 		</dict>
 		<dict>
 			<key>match</key>
