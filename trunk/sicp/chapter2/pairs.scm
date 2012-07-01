@@ -27,7 +27,7 @@
 
 (print-pair-closure (pair-closure 1 2))
 
-; 2.5
+; 2.4
 
 ; возвращает функцию, у которой аргумент - функция, принимающая элементы пары
 (define (pair first-el second-el)
