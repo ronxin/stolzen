@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"pri",
+				"println-in"
+			],
+			[
+				"va",
+				"vars"
+			],
+			[
+				"pr",
+				"print-rec"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"co",
+				"coins"
+			],
+			[
+				"i",
+				"items"
+			],
+			[
+				"le",
+				"length-iter"
+			],
+			[
+				"c",
+				"cdr"
+			],
+			[
+				"li",
+				"list-get"
+			],
+			[
 				"se",
 				"second-el"
 			],
@@ -18,10 +54,6 @@
 			[
 				"a",
 				"abs"
-			],
-			[
-				"co",
-				"comp-sign"
 			],
 			[
 				"nu",
@@ -40,16 +72,8 @@
 				"repeat"
 			],
 			[
-				"pri",
-				"println"
-			],
-			[
 				"repe",
 				"repeat-inc"
-			],
-			[
-				"d",
-				"double"
 			],
 			[
 				"new",
@@ -91,6 +115,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "chapter2/ex2.20.scm",
+			"settings":
+			{
+				"buffer_size": 475,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
+			"settings":
+			{
+				"buffer_size": 3857,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "chapter2/ex2.19.scm",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter2/lists.scm",
+			"settings":
+			{
+				"buffer_size": 2087,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Scheme/Scheme.sublime-build",
 	"command_palette":
@@ -132,7 +188,18 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/scheme.sublime-project"
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Miscellaneous.tmPreferences",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-build",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/lists.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/pairs.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/rational.scm",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Comments.tmPreferences",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Python/Python.tmLanguage"
 	],
 	"find":
 	{
@@ -150,6 +217,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"(define (cc amount coins)\n        (cond \n            (?null 0)\n            (else \n                (+  (cc amount (cdr coins))\n                    (cc (- amount ((list-ref coins (- (length coins) 1))))\n                        (car coins)\n                    )\n                )\n            )\n        )\n    )",
+			"items",
+			"count-change-list",
+			"function",
+			"=",
+			"((= ",
+			"change",
+			"first-denomination",
+			"evends",
+			"get",
 			"param",
 			"f",
 			"func",
@@ -240,8 +317,120 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "chapter2/ex2.20.scm",
+					"settings":
+					{
+						"buffer_size": 475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scheme/Scheme.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
+					"settings":
+					{
+						"buffer_size": 3857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								861,
+								860
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "chapter2/ex2.19.scm",
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								935,
+								935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scheme/Scheme.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "chapter2/lists.scm",
+					"settings":
+					{
+						"buffer_size": 2087,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2013,
+								2013
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scheme/Scheme.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2166.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
