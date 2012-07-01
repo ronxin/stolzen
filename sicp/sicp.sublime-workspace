@@ -1,0 +1,310 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"second-el"
+			],
+			[
+				"first",
+				"first-el"
+			],
+			[
+				"abs",
+				"absd"
+			],
+			[
+				"a",
+				"abs"
+			],
+			[
+				"co",
+				"comp-sign"
+			],
+			[
+				"nu",
+				"num"
+			],
+			[
+				"de",
+				"define"
+			],
+			[
+				"o",
+				"one-third"
+			],
+			[
+				"re",
+				"repeat"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"repe",
+				"repeat-inc"
+			],
+			[
+				"d",
+				"double"
+			],
+			[
+				"new",
+				"newton-method"
+			],
+			[
+				"b",
+				"b-value"
+			],
+			[
+				"po",
+				"positive"
+			],
+			[
+				"ex",
+				"expmod"
+			],
+			[
+				"p",
+				"println"
+			],
+			[
+				"defi",
+				"define"
+			],
+			[
+				"fi",
+				"fib-iter"
+			],
+			[
+				"s",
+				"sqrt-rec"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Scheme/Scheme.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sni",
+				"Snippet: Method"
+			],
+			[
+				"magic",
+				"Snippet: __magic__"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"",
+				"Build: Build"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 166.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/scheme.sublime-project"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"param",
+			"f",
+			"func",
+			"f",
+			"n",
+			"two",
+			"one",
+			"inc",
+			"n",
+			"x",
+			"p",
+			"q",
+			"p",
+			"z",
+			"builder",
+			"m",
+			"pair",
+			"second",
+			"first",
+			"pair",
+			"denum",
+			"d",
+			"n",
+			"d",
+			"n",
+			"\n;",
+			"demon",
+			"time",
+			"n",
+			"m",
+			")",
+			"rec",
+			"lisp",
+			"module1",
+			"Module1",
+			"module1",
+			"p",
+			"):;\n",
+			"def",
+			"et",
+			"labore",
+			"ut",
+			"sed",
+			"\\s+",
+			"i",
+			"for",
+			"lambda",
+			"print",
+			"plus",
+			"molestiae",
+			"vel",
+			"sit",
+			"error",
+			"rem",
+			"laudantium",
+			"non",
+			"quasi",
+			"quia",
+			"ipsum",
+			"suscipit",
+			"consequatur",
+			"facere",
+			"rerum",
+			"aspernatur",
+			"aut",
+			"voluptatem",
+			"ipsa",
+			"voluptatem",
+			"q.i.",
+			" ",
+			"d* ",
+			"qu."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"."
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 107.0,
+	"status_bar_visible": true
+}
