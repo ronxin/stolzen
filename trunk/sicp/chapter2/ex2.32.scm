@@ -1,20 +1,18 @@
 #lang scheme
 
 
-(define (filter items el)
+(define (remove-all el sequence)
     (cond 
-        ((null? items) null)
-        ((= (car items) el)
-            (filter (cdr items) el)
-        )
+        ((null? sequence) null)
+        ((= (car sequence) el)
+            (remove-all el (cdr sequence)))
         (else 
-            (cons (car items) (filter (cdr items) el))
-        )
+            (cons (car sequence) (remove-all el (cdr sequence))))
     )
 )
 
-(filter (list 1 2 3 4) 2)
-(filter (list 1 2 3 4) 1)
+(remove-all 2 (list 1 2 3 4 2))
+(remove-all 1 (list 1 2 3 4 1))
 
 ; 2.32
 
