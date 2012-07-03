@@ -42,7 +42,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\(((?i:cons|car|cdr|list))</string>
+			<string>\(((?i:cons|car|cdr|list|cadr))</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
