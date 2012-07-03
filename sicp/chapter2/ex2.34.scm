@@ -45,3 +45,24 @@
 (define x (cons (list 1 2) (list 3 4)))
 (count-leaves0 (list x x))
 (count-leaves (list x x))
+
+
+; or with enumerate-tree
+
+(define (enumerate-tree tree)
+    (cond
+        ((null? tree) null)
+        ((pair? tree)
+            (append (enumerate-tree (car tree)) (enumerate-tree (cdr tree)))
+        )
+        (else (list tree))
+    )
+)
+
+(define (count-leaves2 tree)
+    (accumulate + 0 
+        (map (lambda (t) 1) (enumerate-tree tree))
+    )
+)
+
+(count-leaves2 (list x x))
