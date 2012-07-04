@@ -139,7 +139,6 @@
 (= (length (queens 7)) 40)
 (= (length (queens 8)) 92)
 
-
 ; 2.43 
 ; because for each iteration it will calculate all the previous data
 ; over and over again 
