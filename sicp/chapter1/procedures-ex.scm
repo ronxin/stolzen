@@ -39,7 +39,7 @@
 ; ((compose square inc) 6)
 
 
-; 1.44
+; 1.43
 
 (define (repeat f amount)
     (define (repeat-iter g n)
