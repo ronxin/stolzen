@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+(if (${1:cond?})
+    ${2:consequence}
+    ${3:alternative}
+)
+]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>source.scheme</scope> 
+</snippet>

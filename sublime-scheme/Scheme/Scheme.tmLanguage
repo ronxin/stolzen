@@ -112,7 +112,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:null|nil)\b</string>
+			<string>\b(?i:null)\b</string>
 			<key>name</key>
 			<string>constant.language.scheme</string>
 		</dict>
