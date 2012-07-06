@@ -8,27 +8,31 @@
     (and (variable? v1) (variable? v2) (eq? v1 v2))
 )
 
+(define (not-empty? seq)
+    (not (null? seq))
+)
+
+(define (contains? seq symbol)
+    (not-empty? (filter (lambda (x) (eq? x symbol)) seq))
+)
+
+(define (expression? e symbol)
+    (and 
+        (pair? e) 
+        (contains? e symbol))
+)
+
 (define (sum? e)
-    (and (pair? e) (eq? (car e) '+))
+    (expression? e '+)
 )
 
-; first term of addition
+
 (define (addend e)
-    (cadr e)
-)
-
-; second term of addition
-; 2.57
-
-(define (binary? expression)
-    (null? (cdddr expression))
+    (car (split e '+))
 )
 
 (define (augend e)
-    (if (binary? e)
-        (caddr e)
-        (make-sum (addend (cdr e)) (augend (cdr e)))
-    )
+    (cadr (split e '+))
 )
 
 (define (=number? exp num)
@@ -41,32 +45,21 @@
         ((=number? augend 0) addend)
         ((and (number? addend) (number? augend)) (+ addend augend))
         (else
-            (list '+ addend augend))
+            (list addend '+ augend))
     )
 )
-
-(= 1 (addend '(+ 1 2 3)))
-(= 5 (augend '(+ 1 2 3)))
-(equal? '(+ 2 x) (augend '(+ 1 2 x)))
 
 (define (product? e)
-    (and (pair? e) (eq? (car e) '*))
+    (and (pair? e) (eq? (cadr e) '*))
 )
 
-; first term of multiplication
 (define (multiplier e)
-    (cadr e)
+    (car (split e '*))
 )
 
-; second term of multiplication
-; 2.57
 (define (multiplicand e)
-    (if (binary? e)
-        (caddr e)
-        (make-product (multiplier (cdr e)) (multiplicand (cdr e)))
-    )
+    (cadr (split e '*))
 )
-
 
 (define (make-product m1 m2)
     (cond
@@ -75,15 +68,9 @@
         ((=number? m2 1) m1)
         ((and (number? m1) (number? m2)) (* m1 m2))
         (else
-            (list '* m1 m2))
+            (list m1 '* m2))
     )
 )
-
-(= 1 (multiplier '(* 1 2 3)))
-(= 6 (multiplicand '(+ 1 2 3)))
-(equal? '(* 2 x) (multiplicand '(+ 1 2 x)))
-
-; 2.56 
 
 (define (exponentiation? e)
     (and (pair? e) (eq? (car e) 'exp))
@@ -105,7 +92,6 @@
    (cond
         ((=number? exponent 0) 1)
         ((=number? exponent 1) base)
-        ; ??
         ((and (number? base) (number? exponent)) (exp base exponent))
         (else
             (list 'exp base exponent))
@@ -128,7 +114,6 @@
                               (multiplicand exp))
             )
         )
-        ; 2.56 
         ((exponentiation? exp)
             (make-product 
                 (exponent exp)
@@ -143,16 +128,11 @@
     )
 )
 
-(deriv '(+ x x) 'x)
-(deriv '(+ x 3) 'x)
-(deriv '(+ x y) 'x)
-(deriv '(+ x y) 'y)
-(deriv '(* x y) 'x)
-(deriv '(* (* x y) (+ x 3)) 'x)
-
-(deriv '(exp x 2) 'x)
-(deriv '(exp x 3) 'x)
-(deriv '(exp (* x 10) 3) 'x)
-
-(deriv '(+ x y (exp x 2) x) 'x)
-(deriv '(* x y (+ x 3)) 'x)
+; (deriv '(x + x) 'x)
+; (deriv '(x + 3) 'x)
+; (deriv '(x + y) 'x)
+; (deriv '(x + y) 'y)
+; (deriv '(x * y) 'y)
+; (deriv '(x + (3 * (x + (y + 2)))) 'x)
+; (deriv '(x + 3 * (x + y + 2)) 'x)
+; (deriv '(x * 3 + (x + y + 2)) 'x)
