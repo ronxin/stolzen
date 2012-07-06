@@ -1,38 +1,71 @@
 #lang scheme
 
-(define (variable? e)
-    (symbol? e)
+(require racket/trace)
+
+(define (variable? expression)
+    (symbol? expression)
 )
 
 (define (same-variable? v1 v2)
     (and (variable? v1) (variable? v2) (eq? v1 v2))
 )
 
-(define (not-empty? seq)
-    (not (null? seq))
-)
-
-(define (contains? seq symbol)
-    (not-empty? (filter (lambda (x) (eq? x symbol)) seq))
-)
-
-(define (expression? e symbol)
+(define (operation? expression symbol)
+    (define (not-empty? seq)
+        (not (null? seq))
+    )
+    (define (contains? seq symbol)
+        (not-empty? (filter (lambda (x) (eq? x symbol)) seq))
+    )
     (and 
-        (pair? e) 
-        (contains? e symbol))
+        (pair? expression) 
+        (contains? expression symbol))
 )
 
-(define (sum? e)
-    (expression? e '+)
+(define (sum? expression)
+    (operation? expression '+)
 )
 
-
-(define (addend e)
-    (car (split e '+))
+(define (first-if-singleton seq)
+    (if (null? (cdr seq))
+        (car seq)
+        seq
+    )
 )
 
-(define (augend e)
-    (cadr (split e '+))
+(define (cut-before symbol expression)
+    (define (cut-before-inner expression)
+        (if (or (null? expression) (eq? (car expression) symbol))
+            null
+            (cons (car expression) (cut-before-inner (cdr expression)))
+        )
+    )
+    (first-if-singleton (cut-before-inner expression))
+)
+
+(= 1 (cut-before '+ '(1 + x * x)))
+(equal? '(1 * 2) (cut-before '+ '(1 * 2 + x * x)))
+
+(define (cut-after symbol expression)
+    (define (cut-after-inner expression)
+        (cond 
+            ((null? expression) null)
+            ((eq? symbol (car expression)) (cdr expression))
+            (else 
+                (cut-after-inner (cdr expression)))
+        )
+    )
+    (first-if-singleton (cut-after-inner expression))
+)
+
+(equal? '(x * x) (cut-after '+ '(1 + x * x)))
+
+(define (addend expression)
+    (cut-before '+ expression)
+)
+
+(define (augend expression)
+    (cut-after '+ expression)
 )
 
 (define (=number? exp num)
@@ -49,16 +82,16 @@
     )
 )
 
-(define (product? e)
-    (and (pair? e) (eq? (cadr e) '*))
+(define (product? expression)
+    (operation? expression '*)
 )
 
-(define (multiplier e)
-    (car (split e '*))
+(define (multiplier expression)
+    (cut-before '* expression)
 )
 
-(define (multiplicand e)
-    (cadr (split e '*))
+(define (multiplicand expression)
+    (cut-after '* expression)
 )
 
 (define (make-product m1 m2)
@@ -72,20 +105,16 @@
     )
 )
 
-(define (exponentiation? e)
-    (and (pair? e) (eq? (car e) 'exp))
+(define (exponentiation? expression)
+    (and (pair? expression) (eq? (car expression) 'exp))
 )
 
-(define (operands seq)
-    (cdr seq)
+(define (base expression)
+    (cadr expression)
 )
 
-(define (base e)
-    (cadr e)
-)
-
-(define (exponent e)
-    (caddr e)
+(define (exponent expression)
+    (caddr expression)
 )
 
 (define (make-exponentiation base exponent)
@@ -124,15 +153,18 @@
             )
         )
         (else 
-            (error "unknown expression tupe -- DERIV" exp))
+            (error "unknown expression type -- DERIV" exp))
     )
 )
 
-; (deriv '(x + x) 'x)
-; (deriv '(x + 3) 'x)
-; (deriv '(x + y) 'x)
-; (deriv '(x + y) 'y)
-; (deriv '(x * y) 'y)
-; (deriv '(x + (3 * (x + (y + 2)))) 'x)
-; (deriv '(x + 3 * (x + y + 2)) 'x)
-; (deriv '(x * 3 + (x + y + 2)) 'x)
+(trace deriv)
+
+(=       2        (deriv '(x + x) 'x))
+(=       1        (deriv '(x + 3) 'x))
+(=       1        (deriv '(x + y) 'x))
+(=       1        (deriv '(x + y) 'y))
+(eq?     'x       (deriv '(x * y) 'y))
+(=       4        (deriv '(x + (3 * (x + (y + 2)))) 'x))
+(=       4        (deriv '(x + 3 * (x + y + 2)) 'x))
+(=       8        (deriv '(x * 3 + 5 * (x + y + 2)) 'x))
+(equal? '(y + 5)  (deriv '(x * y + 5 * (x + y + 2)) 'x))

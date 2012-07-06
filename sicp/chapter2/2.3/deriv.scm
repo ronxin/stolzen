@@ -139,7 +139,7 @@
             )
         )
         (else 
-            (error "unknown expression tupe -- DERIV" exp))
+            (error "unknown expression type -- DERIV" exp))
     )
 )
 

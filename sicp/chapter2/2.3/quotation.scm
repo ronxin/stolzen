@@ -27,14 +27,7 @@ nil
 (display "(eq? 'apple1 'apple2) ")
 (eq? 'apple1 'apple2)
 
-(define (memq item seq)
-    (cond 
-        ((null? seq) false)
-        ((eq? item (car seq)) seq)
-        (else 
-            (memq item (cdr seq)))
-    )
-)
+
 
 (memq 'apple '(pear banana prune))
 (memq 'apple '(x (apple sauce) y apple pear))
