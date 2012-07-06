@@ -1,13 +1,5 @@
 #lang scheme
 
-(define (accumulate op initial sequence)
-    (if (null? sequence)
-        initial
-        (op (car sequence)
-            (accumulate op initial (cdr sequence)))
-    )
-)
-
 (define (variable? e)
     (symbol? e)
 )
@@ -26,45 +18,36 @@
 )
 
 ; second term of addition
+; 2.57
+
+(define (binary? expression)
+    (null? (cdddr expression))   
+)
+
 (define (augend e)
-    (caddr e)
+    (if (binary? e)
+        (caddr e)
+        (make-sum (addend (cdr e)) (augend (cdr e)))
+    )
 )
 
 (define (=number? exp num)
     (and (number? exp) (= exp num))
 )
 
-; (define (make-sum a1 a2)
-;     (cond
-;         ((=number? a1 0) a2)
-;         ((=number? a2 0) a1)
-;         ((and (number? a1) (number? a2)) (+ a1 a2))
-;         (else
-;             (list '+ a1 a2))
-;     )
-; )
-
-
-(define (make-sum seq)
-    (display seq) (newline)
-    (define (not-number? n)
-        (not (number? n))
-    )
-    (define (make-sum-inner seq)
-        (cons 
-            (accumulate + 0 (filter number? seq))
-            (filter not-number? seq)
-        )
-    )
-    (let ((res (make-sum-inner (cdr seq))))
-        (cond
-            ((null? (cdr res)) (car res))
-            (else
-                (cons '+ res))
-        )
+(define (make-sum addend augend)
+    (cond
+        ((=number? addend 0) augend)
+        ((=number? augend 0) addend)
+        ((and (number? addend) (number? augend)) (+ addend augend))
+        (else
+            (list '+ addend augend))
     )
 )
 
+(= 1 (addend '(+ 1 2 3)))
+(= 5 (augend '(+ 1 2 3)))
+(equal? '(+ 2 x) (augend '(+ 1 2 x)))
 
 (define (product? e)
     (and (pair? e) (eq? (car e) '*))
@@ -76,9 +59,14 @@
 )
 
 ; second term of multiplication
+; 2.57
 (define (multiplicand e)
-    (caddr e)
+    (if (binary? e)
+        (caddr e)
+        (make-product (multiplier (cdr e)) (multiplicand (cdr e)))
+    )
 )
+
 
 (define (make-product m1 m2)
     (cond
@@ -91,13 +79,17 @@
     )
 )
 
+(= 1 (multiplier '(* 1 2 3)))
+(= 6 (multiplicand '(+ 1 2 3)))
+(equal? '(* 2 x) (multiplicand '(+ 1 2 x)))
+
 ; 2.56 
 
 (define (exponentiation? e)
     (and (pair? e) (eq? (car e) 'exp))
 )
 
-(define (tail seq)
+(define (operands seq)
     (cdr seq)
 )
 
@@ -121,20 +113,13 @@
 )
 
 (define (deriv exp var)
-    (display exp) (newline)
-    (define (deriv-inner param)
-        (deriv exp var)
-    )
     (cond 
         ((number? exp) 0)
         ((variable? exp)
             (if (same-variable? exp var) 1 0))
         ((sum? exp) 
-            ; (make-sum 
-            ;     (deriv (addend exp) var)
-            ;     (deriv (augend exp) var))
-            (make-sum (map deriv-inner (tail exp)))
-        )
+            (make-sum (deriv (addend exp) var)
+                      (deriv (augend exp) var)))
         ((product? exp)
             (make-sum
                 (make-product (multiplier exp)
@@ -158,7 +143,7 @@
     )
 )
 
-
+(deriv '(+ x x) 'x)
 (deriv '(+ x 3) 'x)
 (deriv '(+ x y) 'x)
 (deriv '(+ x y) 'y)
@@ -169,4 +154,5 @@
 (deriv '(exp x 3) 'x)
 (deriv '(exp (* x 10) 3) 'x)
 
+(deriv '(+ x y (exp x 2) x) 'x)
 (deriv '(* x y (+ x 3)) 'x)
