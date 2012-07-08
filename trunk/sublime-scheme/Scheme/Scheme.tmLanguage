@@ -42,7 +42,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\(((?i:cons|car|cdr|list|cadr|caddr))</string>
+			<string>\(((?i:cons|list|car|cdr|cadr|caddr|cdddr|cadddr|cddddr))</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -61,7 +61,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\b(?i:(define))\b)(\s+)\(?((\w|\-|\!|\?)*)</string>
+			<string>(\b(?i:(define))\b)(\s+)\(?((\w|\-|\!|\?|\=)*)</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -100,7 +100,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:case|lambda|do|let|loop|if|cond|else|when)\b</string>
+			<string>\b(?i:lambda|do|let|cond|if|else)\b</string>
 			<key>name</key>
 			<string>keyword.control.scheme</string>
 		</dict>
@@ -154,6 +154,12 @@
 					<string>constant.character.escape.scheme</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>'[^ \(\)]+[\s']?</string>
+			<key>name</key>
+			<string>string.quoted.double.scheme</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
