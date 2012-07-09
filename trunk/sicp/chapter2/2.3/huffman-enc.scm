@@ -291,3 +291,10 @@
 
 ; 2.71
 
+; with an alphabet made up with n symbols, 1 bit required for the most frequent
+; symbol, (n - 1) for the least frequent
+
+; 2.72
+
+; for most frequent - O(1), for the least - O(n^2). Search is the most expensive
+; part
