@@ -38,12 +38,12 @@
     )
 )
 
-; извлекаем имя переменной, 
-; пытаемся найти ее в списке
-;   если переменняа не найдена, добавляем ее в словарь
-;   если переменная найдена, проверяется ее значение в списке
-;       если оно не совпадает - ошибка
-;       иначе возвращается нетронутый словарь
+; taking variable name, 
+; trying to find it
+;   if not found, adding to the dict
+;   otherwise, looking for it in the list
+;       if they don't match eact other - error 
+;       otherwise retruning untouched dict
 
 
 (equal? (extend-dict '(? x) '10 empty-dict)     '((x 10)))
@@ -165,7 +165,6 @@
 )
 
 
-; магия
 (define (evaluate form dictionary)
     (if (atom? form)
         (lookup form dictionary)
