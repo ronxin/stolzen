@@ -4,6 +4,266 @@
 		"selected_items":
 		[
 			[
+				"s",
+				"symbols-len"
+			],
+			[
+				"log",
+				"log2"
+			],
+			[
+				"ly",
+				"lyrix-tree"
+			],
+			[
+				"tre",
+				"tree2"
+			],
+			[
+				"en",
+				"encoded-2"
+			],
+			[
+				"de",
+				"decode"
+			],
+			[
+				"le",
+				"leaves"
+			],
+			[
+				"mak",
+				"make-code-tree"
+			],
+			[
+				"null",
+				"null?"
+			],
+			[
+				"make",
+				"make-leaf-set"
+			],
+			[
+				"sym",
+				"symbols"
+			],
+			[
+				"end",
+				"encode-symbol"
+			],
+			[
+				"e",
+				"eq?"
+			],
+			[
+				"ri",
+				"right-branch"
+			],
+			[
+				"tree",
+				"tree"
+			],
+			[
+				"lef",
+				"left-branch"
+			],
+			[
+				"con",
+				"cond	cond"
+			],
+			[
+				"symb",
+				"symbol"
+			],
+			[
+				"wei",
+				"weight"
+			],
+			[
+				"rit",
+				"right-branch"
+			],
+			[
+				"rig",
+				"right-branch"
+			],
+			[
+				"sy",
+				"symbols"
+			],
+			[
+				"ma",
+				"make-code-tree"
+			],
+			[
+				"dec",
+				"decode"
+			],
+			[
+				"ca",
+				"cadr"
+			],
+			[
+				"pa",
+				"pairs"
+			],
+			[
+				"we",
+				"weight"
+			],
+			[
+				"left",
+				"left-branch"
+			],
+			[
+				"deco",
+				"decode-1"
+			],
+			[
+				"righ",
+				"right-result"
+			],
+			[
+				"f",
+				"fill-set"
+			],
+			[
+				"a",
+				"adjoint-set"
+			],
+			[
+				"co",
+				"cons"
+			],
+			[
+				"tai",
+				"tail1"
+			],
+			[
+				"tail",
+				"tail2"
+			],
+			[
+				"i",
+				"intersection-set"
+			],
+			[
+				"h",
+				"head1"
+			],
+			[
+				"hea",
+				"head2"
+			],
+			[
+				"head",
+				"head1"
+			],
+			[
+				"uni",
+				"union-set"
+			],
+			[
+				"c",
+				"car"
+			],
+			[
+				"se",
+				"set2"
+			],
+			[
+				"set",
+				"set1"
+			],
+			[
+				"map",
+				"map-inner"
+			],
+			[
+				"eq",
+				"equal?"
+			],
+			[
+				"be",
+				"before"
+			],
+			[
+				"make-",
+				"make-sum"
+			],
+			[
+				"no",
+				"not-number?"
+			],
+			[
+				"n",
+				"number?"
+			],
+			[
+				"op",
+				"operands"
+			],
+			[
+				"fo",
+				"fold-right"
+			],
+			[
+				"it",
+				"initial"
+			],
+			[
+				"res",
+				"rest"
+			],
+			[
+				"ver",
+				"verticalize"
+			],
+			[
+				"m",
+				"matrix-vector"
+			],
+			[
+				"ac",
+				"accumulate-n"
+			],
+			[
+				"bra",
+				"branch6"
+			],
+			[
+				"b",
+				"branch-left"
+			],
+			[
+				"mo",
+				"mobiles"
+			],
+			[
+				"ba",
+				"branch-structure"
+			],
+			[
+				"nu",
+				"null?"
+			],
+			[
+				"ite",
+				"items"
+			],
+			[
+				"fri",
+				"list-to-fringe"
+			],
+			[
+				"li",
+				"list-to-fringe"
+			],
+			[
+				"list",
+				"list1"
+			],
+			[
 				"pri",
 				"println-in"
 			],
@@ -20,48 +280,12 @@
 				"display"
 			],
 			[
-				"co",
-				"coins"
-			],
-			[
-				"i",
-				"items"
-			],
-			[
-				"le",
-				"length-iter"
-			],
-			[
-				"c",
-				"cdr"
-			],
-			[
-				"li",
-				"list-get"
-			],
-			[
-				"se",
-				"second-el"
-			],
-			[
 				"first",
 				"first-el"
 			],
 			[
 				"abs",
 				"absd"
-			],
-			[
-				"a",
-				"abs"
-			],
-			[
-				"nu",
-				"num"
-			],
-			[
-				"de",
-				"define"
 			],
 			[
 				"o",
@@ -78,10 +302,6 @@
 			[
 				"new",
 				"newton-method"
-			],
-			[
-				"b",
-				"b-value"
 			],
 			[
 				"po",
@@ -104,10 +324,6 @@
 				"fib-iter"
 			],
 			[
-				"s",
-				"sqrt-rec"
-			],
-			[
 				"if",
 				"ifmain	if __name__ == '__main__'"
 			]
@@ -116,34 +332,10 @@
 	"buffers":
 	[
 		{
-			"file": "chapter2/ex2.20.scm",
+			"file": "chapter2/2.3/huffman-enc.scm",
 			"settings":
 			{
-				"buffer_size": 475,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
-			"settings":
-			{
-				"buffer_size": 3857,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "chapter2/ex2.19.scm",
-			"settings":
-			{
-				"buffer_size": 1226,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "chapter2/lists.scm",
-			"settings":
-			{
-				"buffer_size": 2087,
+				"buffer_size": 6217,
 				"line_ending": "Windows"
 			}
 		}
@@ -155,16 +347,20 @@
 		"selected_items":
 		[
 			[
+				"Snippet: ",
+				"Snippet: if"
+			],
+			[
+				"def",
+				"Snippet: define-procedure"
+			],
+			[
 				"sni",
 				"Snippet: Method"
 			],
 			[
 				"magic",
 				"Snippet: __magic__"
-			],
-			[
-				"Snippet: ",
-				"Snippet: Function"
 			],
 			[
 				"",
@@ -188,15 +384,48 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/deriv.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/1.scm",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-orderedlist.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-tree.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.66.scm",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-unorderedlist.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.61.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/2.61.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/2.60.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/2.58.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/quotation.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/map.scm",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-build",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/1.sublime-macro",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/lambda.sublime-snippet",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/if.sublime-snippet",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.38.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.36.scm",
+		"/C/Users/Alexey Grigorev/Desktop/jtalks.tech.session.locking.chat",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/conv-interfaces.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.28.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.29.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/trees.scm",
+		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.601/лаб 7/LAB7-1.PRO",
+		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.057/лаб 6/LAB6-2.PRO",
+		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.787/лаб 6/LAB6-1.PRO",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.177/LAB5-2.PRO",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.688/LAB5-1.PRO",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.034/LAB5-1.PRO",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/lists.scm",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.210/lab4.CLP",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.840/лаб 1 граф.bls",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/map.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/pairs.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.19.scm",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Miscellaneous.tmPreferences",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-build",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/lists.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/pairs.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/rational.scm",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Comments.tmPreferences",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Python/Python.tmLanguage"
@@ -217,6 +446,62 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" ",
+			"(A       2), (NA      16), (BOOM    1), (SHA     3), (GET     2), (YIP     9), (JOB     2), (WAH     1 ),",
+			" ",
+			"node",
+			"leafs",
+			"sample-message",
+			"x",
+			"union-set-merge",
+			"union-set",
+			"intersection-set-list",
+			"intersection-set",
+			"intersection-set-list",
+			" \\n",
+			"tree",
+			"x2",
+			"x1",
+			"union",
+			"b",
+			"a",
+			"after",
+			"before",
+			"expression?",
+			"e",
+			"after",
+			"symbol",
+			"before",
+			"aft",
+			"prev",
+			"seq",
+			"item",
+			"memq",
+			"seq",
+			"split",
+			"a2",
+			"a1",
+			"tail",
+			"exp",
+			"param",
+			"variable?",
+			"multiplicand",
+			"deriv",
+			"accumulate",
+			" + ",
+			".+",
+			"\\s+",
+			"b",
+			"a",
+			"struncture",
+			"branch",
+			"fringe",
+			"list-to-fringe",
+			"flattern",
+			"items",
+			"y",
+			"x",
+			" )",
 			"(define (cc amount coins)\n        (cond \n            (?null 0)\n            (else \n                (+  (cc amount (cdr coins))\n                    (cc (- amount ((list-ref coins (- (length coins) 1))))\n                        (car coins)\n                    )\n                )\n            )\n        )\n    )",
 			"items",
 			"count-change-list",
@@ -288,20 +573,10 @@
 			"ipsum",
 			"suscipit",
 			"consequatur",
-			"facere",
-			"rerum",
-			"aspernatur",
-			"aut",
-			"voluptatem",
-			"ipsa",
-			"voluptatem",
-			"q.i.",
-			" ",
-			"d* ",
-			"qu."
+			"facere"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": true,
 		"replace_history":
@@ -322,111 +597,26 @@
 			[
 				{
 					"buffer": 0,
-					"file": "chapter2/ex2.20.scm",
+					"file": "chapter2/2.3/huffman-enc.scm",
 					"settings":
 					{
-						"buffer_size": 475,
+						"buffer_size": 6217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								148,
-								148
+								5998,
+								5998
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scheme/Scheme.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
-					"settings":
-					{
-						"buffer_size": 3857,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								861,
-								860
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 627.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "chapter2/ex2.19.scm",
-					"settings":
-					{
-						"buffer_size": 1226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								935,
-								935
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Scheme/Scheme.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 570.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "chapter2/lists.scm",
-					"settings":
-					{
-						"buffer_size": 2087,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2013,
-								2013
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Scheme/Scheme.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2166.0,
+						"translation.y": 5375.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -467,7 +657,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 124.0
+		"height": 164.0
 	},
 	"replace":
 	{
