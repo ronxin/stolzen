@@ -5,9 +5,6 @@
 )
 
 
-
-
-
 (define (put op type item)
     true
 )
@@ -36,7 +33,7 @@
         (cdr z)
     )
 
-    (define (magnituge z)
+    (define (magnitude z)
         (sqrt (+ (square (real-part z))
                  (square (imag-part z))))
     )
@@ -46,11 +43,11 @@
     )
 
     (define (make-from-real-imag x y)
-        (attach-tag RECTANGULAR (cons x y))
+        (cons x y)
     )
 
     (define (make-from-mag-ang r a)
-        (attach-tag RECTANGULAR (cons (* r (cos a)) (* r (sin a)))) 
+        (cons (* r (cos a)) (* r (sin a)))
     ) 
 
     ;; interface
@@ -82,14 +79,14 @@
     (define POLAR 'polar)
 
     (define (real-part z)
-        (* (magnituge z) (cos angle z))
+        (* (magnitude z) (cos (angle z)))
     )
 
     (define (imag-part z)
-        (* (magnituge z) (cos (angle z)))
+        (* (magnitude z) (sin (angle z)))
     )
 
-    (define (magnituge z)
+    (define (magnitude z)
         (car z)
     )
 
@@ -98,16 +95,14 @@
     )
 
     (define (make-from-real-imag x y)
-        (attach-tag POLAR 
-            (cons 
-                (sqrt (+ (square x) (square y)))
-                (atan y x)
-            )
+        (cons 
+            (sqrt (+ (square x) (square y)))
+            (atan y x)
         )
     )
 
     (define (make-from-mag-ang r a)
-        (attach-tag POLAR (cons r a))
+        (cons r a)
     )
 
     ;; interface
@@ -180,12 +175,12 @@
     (apply-generic 'imag-part z)
 )
 
-(define (magnituge z)
-    (apply-generic 'magnituge z)
+(define (magnitude z)
+    (apply-generic 'magnitude z)
 )
 
 (define (angle z)
-    (apply-generic 'magnituge z)
+    (apply-generic 'magnitude z)
 )
 
 (define (make-from-real-imag real imag)
@@ -216,17 +211,19 @@
 
 (define (mul-complex z1 z2)
     (make-from-mag-ang 
-        (* (magnituge z1) (magnituge z2))
+        (* (magnitude z1) (magnitude z2))
         (+ (angle z1) (angle z2))
     )
 )
 
 (define (div-complex z1 z2)
     (make-from-mag-ang 
-        (/ (magnituge z1) (magnituge z2))
+        (/ (magnitude z1) (magnitude z2))
         (- (angle z1) (angle z2))
     )
 )
+
+; error is expected - put is not implemented
 
 (add-complex 
     (make-from-real-imag 2 0)

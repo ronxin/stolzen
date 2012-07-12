@@ -43,7 +43,7 @@
     (cdr z)
 )
 
-(define (magnituge-rectangular z)
+(define (magnitude-rectangular z)
     (sqrt (+ (square (real-part-rectangular z))
              (square (imag-part-rectangular z))))
 )
@@ -71,14 +71,14 @@
 )
 
 (define (real-part-polar z)
-    (* (magnituge-polar z) (cos angle-polar z))
+    (* (magnitude-polar z) (cos (angle-polar z)))
 )
 
 (define (imag-part-polar z)
-    (* (magnituge-polar z) (cos (angle-polar z)))
+    (* (magnitude-polar z) (sin (angle-polar z)))
 )
 
-(define (magnituge-polar z)
+(define (magnitude-polar z)
     (car z)
 )
 
@@ -122,12 +122,12 @@
     )
 )
 
-(define (magnituge z)
+(define (magnitude z)
     (cond
-        ((rectangular? z) (magnituge-rectangular (contents z)))
-        ((polar? z) (magnituge-polar (contents z)))
+        ((rectangular? z) (magnitude-rectangular (contents z)))
+        ((polar? z) (magnitude-polar (contents z)))
         (else
-            (error "Unknown type - magnituge" z))
+            (error "Unknown type - magnitude" z))
     )
 )
 
@@ -168,14 +168,14 @@
 
 (define (mul-complex z1 z2)
     (make-from-mag-ang 
-        (* (magnituge z1) (magnituge z2))
+        (* (magnitude z1) (magnitude z2))
         (+ (angle z1) (angle z2))
     )
 )
 
 (define (div-complex z1 z2)
     (make-from-mag-ang 
-        (/ (magnituge z1) (magnituge z2))
+        (/ (magnitude z1) (magnitude z2))
         (- (angle z1) (angle z2))
     )
 )
