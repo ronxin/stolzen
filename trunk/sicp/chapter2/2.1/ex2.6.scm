@@ -1,3 +1,5 @@
+#lang scheme
+
 ; 2.6
 
 ; http://en.wikipedia.org/wiki/Church_encoding
