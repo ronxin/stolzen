@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"en",
+				"enumerate-interval"
+			],
+			[
+				"co",
+				"comb"
+			],
+			[
+				"re",
+				"reverse"
+			],
+			[
+				"pre",
+				"pred-to"
+			],
+			[
+				"e",
+				"enumerate-interval"
+			],
+			[
 				"s",
 				"symbols-len"
 			],
@@ -18,10 +38,6 @@
 			[
 				"tre",
 				"tree2"
-			],
-			[
-				"en",
-				"encoded-2"
 			],
 			[
 				"de",
@@ -50,10 +66,6 @@
 			[
 				"end",
 				"encode-symbol"
-			],
-			[
-				"e",
-				"eq?"
 			],
 			[
 				"ri",
@@ -130,10 +142,6 @@
 			[
 				"a",
 				"adjoint-set"
-			],
-			[
-				"co",
-				"cons"
 			],
 			[
 				"tai",
@@ -292,10 +300,6 @@
 				"one-third"
 			],
 			[
-				"re",
-				"repeat"
-			],
-			[
 				"repe",
 				"repeat-inc"
 			],
@@ -332,10 +336,13 @@
 	"buffers":
 	[
 		{
-			"file": "chapter2/2.3/huffman-enc.scm",
+			"contents": "#lang scheme \n\n; for testing \n\n(define (container)\n    (define hash (make-hash))\n\n    (define (put op type item)\n        (hash-set! hash (cons op type) item)\n    )\n\n    (define (get op type)\n        (let\n            ((key (cons op type)))\n            (if (hash-has-key? hash key)\n                (hash-ref hash key)\n                false\n            )\n        )\n    )\n\n    (lambda (name) \n        (cond\n            ((eq? name 'get) get)\n            ((eq? name 'put) put)\n            ((eq? name 'hash) hash)\n        )\n    )\n)\n\n(define storage (container))\n\n(define put (storage 'put))\n(define get (storage 'get))\n\n;\n; Usual numbers\n;\n\n(define (install-scheme-number-package)\n    (define (tag x)\n        (attach-tag 'scheme-number x)\n    )\n\n    (put 'add '(scheme-number scheme-number)\n        (lambda (x y) (tag (+ x y)))\n    )\n\n    (put 'sub '(scheme-number scheme-number)\n        (lambda (x y) (tag (- x y)))\n    )\n\n    (put 'mul '(scheme-number scheme-number)\n        (lambda (x y) (tag (* x y)))\n    )\n\n    (put 'div '(scheme-number scheme-number)\n        (lambda (x y) (tag (/ x y)))\n    )\n\n    (put 'make 'scheme-number\n        (lambda (x) (tag x))\n    )\n\n    ; 2.79\n    (put 'equ? '(scheme-number scheme-number)\n        (lambda (a b) (= a b))\n    )\n\n    ; 2.80\n    (put 'zero? '(scheme-number)\n        (lambda (a) (= a 0))\n    )\n\n    'done\n)\n\n(define (make-scheme-number n)\n    ((get 'make 'scheme-number) n)\n)\n\n\n;\n; rational\n;\n\n(define (install-rational-package)\n    ;; internal procedures\n    (define (numer x) \n        (car x)\n    )\n\n    (define (denom x) \n        (cdr x)\n    )\n\n    (define (make-rat n d)\n        (let \n            ((g (gcd n d)))\n            (cons (/ n g) (/ d g))\n        )\n    )\n\n    (define (add-rat x y)\n        (make-rat (+ (* (numer x) (denom y))\n                     (* (numer y) (denom x)))\n                  (* (denom x) (denom y)))\n    )\n\n    (define (sub-rat x y)\n        (make-rat (- (* (numer x) (denom y))\n                     (* (numer y) (denom x)))\n                  (* (denom x) (denom y)))\n    )\n\n    (define (mul-rat x y)\n        (make-rat (* (numer x) (numer y))\n                  (* (denom x) (denom y)))\n    )\n\n    (define (div-rat x y)\n        (make-rat (* (numer x) (denom y))\n                  (* (denom x) (numer y)))\n    )\n\n    ;; interface to rest of the system\n    (define (tag x) \n        (attach-tag 'rational x)\n    )\n\n    (put 'add '(rational rational)\n        (lambda (x y) (tag (add-rat x y)))\n    )\n\n    (put 'sub '(rational rational)\n        (lambda (x y) (tag (sub-rat x y)))\n    )\n\n    (put 'mul '(rational rational)\n        (lambda (x y) (tag (mul-rat x y)))\n    )\n\n    (put 'div '(rational rational)\n        (lambda (x y) (tag (div-rat x y)))\n    )\n\n    (put 'make 'rational\n        (lambda (n d) (tag (make-rat n d)))\n    )\n\n    ; 2.79\n    (put 'equ? '(rational rational)\n        (lambda (r1 r2) (and (= (numer r1) (numer r2)) (= (denom r1) (denom r2))))\n    )\n\n    ; 2.80\n    (put 'zero? '(rational)\n        (lambda (a) (= (numer a) 0))\n    )\n\n    'done\n)\n\n(define (make-rational n d)\n    ((get 'make 'rational) n d)\n)\n\n;\n; Complex\n;\n\n(define (square x)\n    (* x x)\n)\n\n(define (install-rectangular-package)\n    (define RECTANGULAR 'rectangular)\n\n    (define (real-part z)\n        (car z)\n    )\n\n    (define (imag-part z)\n        (cdr z)\n    )\n\n    (define (magnitude z)\n        (sqrt (+ (square (real-part z))\n                 (square (imag-part z))))\n    )\n\n    (define (angle z)\n        (atan (imag-part z) (real-part z))\n    )\n\n    (define (make-from-real-imag x y)\n        (cons x y)\n    )\n\n    (define (make-from-mag-ang r a)\n        (cons (* r (cos a)) (* r (sin a)))\n    ) \n\n    ;; interface\n\n    (define (tag x)\n        (attach-tag RECTANGULAR x)\n    )\n\n    (put 'real-part RECTANGULAR real-part)\n    (put 'imag-part RECTANGULAR imag-part)\n    (put 'magnitude RECTANGULAR magnitude)\n    (put 'angle RECTANGULAR angle)\n\n    (put 'make-from-real-imag RECTANGULAR \n        (lambda (x y) (tag (make-from-real-imag x y)))\n    )\n\n    (put 'make-from-mag-ang RECTANGULAR \n        (lambda (r a) (tag (make-from-mag-ang r a)))\n    )\n\n    'done\n)\n\n\n(define (install-polar-package)\n    (define POLAR 'polar)\n\n    (define (real-part z)\n        (* (magnitude z) (cos (angle z)))\n    )\n\n    (define (imag-part z)\n        (* (magnitude z) (sin (angle z)))\n    )\n\n    (define (magnitude z)\n        (car z)\n    )\n\n    (define (angle z)\n        (cdr z)\n    )\n\n    (define (make-from-real-imag x y)\n        (cons \n            (sqrt (+ (square x) (square y)))\n            (atan y x)\n        )\n    )\n\n    (define (make-from-mag-ang r a)\n        (cons r a)\n    )\n\n    ;; interface\n\n    (define (tag x)\n        (attach-tag POLAR x)\n    )\n\n    (put 'real-part POLAR real-part)\n    (put 'imag-part POLAR imag-part)\n    (put 'magnitude POLAR magnitude)\n    (put 'angle POLAR angle)\n\n    (put 'make-from-real-imag POLAR \n        (lambda (x y) (tag (make-from-real-imag x y)))\n    )\n\n    (put 'make-from-mag-ang POLAR \n        (lambda (r a) (tag (make-from-mag-ang r a)))\n    )\n\n    'done\n)\n\n(define (install-complex-package)\n    ;; imported procedures from rectangular and polar packages\n    (define (make-from-real-imag x y)\n        ((get 'make-from-real-imag 'rectangular) x y)\n    )\n    \n    (define (make-from-mag-ang r a)\n        ((get 'make-from-mag-ang 'polar) r a)\n    )\n\n    (define (operation name z)\n        ((get name (type-tag z)) (contents z))\n    )\n\n    (define (real-part z)\n        (operation 'real-part z)\n    )\n\n    (define (imag-part z)\n        (operation 'imag-part z)\n    )\n\n    (define (magnitude z)\n        (operation 'magnitude z)\n    )\n\n    (define (angle z)\n        (operation 'angle z)\n    )\n\n    ;; internal procedures\n    (define (add-complex z1 z2)\n        (make-from-real-imag (+ (real-part z1) (real-part z2))\n                             (+ (imag-part z1) (imag-part z2)))\n    )\n\n    (define (sub-complex z1 z2)\n        (make-from-real-imag (- (real-part z1) (real-part z2))\n                             (- (imag-part z1) (imag-part z2)))\n    )\n\n    (define (mul-complex z1 z2)\n        (make-from-mag-ang (* (magnitude z1) (magnitude z2))\n                           (+ (angle z1) (angle z2)))\n    )\n    \n    (define (div-complex z1 z2)\n        (make-from-mag-ang (/ (magnitude z1) (magnitude z2))\n                           (- (angle z1) (angle z2)))\n    )\n\n    ;; interface to rest of the system\n    (define (tag z) (attach-tag 'complex z))\n\n    ; 2.77\n    (put 'real-part '(complex) real-part)\n    (put 'imag-part '(complex) imag-part)\n    (put 'magnitude '(complex) magnitude)\n    (put 'angle '(complex) angle)\n\n    (put 'add '(complex complex)\n        (lambda (z1 z2) (tag (add-complex z1 z2)))\n    )\n\n    (put 'sub '(complex complex)\n        (lambda (z1 z2) (tag (sub-complex z1 z2)))\n    )\n\n    (put 'mul '(complex complex)\n        (lambda (z1 z2) (tag (mul-complex z1 z2)))\n    )\n\n    (put 'div '(complex complex)\n        (lambda (z1 z2) (tag (div-complex z1 z2)))\n    )\n\n    (put 'make-from-real-imag 'complex\n        (lambda (x y) (tag (make-from-real-imag x y)))\n    )\n\n    (put 'make-from-mag-ang 'complex\n        (lambda (r a) (tag (make-from-mag-ang r a)))\n    )\n\n    ; 2.79\n    (put 'equ? '(complex complex)\n        (lambda (z1 z2) (and (= (real-part z1) (real-part z2)) (= (imag-part z1) (imag-part z2))))\n    )\n\n    ; 2.80\n    (put 'zero? '(complex)\n        (lambda (a) (and (= (real-part a) 0) (= (imag-part a) 0)))\n    )\n\n    'done\n)\n\n(define (make-complex-from-real-imag x y)\n    ((get 'make-from-real-imag 'complex) x y)\n)\n\n(define (make-complex-from-mag-ang r a)\n    ((get 'make-from-mag-ang 'complex) r a)\n)\n\n\n(define storage-coercion (container))\n\n(define put-coercion (storage-coercion 'put))\n(define get-coercion (storage-coercion 'get))\n\n\n;\n; Generic\n;\n\n(define (attach-tag type-tag contents)\n    (cons type-tag contents)\n)\n\n(define (type-tag datum)\n    (if (pair? datum)\n        (car datum)\n        (error \"Bad tagged datum -- type-tag\" datum)\n    )\n)\n\n(define (contents datum)\n    (if (pair? datum)\n        (cdr datum)\n        (error \"Bad tagged datum -- contents\" datum)\n    )\n)\n\n(define (apply-generic op . args)\n    (let \n        ((type-tags (map type-tag args)))\n        (let \n            ((proc (get op type-tags)))\n            \n            (if proc\n                (apply proc (map contents args))\n                (if (= (length args) 2)\n                    (let \n                        ((type1 (car type-tags))\n                         (type2 (cadr type-tags))\n                         (a1 (car args))\n                         (a2 (cadr args)))\n\n                        (let \n                            ((t1->t2 (get-coercion type1 type2))\n                             (t2->t1 (get-coercion type2 type1)))\n\n                            (cond \n                                (t1->t2\n                                    (apply-generic op (t1->t2 a1) a2))\n                                (t2->t1\n                                    (apply-generic op a1 (t2->t1 a2)))\n                                (else\n                                    (error \"No method for these types\" (list op type-tags)))\n                            )\n                        )\n                    )\n                    (error \"No method for these types\" (list op type-tags)) \n                )\n            )\n        )\n    )\n)\n\n\n(define (add x y) \n    (apply-generic 'add x y)\n)\n\n(define (sub x y) \n    (apply-generic 'sub x y)\n)\n\n(define (mul x y) \n    (apply-generic 'mul x y)\n)\n\n(define (div x y) \n    (apply-generic 'div x y)\n)\n\n\n(define (scheme-number->complex n)\n    (make-complex-from-real-imag (contents n) 0)\n)\n\n(install-scheme-number-package)\n(install-rational-package)\n(install-polar-package)\n(install-rectangular-package)\n(install-complex-package)\n\n\n\n(put-coercion 'scheme-number 'complex scheme-number->complex)\n\n(add (make-scheme-number 1) (make-complex-from-real-imag 1 2))",
+			"file": "chapter2/2.5/generic-different-types.scm",
+			"file_size": 10347,
+			"file_write_time": 129867299137322379,
 			"settings":
 			{
-				"buffer_size": 6217,
+				"buffer_size": 9885,
 				"line_ending": "Windows"
 			}
 		}
@@ -384,13 +391,34 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/combinations.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/1.scm",
+		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.680/Generator.java",
+		"/C/Users/Alexey Grigorev/Dropbox/agrigor.droppages.com/Content/index.txt",
+		"/C/Users/Alexey Grigorev/Dropbox/agrigor.droppages.com/Templates/index.html",
+		"/C/cygwin/bin/pl",
+		"/C/cygwin/bin/awk",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/typical-prog.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/comb.scm",
+		"/C/Users/Alexey Grigorev/Downloads/soft/cygwin/http%3a%2f%2fmirror.mcs.anl.gov%2fcygwin%2f/setup.ini",
+		"/C/Users/Alexey Grigorev/Desktop/1/russia_vk/russia_vk/pom.xml",
+		"/C/Users/Alexey Grigorev/Desktop/1/russia_vk/russia_vk/vkontakte-integration-service/src/main/resources/ru/intech/tele2/vkintegration/vkintegration-context.xml",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.78.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/ex2.40.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/typical-prog.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-op.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/ex2.34.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/4A/mattern-matching.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/4A/fig4.png",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/huffman-enc.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/4A/конспект.txt",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/deriv.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/1.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-orderedlist.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-tree.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.66.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-unorderedlist.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.61.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/2.61.scm",
@@ -439,6 +467,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"C:\\Users\\Alexey Grigorev\\Documents\\sublime\\sicp\\chapter2\\2.2"
 		]
 	},
 	"find_state":
@@ -446,6 +475,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"m",
+			"lst",
+			"params",
+			"cur",
+			"C3",
 			" ",
 			"(A       2), (NA      16), (BOOM    1), (SHA     3), (GET     2), (YIP     9), (JOB     2), (WAH     1 ),",
 			" ",
@@ -568,12 +602,7 @@
 			"rem",
 			"laudantium",
 			"non",
-			"quasi",
-			"quia",
-			"ipsum",
-			"suscipit",
-			"consequatur",
-			"facere"
+			"quasi"
 		],
 		"highlight": true,
 		"in_selection": true,
@@ -597,26 +626,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "chapter2/2.3/huffman-enc.scm",
+					"file": "chapter2/2.5/generic-different-types.scm",
 					"settings":
 					{
-						"buffer_size": 6217,
+						"buffer_size": 9885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5998,
-								5998
+								7529,
+								7529
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scheme/Scheme.tmLanguage"
+							"syntax": "Packages/Scheme/Scheme.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 5375.0,
+						"translation.y": 852.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -684,6 +715,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 107.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }
