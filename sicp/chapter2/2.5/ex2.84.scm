@@ -51,8 +51,37 @@
     )
 )
 
+(define (make-number x)
+    (attach-tag 'number x)
+)
+
+(define (make-rational x)
+    (attach-tag 'rational x)
+)
+
+(define (make-complex x)
+    (attach-tag 'complex x)
+)
+
+(define (raise-number x)
+    (attach-tag 'rational (contents x))
+)
+
+(define (raise-rational x)
+    (attach-tag 'complex (contents x))
+)
+
+(put 'raise 'number raise-number)
+(put 'raise 'rational raise-rational)
+
+(define (raise x)
+    ((get 'raise (type-tag x)) x)
+)
 
 ; 2.84
+
+; representing inheritance tower as list
+; the superer type - the nearer it to the head
 
 (define inheritance-tower '(complex rational number))
 
@@ -67,7 +96,8 @@
     (index-inner tower 0)
 )
 
-; making pairs of (type - ordinal number), i.e complex: 0, rational: 1, etc
+; making pairs of {type: ordinal number in inheritance list}
+; i.e {complex: 0, rational: 1, etc}
 (define inheritance-indexes (index-tower inheritance-tower))
 
 (define (get-index type indexes)
@@ -84,6 +114,7 @@
 (equal? 2 (get-index 'number inheritance-indexes))
 
 
+
 (define (get-type ord indexes)
     (cond
         ((null? indexes) false)
@@ -96,6 +127,8 @@
 (equal? 'complex (get-type 0 inheritance-indexes))
 (equal? 'rational (get-type 1 inheritance-indexes))
 (equal? 'number (get-type 2 inheritance-indexes))
+
+
 
 (define (find-superest-parent seq inheritance-indexes)
     (define (index type)
@@ -112,39 +145,83 @@
 (equal? 'complex (find-superest-parent '(number complex rational) inheritance-indexes))
 
 
-(define (apply-generic2 op . args)
-    (define (coerce type1 a1 type2 a2)
-        (let 
-            ((t1->t2 (get-coercion type1 type2))
-             (t2->t1 (get-coercion type2 type1)))
 
-            (cond 
-                (t1->t2
-                    (apply-generic2 op (t1->t2 a1) a2))
-                (t2->t1
-                    (apply-generic2 op a1 (t2->t1 a2)))
-                (else
-                    (error "No method for these types" (list op type1 type2)))
-            )
-        )
+(define (calc-distance type1 type2 inheritance-indexes)
+    (define (index type)
+        (get-index type inheritance-indexes)
     )
 
-    (define (try-coerce type-tags args)
-        (if (= (length args) 2)
-            (let 
-                ((type1 (car type-tags))
-                 (type2 (cadr type-tags))
-                 (a1 (car args))
-                 (a2 (cadr args)))
-                (if (eq? type1 type2)
-                    (error "Types are equal, can't coerce" (list op type-tags args)) 
-                    (coerce type1 a1 type2 a2)  
-                )
-            )
-            (error "No method for these types" (list op type-tags)) 
-        )
+    (abs (- (index type1) (index type2)))
+)
+
+(equal? 0 (calc-distance 'complex 'complex inheritance-indexes))
+(equal? 1 (calc-distance 'complex 'rational inheritance-indexes))
+(equal? 2 (calc-distance 'complex 'number inheritance-indexes))
+
+
+
+(define (distances type-tags inheritance-indexes)
+    (define (distance supertype)
+        (lambda (type) (calc-distance supertype type inheritance-indexes))
     )
 
+    (let
+        ((super-parent (find-superest-parent type-tags inheritance-indexes)))
+        
+        (map (distance super-parent) type-tags)
+    )
+)
+
+(equal? '(0 1 2) (distances '(complex rational number) inheritance-indexes))
+(equal? '(0 0 0) (distances '(complex complex complex) inheritance-indexes))
+(equal? '(0 0 0) (distances '(number number number) inheritance-indexes))
+
+
+
+
+(define (raise-times arg times)
+    (if (= times 0)
+        arg
+        (raise-times (raise arg) (- times 1))
+    )
+)
+
+(equal? (make-number 1)   (raise-times (make-number 1) 0))
+(equal? (make-rational 1) (raise-times (make-number 1) 1))
+(equal? (make-complex 1)  (raise-times (make-number 1) 2))
+
+
+
+(define (raise-seq args distances)
+    (if (null? args)
+        null
+        (cons (raise-times (car args) (car distances)) 
+              (raise-seq (cdr args) (cdr distances)))
+    )
+) 
+
+(equal? (list (make-complex 1) (make-complex 2))
+        (raise-seq (list (make-number 1) (make-complex 2)) '(2 0)))
+
+
+
+(define (coerce args inheritance-indexes)
+    (let
+        ((dis (distances (map type-tag args) inheritance-indexes)))
+        (raise-seq args dis)
+    )
+)
+
+(equal? (list (make-complex 1) (make-complex 2))
+        (coerce (list (make-complex 1) (make-complex 2)) inheritance-indexes))
+
+
+
+(define (apply-generic op . args)
+    (apply-generic2 op args)
+)
+
+(define (apply-generic2 op args)
     (let 
         ((type-tags (map type-tag args)))
         (let 
@@ -152,7 +229,7 @@
             
             (if proc
                 (apply proc (map contents args))
-                (try-coerce type-tags args)
+                (apply-generic2 op (coerce args inheritance-indexes))
             )
         )
     )
