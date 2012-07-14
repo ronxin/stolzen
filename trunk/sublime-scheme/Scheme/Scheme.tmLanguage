@@ -42,7 +42,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\(((?i:cons|list|car|cdr|cadr|caddr|cdddr|cadddr|cddddr))</string>
+			<string>\(((?i:cons|list|car|cdr|cadr|cddr|caddr|cdddr|cadddr|cddddr))</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -61,7 +61,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\b(?i:(define))\b)(\s+)\(?((\w|\-|\!|\?|\=)*)</string>
+			<string>(\b(?i:(define))\b)(\s+)\(?((\w|[-!?=&lt;&gt;])*)</string>
 			<key>name</key>
 			<string>meta.function.scheme</string>
 		</dict>
@@ -106,7 +106,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:eq|neq|and|or)\b</string>
+			<string>\b(?i:and|or)\b</string>
 			<key>name</key>
 			<string>keyword.operator.scheme</string>
 		</dict>
@@ -118,7 +118,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\b</string>
+			<string>[-]?\b[0-9]+\b</string>
 			<key>name</key>
 			<string>constant.numeric.scheme</string>
 		</dict>

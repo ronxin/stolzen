@@ -1,8 +1,8 @@
 {
     "extensions": ["scm"],
 
-    // -?= excluded, propably need to exlude more
-    "word_separators": "./\\()\"':,.;<>~@#$%^&*|+[]{}`~",
+    // -?=<> excluded, propably need to exlude more
+    "word_separators": "./\\()\"':,.;~@#$%^&*|+[]{}`~",
 
     "tab_size": 4,
     "translate_tabs_to_spaces": true
