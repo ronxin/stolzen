@@ -3,7 +3,7 @@
 (require racket/trace)
 
 
-(define ns (make-base-namespace)) ; для eval
+(define ns (make-base-namespace)) ; for eval
 (define FAILED 'failed)
 
 (define (atom? x)

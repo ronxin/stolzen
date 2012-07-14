@@ -71,6 +71,11 @@
         (lambda (a) (= a 0))
     )
 
+    ; 2.83
+    (put 'raise '(scheme-number) 
+        (lambda (a) (tag (make-rational a 1)))
+    )
+
     'done
 )
 
@@ -155,6 +160,11 @@
     ; 2.80
     (put 'zero? '(rational)
         (lambda (a) (= (numer a) 0))
+    )
+
+    ; 2.83
+    (put 'raise '(rational) 
+        (lambda (a) (tag (make-complex-from-real-imag a 0)))
     )
 
     'done
@@ -369,6 +379,8 @@
         (lambda (a) (and (= (real-part a) 0) (= (imag-part a) 0)))
     )
 
+
+
     'done
 )
 
@@ -519,3 +531,12 @@
 (=zero? (make-complex-from-mag-ang 0 0))
 (=zero? (make-complex-from-mag-ang 0 12))
 (not (=zero? z11))
+
+; 2.83
+
+(define (raise a)
+    (apply-generic 'raise a)
+)
+
+(raise (make-scheme-number 1))
+(raise (make-rational 2 3))
