@@ -234,3 +234,64 @@
         )
     )
 )
+
+
+; 2.85
+
+
+(define (project-complex x)
+    (attach-tag 'rational (contents x))
+)
+
+(define (project-rational x)
+    (attach-tag 'number (contents x))
+)
+
+(put 'project 'complex project-complex)
+(put 'project 'rational project-rational)
+
+(define (project x)
+    (let 
+        ((proc (get 'project (type-tag x))))
+        (if proc
+            (proc x)
+            false
+        )
+    )
+)
+
+; let equal? be the generic equality predicate
+(define (can-drop x)
+    (let
+        ((projection (project x)))
+        (if projection
+            (equal? x (raise projection))
+            false
+        )
+    )
+)
+
+(define (drop x)
+    (if (can-drop x)
+        (drop (project x))
+        x
+    )
+)
+
+
+(equal? (make-number 1) (drop (make-complex 1)))
+(equal? (make-number 1) (drop (make-rational 1)))
+(equal? (make-number 1) (drop (make-number 1)))
+
+
+(define (apply-generic-improved op . args)
+    (drop (apply-generic2 op args))
+)
+
+
+; 2.86
+
+; for this change, it's needed to replace * and + in the complex package onto
+; generic add and mul. Also generic sin and cos need to be added. And in the
+; apply-generic procedure it's not needed anymore to cut the tag, let packeges
+; decide on themselves whether to cut or not
