@@ -56,7 +56,56 @@
     (check-equal?
         (add (make-complex-from-real-imag (make-rational 3 4) (make-rational 4 3))
              (make-complex-from-real-imag (make-rational 1 2) (make-rational 2 3)))
-        (make-complex-from-real-imag (make-rational 5 4) (make-rational 2 1)))
+        (make-complex-from-real-imag (make-rational 5 4) 2))
 
+    (test-case
+        "=zero? for zero both number zeros"
+        (check-true  
+            (=zero? (make-complex-from-real-imag 0 0)))
+    )
 
+    (test-case
+        "=zero? for non-zero both number non-zeros"
+        (check-false 
+            (=zero? (make-complex-from-real-imag 1 1)))
+    )
+
+    (test-case
+        "=zero? for non-zero, one zero number"
+        (check-false 
+            (=zero? (make-complex-from-real-imag 0 1)))
+    )
+
+    (test-case
+        "=zero? for non-zero, another zero number"
+        (check-false 
+            (=zero? (make-complex-from-real-imag 1 0)))
+    )
+
+    (test-case
+        "=zero? for zero, one rational zero, another number zero"
+        (check-true  
+            (=zero? (make-complex-from-real-imag (make-rational 0 1) 0)))
+    )
+
+    (test-case
+        "=zero? for zero, one number zero, another rational zero"
+        (check-true  
+            (=zero? (make-complex-from-real-imag 0 (make-rational 0 1))))
+    )
+
+    (test-case
+        "=zero? for zero, both rational zeros"
+        (check-true  
+            (=zero? (make-complex-from-real-imag (make-rational 0 1) (make-rational 0 2))))
+    )
+
+    (test-case
+        "=zero? for non-zero, one rational non-zero"
+        (check-false  
+            (=zero? (make-complex-from-real-imag (make-rational 1 1) 0)))
+    )
 ))
+
+
+(run-tests complex-numbers-test-suite)

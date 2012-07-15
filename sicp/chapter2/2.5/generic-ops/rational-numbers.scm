@@ -99,6 +99,25 @@
         (lambda (n d) (tag (make-rat n d)))
     )
 
+    (define (zero? a)
+        (=zero? (numer a))
+    )
+
+    (put '=zero? '(rational)
+        (lambda (a) (zero? (contents a)))
+    )
+
+    (define (drop a)
+        (if (equal? 1 (denom a))
+            (numer a)
+            false
+        )
+    )
+
+    (put 'drop 'rational
+        (lambda (a) (drop (contents a)))
+    )
+
     (void)
 )
 

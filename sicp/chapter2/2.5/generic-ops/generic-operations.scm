@@ -7,12 +7,13 @@
 (require "tags.scm")
 
 (require "coerce.scm")
+(require "drop.scm")
 
 
 
 (define (apply-generic op . args)
     ; (drop (apply-generic2 op args))
-     (apply-generic2 op args)
+    (apply-generic2 op args)
 )
 
 (define (apply-generic2 op args)
@@ -34,19 +35,19 @@
 
 
 (define (add x y) 
-    (apply-generic 'add x y)
+    (drop (apply-generic 'add x y))
 )
 
 (define (sub x y) 
-    (apply-generic 'sub x y)
+    (drop (apply-generic 'sub x y))
 )
 
 (define (mul x y) 
-    (apply-generic 'mul x y)
+    (drop (apply-generic 'mul x y))
 )
 
 (define (div x y) 
-    (apply-generic 'div x y)
+    (drop (apply-generic 'div x y))
 )
 
 (define (cosine x) 
@@ -65,6 +66,9 @@
     (apply-generic 'atan y x)
 )
 
+(define (=zero? x) 
+    (apply-generic '=zero? x)
+)
 
 
 

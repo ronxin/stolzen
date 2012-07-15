@@ -41,6 +41,10 @@
         (lambda (x) x)
     )
 
+    (put '=zero? '(scheme-number)
+        (lambda (x) (= x 0))
+    )
+
     (void)
 )
 
