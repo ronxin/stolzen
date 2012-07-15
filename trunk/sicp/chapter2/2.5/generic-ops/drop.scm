@@ -4,53 +4,20 @@
 (require "container.scm")
 
 
-
-(define (project-complex x)
-    (define (real-part)
-        (get 'real-part 'complex)
-    )
-    ((real-part) x)
-)
-
-
-(define (project-rational x)
-    (define (numer)
-        (get 'numer 'rational)
-    )
-    ((numer) x)
-)
-
-
-(put 'project 'complex project-complex)
-(put 'project 'rational project-rational)
-
-(define (project x)
+(define (drop param)
     (let 
-        ((proc (get 'project (type-tag x))))
-        (if proc
-            (proc x)
-            false
+        ((drop-proc (get 'drop (type-tag param))))
+        (if drop-proc
+            (let 
+                ((res (drop-proc param)))
+                (if res
+                    (drop res)
+                    param
+                )
+            )
+            param
         )
-    )
+    ) 
 )
 
-; let equal? be the generic equality predicate
-(define (can-drop x)
-    (let
-        ((projection (project x)))
-        (if projection
-            (equal? x (raise projection))
-            false
-        )
-    )
-)
-
-(define (drop x)
-    (if (can-drop x)
-        (drop (project x))
-        x
-    )
-)
-
-
-(provide (all-defined-out))
+(provide drop)

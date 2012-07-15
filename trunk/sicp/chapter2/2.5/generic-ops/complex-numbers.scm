@@ -197,6 +197,25 @@
         (lambda (r a) (tag (make-from-mag-ang r a)))
     )
 
+    (define (zero? z)
+        (and (=zero? (real-part z)) (=zero? (imag-part z)))
+    )
+
+    (put '=zero? '(complex)
+        (lambda (a) (zero? (contents a)))
+    )
+
+    (define (drop a)
+        (if (=zero? (imag-part a))
+            (real-part a)
+            false
+        )
+    )
+
+    (put 'drop 'complex
+        (lambda (a) (drop (contents a)))
+    )
+
     (void)
 )
 

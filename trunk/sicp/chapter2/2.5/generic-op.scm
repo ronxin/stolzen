@@ -368,8 +368,6 @@
         (lambda (a) (and (= (real-part a) 0) (= (imag-part a) 0)))
     )
 
-
-
     'done
 )
 

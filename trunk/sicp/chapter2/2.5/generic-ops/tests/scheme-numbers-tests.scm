@@ -64,6 +64,18 @@
         (add 1 2)
         (make-scheme-number 3) 
         "Add for two usual numbers works as for tagged numbers")
+
+    (test-case
+        "=zero? for zero"
+        (check-true  
+            (=zero? 0))
+    )
+
+    (test-case
+        "=zero? for non-zero"
+        (check-false  
+            (=zero? 1))
+    )
 ))
 
 (run-tests (test-suite 
