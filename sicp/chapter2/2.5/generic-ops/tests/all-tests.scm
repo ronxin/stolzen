@@ -2,6 +2,7 @@
 
 (require "raise-tests.scm")
 (require "drop-tests.scm")
+(require "coerse-test.scm")
 (require "scheme-numbers-tests.scm")
 (require "rational-tests.scm")
 (require "complex-numbers-tests.scm")
