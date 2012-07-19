@@ -48,6 +48,10 @@
                   (mul (denom x) (denom y)))
     )
 
+    (define (negate-rat x)
+        (make-rat (negate (numer x)) (denom x))
+    )
+
     (define (mul-rat x y)
         (make-rat (mul (numer x) (numer y))
                   (mul (denom x) (denom y)))
@@ -69,6 +73,10 @@
 
     (put 'sub '(rational rational)
         (lambda (x y) (tag (sub-rat (contents x) (contents y))))
+    )
+
+    (put 'negate '(rational)
+        (lambda (x) (tag (negate-rat (contents x))))
     )
 
     (put 'mul '(rational rational)

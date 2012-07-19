@@ -76,6 +76,27 @@
         (check-false  
             (=zero? 1))
     )
+
+    (test-case
+        "negate for positive"
+        (check-equal?
+            (negate 1)
+            -1)
+    )
+
+    (test-case
+        "negate for negative"
+        (check-equal?
+            (negate -1)
+            1)
+    )
+
+    (test-case
+        "negate for zero"
+        (check-equal?
+            (negate 0)
+            0)
+    )
 ))
 
 (run-tests (test-suite 

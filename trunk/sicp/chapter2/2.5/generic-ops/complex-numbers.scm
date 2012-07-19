@@ -29,6 +29,10 @@
         (artangent2 (imag-part z) (real-part z))
     )
 
+    (define (negate-rectangular z)
+        (make-from-real-imag (negate (real-part z)) (negate (imag-part z)))
+    )
+
     (define (make-from-real-imag x y)
         (cons x y)
     )
@@ -43,10 +47,13 @@
         (attach-tag RECTANGULAR x)
     )
 
+    
     (put 'real-part RECTANGULAR real-part)
     (put 'imag-part RECTANGULAR imag-part)
     (put 'magnitude RECTANGULAR magnitude)
     (put 'angle RECTANGULAR angle)
+
+    (put 'negate RECTANGULAR (lambda (x) (tag (negate-rectangular x))))
 
     (put 'make-from-real-imag RECTANGULAR 
         (lambda (x y) (tag (make-from-real-imag x y)))
@@ -79,6 +86,20 @@
         (cdr z)
     )
 
+    (define (rotate180 a)
+        (let 
+            ((res (+ a (/ pi 2))))
+            (if (> res pi)
+                (- res pi)
+                res
+            )
+        )
+    )
+
+    (define (negate-polar z)
+        (make-from-mag-ang (magnitude z) (rotate180 (angle z)))
+    )
+
     (define (make-from-real-imag x y)
         (cons 
             (sqroot (add (square x) (square y)))
@@ -100,6 +121,8 @@
     (put 'imag-part POLAR imag-part)
     (put 'magnitude POLAR magnitude)
     (put 'angle POLAR angle)
+
+    (put 'negate POLAR (lambda (x) (tag (negate-polar x))))
 
     (put 'make-from-real-imag POLAR 
         (lambda (x y) (tag (make-from-real-imag x y)))
@@ -155,6 +178,10 @@
                              (sub (imag-part z1) (imag-part z2)))
     )
 
+    (define (negate-complex z)
+        (operation 'negate z)
+    )
+
     (define (mul-complex z1 z2)
         (make-from-mag-ang (mul (magnitude z1) (magnitude z2))
                            (add (angle z1) (angle z2)))
@@ -175,6 +202,10 @@
 
     (put 'add '(complex complex)
         (lambda (z1 z2) (tag (add-complex (contents z1) (contents z2))))
+    )
+
+    (put 'negate '(complex)
+        (lambda (z) (tag (negate-complex (contents z))))
     )
 
     (put 'sub '(complex complex)

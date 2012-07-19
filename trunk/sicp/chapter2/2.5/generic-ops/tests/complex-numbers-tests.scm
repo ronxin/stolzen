@@ -105,6 +105,36 @@
         (check-false  
             (=zero? (make-complex-from-real-imag (make-rational 1 1) 0)))
     )
+
+    (test-case
+        "negate for scheme-number rectangular"
+        (check-equal?  
+            (negate (make-complex-from-real-imag 1 1))
+            (make-complex-from-real-imag -1 -1))
+    )
+
+    (test-case
+        "negate for rational rectangular"
+        (check-equal?  
+            (negate (make-complex-from-real-imag (make-rational 1 2) 1))
+            (make-complex-from-real-imag (make-rational -1 2) -1))
+    )
+
+    (test-case
+        "negate for polar"
+        (check-equal?  
+            (negate (make-complex-from-mag-ang 2 (/ pi 4)))
+            (make-complex-from-mag-ang 2 (* 3 (/ pi 4))))
+    )
+
+    (test-case
+        "negate for negative polar"
+        (check-equal?  
+            (negate (make-complex-from-mag-ang 2 (* 3 (/ pi 4))))
+            (make-complex-from-mag-ang 2 (/ pi 4)))
+    )
+
+      
 ))
 
 

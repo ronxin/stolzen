@@ -42,6 +42,10 @@
     (drop (apply-generic 'sub x y))
 )
 
+(define (negate x) 
+    (apply-generic 'negate x)
+)
+
 (define (mul x y) 
     (drop (apply-generic 'mul x y))
 )

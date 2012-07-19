@@ -8,3 +8,6 @@
 
 (require "complex-numbers.scm")
 (install-complex-package)
+
+(require "polynomial-numbers.scm")
+(install-polynomial-package)
