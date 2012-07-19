@@ -58,6 +58,13 @@
         (check-false 
             (=zero? (make-rational 1 1)))
     )
+
+    (test-case
+        "negate"
+        (check-equal? 
+            (negate (make-rational 1 1))
+            (make-rational -1 1))
+    )
 ))
 
 (run-tests rational-tests)

@@ -13,6 +13,10 @@
         (lambda (x y) (- x y))
     )
 
+    (put 'negate '(scheme-number)
+        (lambda (x) (- x))
+    )
+
     (put 'mul '(scheme-number scheme-number)
         (lambda (x y) (* x y))
     )
