@@ -131,7 +131,7 @@
     (trace mul-term-by-all-terms)
 
 
-    ; 2.85
+    ; 2.88
 
     (define (negate-term term)
         (make-term (order term) (negate (coeff term)))
@@ -182,7 +182,7 @@
             (error "not the same variable -- div-poly" (list p1 p2)))
     )
 
-    ; 2.84
+    ; 2.87
 
     (define (zero? p)
         (all? =zero? (map coeff (term-list p)))
