@@ -47,12 +47,14 @@
     (list '*table*)
 )
 
-(define t1 (make-table))
-t1
+; (define t1 (make-table))
+; t1
 
-(insert! 'a 'value t1)
-(insert! 'b 'value2 t1)
-(insert! 'c 'value3 t1)
-t1
+; (insert! 'a 'value t1)
+; (insert! 'b 'value2 t1)
+; (insert! 'c 'value3 t1)
+; t1
 
-(lookup 'a t1)
+; (lookup 'a t1)
+
+(provide make-table insert! lookup)
