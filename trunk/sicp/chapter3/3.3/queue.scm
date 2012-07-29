@@ -1,5 +1,6 @@
 #lang scheme
 
+
 (require racket/mpair)
 
 (define front-ptr mcar)
@@ -64,12 +65,6 @@
     (display (front-ptr queue)) (newline)
 )
 
-(define q1 (make-queue))
-(print-queue q1)
-(print-queue (insert-queue! q1 'a))
-(print-queue (insert-queue! q1 'b))
-(print-queue (delete-queue! q1))
-(print-queue (delete-queue! q1))
-
+(provide (all-defined-out))
 
 
