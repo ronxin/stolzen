@@ -236,7 +236,5 @@
 (propagate)
 
 
-; ex 3.31 
-; http://wqzhang.wordpress.com/2009/07/28/sicp-exercise-3-31/
-; Without running the procedure immediately after it is added to a wire, 
-; the agenda table will be empty and no actions will be taken.
+; ex 3.31  
+; The agenda table will be empty and no actions will be taken.
