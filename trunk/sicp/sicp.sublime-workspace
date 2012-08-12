@@ -4,100 +4,424 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"integers-starting-from"
+			],
+			[
+				"str",
+				"stream"
+			],
+			[
+				"stre",
+				"stream-null?"
+			],
+			[
+				"st",
+				"stream"
+			],
+			[
+				"s",
+				"stream"
+			],
+			[
+				"stream-f",
+				"stream-first-n"
+			],
+			[
+				"strea",
+				"stream"
+			],
+			[
+				"cons",
+				"cons-stream"
+			],
+			[
+				"stream-c",
+				"stream-cons"
+			],
+			[
+				"di",
+				"display-stream"
+			],
+			[
+				"force-",
+				"force-in"
+			],
+			[
+				"has",
+				"has-value-inner?"
+			],
+			[
+				"fo",
+				"forget-value!"
+			],
+			[
+				"set",
+				"set-value!"
+			],
+			[
+				"pro",
+				"probe"
+			],
+			[
+				"m",
+				"multiplier"
+			],
+			[
+				"eq",
+				"eq?trace"
+			],
+			[
+				"co",
+				"connector"
+			],
+			[
+				"mak",
+				"make-agenda"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"fu",
+				"full-adder-inner"
+			],
+			[
+				"nu",
+				"number1"
+			],
+			[
+				"r",
+				"ripple-carry-adder"
+			],
+			[
+				"num",
+				"number2"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"re",
+				"rem-wires"
+			],
+			[
+				"out",
+				"output"
+			],
+			[
+				"ti",
+				"times"
+			],
+			[
+				"zip",
+				"zip-inner"
+			],
+			[
+				"logi",
+				"logical-and"
+			],
+			[
+				"an",
+				"and-gate-delay"
+			],
+			[
+				"i",
+				"inverter"
+			],
+			[
+				"me",
+				"memo-fib"
+			],
+			[
+				"ta",
+				"local-table"
+			],
+			[
+				"em",
+				"empty-deque?"
+			],
+			[
+				"fr",
+				"front-deque"
+			],
+			[
 				"make",
-				"make-complex"
+				"make-deque"
+			],
+			[
+				"front-d",
+				"front-delete!"
+			],
+			[
+				"ma",
+				"make-empty"
+			],
+			[
+				"ne",
+				"new-rear"
+			],
+			[
+				"fro",
+				"front-ptr"
+			],
+			[
+				"con",
+				"cond	cond"
+			],
+			[
+				"se",
+				"set-value"
+			],
+			[
+				"ser",
+				"set-prev-ptr!"
+			],
+			[
+				"mc",
+				"mcadr"
+			],
+			[
+				"f",
+				"f-new"
+			],
+			[
+				"tr",
+				"try-pass"
+			],
+			[
+				"a",
+				"account"
+			],
+			[
+				"pas",
+				"passwords"
+			],
+			[
+				"pa",
+				"pass-try"
+			],
+			[
+				"che",
+				"check-all-passwords"
+			],
+			[
+				"ran",
+				"random-in-range"
+			],
+			[
+				"ca",
+				"call-cops?"
+			],
+			[
+				"be",
+				"before-call-cops"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"dis",
+				"dispatch"
+			],
+			[
+				"map",
+				"mapreducer"
+			],
+			[
+				"b",
+				"bucket"
+			],
+			[
+				"lo",
+				"lorem-file"
+			],
+			[
+				"lorem",
+				"lorem-ipsum"
+			],
+			[
+				"get",
+				"get-values"
+			],
+			[
+				"par",
+				"pair"
+			],
+			[
+				"ke",
+				"key1"
+			],
+			[
+				"cp",
+				"comparator"
+			],
+			[
+				"n",
+				"negate-rectangular"
+			],
+			[
+				"make-from-",
+				"make-from-mag-ang"
+			],
+			[
+				"neg",
+				"neg-poly"
+			],
+			[
+				"va",
+				"variable"
+			],
+			[
+				"term",
+				"term-list"
+			],
+			[
+				"pol",
+				"polynomial"
+			],
+			[
+				"add",
+				"add-poly"
+			],
+			[
+				"scheme",
+				"Scheme-numer"
+			],
+			[
+				"coe",
+				"coerse-test-suite"
+			],
+			[
+				"dro",
+				"drop-proc"
+			],
+			[
+				"dr",
+				"drop-proc"
+			],
+			[
+				"im",
+				"imag-part"
+			],
+			[
+				"zeo",
+				"zeros"
+			],
+			[
+				"de",
+				"define	define-procedure"
+			],
+			[
+				"ap",
+				"apply-generic"
+			],
+			[
+				"schene",
+				"scheme-number"
+			],
+			[
+				"test-",
+				"test-case"
+			],
+			[
+				"sc",
+				"scheme-numbers-test"
+			],
+			[
+				"ra",
+				"rational"
+			],
+			[
+				"rat",
+				"rational"
+			],
+			[
+				"sche",
+				"scheme-number"
+			],
+			[
+				"sch",
+				"scheme-number?"
+			],
+			[
+				"ty",
+				"type-tag"
+			],
+			[
+				"raise",
+				"raise-proc"
+			],
+			[
+				"rai",
+				"raise"
+			],
+			[
+				"cosi",
+				"cosine"
+			],
+			[
+				"cos",
+				"cosine"
+			],
+			[
+				"make-",
+				"make-scheme-number"
+			],
+			[
+				"shem",
+				"scheme-number"
+			],
+			[
+				"tag",
+				"type-tag"
+			],
+			[
+				"mul",
+				"mul-complex"
+			],
+			[
+				"schm",
+				"scheme-number"
+			],
+			[
+				"tra",
+				"trace"
+			],
+			[
+				"equal",
+				"equal?"
+			],
+			[
+				"d",
+				"drop"
+			],
+			[
+				"app",
+				"apply-generic"
 			],
 			[
 				"cd",
 				"cdr"
 			],
 			[
-				"ra",
-				"raise-seq"
-			],
-			[
-				"d",
-				"distances"
-			],
-			[
 				"t",
 				"times"
-			],
-			[
-				"ty",
-				"type"
-			],
-			[
-				"a",
-				"args"
-			],
-			[
-				"ap",
-				"apply-generic2"
-			],
-			[
-				"get",
-				"get-index"
-			],
-			[
-				"in",
-				"indexes"
-			],
-			[
-				"i",
-				"inheritance-tower"
-			],
-			[
-				"ca",
-				"car"
-			],
-			[
-				"co",
-				"complex"
-			],
-			[
-				"make-",
-				"make-complex-from-real-imag"
 			],
 			[
 				"trans",
 				"transormables"
 			],
 			[
-				"tra",
-				"transormables"
-			],
-			[
-				"nu",
-				"number->rational"
-			],
-			[
-				"num",
-				"number->rational"
-			],
-			[
 				"c",
 				"curr"
 			],
 			[
-				"con",
-				"contains?"
-			],
-			[
-				"eq",
-				"equal"
-			],
-			[
 				"end",
 				"END"
-			],
-			[
-				"se",
-				"seq2"
-			],
-			[
-				"fo",
-				"fold-pred"
 			],
 			[
 				"fol",
@@ -108,20 +432,12 @@
 				"enumerate-interval"
 			],
 			[
-				"re",
-				"reverse"
-			],
-			[
 				"pre",
 				"pred-to"
 			],
 			[
 				"e",
 				"enumerate-interval"
-			],
-			[
-				"s",
-				"symbols-len"
 			],
 			[
 				"log",
@@ -136,16 +452,8 @@
 				"tree2"
 			],
 			[
-				"de",
-				"decode"
-			],
-			[
 				"le",
 				"leaves"
-			],
-			[
-				"mak",
-				"make-code-tree"
 			],
 			[
 				"null",
@@ -188,16 +496,8 @@
 				"symbols"
 			],
 			[
-				"ma",
-				"make-code-tree"
-			],
-			[
 				"dec",
 				"decode"
-			],
-			[
-				"pa",
-				"pairs"
 			],
 			[
 				"we",
@@ -214,176 +514,32 @@
 			[
 				"righ",
 				"right-result"
-			],
-			[
-				"f",
-				"fill-set"
-			],
-			[
-				"tai",
-				"tail1"
-			],
-			[
-				"tail",
-				"tail2"
-			],
-			[
-				"h",
-				"head1"
-			],
-			[
-				"hea",
-				"head2"
-			],
-			[
-				"head",
-				"head1"
-			],
-			[
-				"uni",
-				"union-set"
-			],
-			[
-				"set",
-				"set1"
-			],
-			[
-				"map",
-				"map-inner"
-			],
-			[
-				"be",
-				"before"
-			],
-			[
-				"no",
-				"not-number?"
-			],
-			[
-				"n",
-				"number?"
-			],
-			[
-				"op",
-				"operands"
-			],
-			[
-				"it",
-				"initial"
-			],
-			[
-				"res",
-				"rest"
-			],
-			[
-				"ver",
-				"verticalize"
-			],
-			[
-				"m",
-				"matrix-vector"
-			],
-			[
-				"ac",
-				"accumulate-n"
-			],
-			[
-				"bra",
-				"branch6"
-			],
-			[
-				"b",
-				"branch-left"
-			],
-			[
-				"mo",
-				"mobiles"
-			],
-			[
-				"ba",
-				"branch-structure"
-			],
-			[
-				"ite",
-				"items"
-			],
-			[
-				"fri",
-				"list-to-fringe"
-			],
-			[
-				"li",
-				"list-to-fringe"
-			],
-			[
-				"list",
-				"list1"
-			],
-			[
-				"pri",
-				"println-in"
-			],
-			[
-				"va",
-				"vars"
-			],
-			[
-				"pr",
-				"print-rec"
-			],
-			[
-				"first",
-				"first-el"
-			],
-			[
-				"abs",
-				"absd"
-			],
-			[
-				"o",
-				"one-third"
-			],
-			[
-				"repe",
-				"repeat-inc"
-			],
-			[
-				"new",
-				"newton-method"
-			],
-			[
-				"po",
-				"positive"
-			],
-			[
-				"ex",
-				"expmod"
-			],
-			[
-				"p",
-				"println"
-			],
-			[
-				"defi",
-				"define"
-			],
-			[
-				"fi",
-				"fib-iter"
-			],
-			[
-				"if",
-				"ifmain	if __name__ == '__main__'"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "chapter2/2.5/ex2.84.scm",
+			"file": "chapter3/3.5/ex3.52.scm",
 			"settings":
 			{
-				"buffer_size": 5351,
+				"buffer_size": 792,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter3/3.5/infinite-streams.scm",
+			"settings":
+			{
+				"buffer_size": 1466,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "chapter3/3.5/ex3.56.scm",
+			"settings":
+			{
+				"buffer_size": 882,
 				"line_ending": "Windows"
 			}
 		}
@@ -432,18 +588,99 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.5/streams.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.5/delay.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.5/ex3.51.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.5/ex3.50.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.37.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/constraints-degrees.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/constraints-mult-test.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/constraints.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.34.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.24.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/digital-circuits.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/agenda.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/queue.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/zip.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.30.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/times.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/table.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.28.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.27.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.29.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/table2dim.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.25.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.26.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-tree.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.66.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/local-tables.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.23.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.12.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.13.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.3/ex3.14.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/monte-carlo.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.8.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.5.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.6.scm",
+		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.929/сурцы/лаб 2/Lab_2_5.cpp",
+		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.145/сурцы/лаб 1/Lab_1_5.cpp",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.3.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.1.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter3/3.1/ex3.2.scm",
+		"/E/data/stuff/java.txt",
+		"/E/data/stuff/Несохранённый документ 1",
+		"/E/data/stuff/новый файл",
+		"/E/data/stuff/новый файл (другая копия)",
+		"/E/data/stuff/новый файл (копия)",
+		"/E/data/stuff/дерево.tex",
+		"/E/data/stuff/задача 2 питон",
+		"/E/data/stuff/новый файл (3-я копия)",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/polynomial-numbers.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-orderedlist.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/map-reduce/map-reduce.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/rational-numbers.scm",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
+		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/map-reduce/map-reduce3.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/container.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/map-reduce/map-reduce2.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/ex2.40.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/map-reduce.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/map-reduce2.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/polynomial-numbers-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/generic-operations.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.89.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/complex-numbers-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/complex-numbers.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/scheme-numbers.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/rational-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/scheme-numbers-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/all-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/coerce.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/coerse-test.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/install-modules.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/coarse-test.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.84.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/drop-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/drop.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/raise-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tests/diff-types-operations-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-op.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/tags.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/all.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/raise.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/trace.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-ops/all-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/all.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/all-tests.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.83.scm",
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.82.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.1/ex2.6.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/other-stuff/1.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.82.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.83.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.84.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-op.scm",
 		"/C/Users/Alexey Grigorev/Dropbox/wordpress/wordpress.2012-07-14.xml",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.1/pairs.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.81.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.tmLanguage",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/generic-different-types.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Scheme.sublime-settings",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/combinations.scm",
 		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.680/Generator.java",
 		"/C/Users/Alexey Grigorev/Dropbox/agrigor.droppages.com/Content/index.txt",
@@ -456,7 +693,6 @@
 		"/C/Users/Alexey Grigorev/Desktop/1/russia_vk/russia_vk/pom.xml",
 		"/C/Users/Alexey Grigorev/Desktop/1/russia_vk/russia_vk/vkontakte-integration-service/src/main/resources/ru/intech/tele2/vkintegration/vkintegration-context.xml",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/ex2.78.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/ex2.40.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.5/typical-prog.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.2/ex2.34.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/4A/mattern-matching.scm",
@@ -465,9 +701,6 @@
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/4A/конспект.txt",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/deriv.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/1.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-orderedlist.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-tree.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.66.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/sets-unorderedlist.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/ex2.61.scm",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/2.3/2.61.scm",
@@ -482,30 +715,7 @@
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/if.sublime-snippet",
 		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.38.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.36.scm",
-		"/C/Users/Alexey Grigorev/Desktop/jtalks.tech.session.locking.chat",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/conv-interfaces.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.28.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.29.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/trees.scm",
-		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.601/лаб 7/LAB7-1.PRO",
-		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.057/лаб 6/LAB6-2.PRO",
-		"/C/Users/ALEXEY~1/AppData/Local/Temp/Rar$DRa0.787/лаб 6/LAB6-1.PRO",
-		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.177/LAB5-2.PRO",
-		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.688/LAB5-1.PRO",
-		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.034/LAB5-1.PRO",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/lists.scm",
-		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.210/lab4.CLP",
-		"/C/Users/Alexey Grigorev/AppData/Local/Temp/Rar$DIa0.840/лаб 1 граф.bls",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/map.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/pairs.scm",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.19.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Miscellaneous.tmPreferences",
-		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/rational.scm",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Scheme/Comments.tmPreferences",
-		"/C/Users/Alexey Grigorev/AppData/Roaming/Sublime Text 2/Packages/Python/Python.tmLanguage"
+		"/C/Users/Alexey Grigorev/Documents/sublime/sicp/chapter2/ex2.36.scm"
 	],
 	"find":
 	{
@@ -516,6 +726,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"C:\\Users\\Alexey Grigorev\\Documents\\sublime\\sicp\\",
 			"C:\\Users\\Alexey Grigorev\\Documents\\sublime\\sicp\\chapter2\\2.2"
 		]
 	},
@@ -524,6 +735,105 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"stream-cons",
+			"cons-stream",
+			"sequence",
+			"accumulate",
+			"proc",
+			"eq?trace",
+			"a",
+			"me-adder",
+			"me",
+			"probe",
+			"result",
+			"number2",
+			"number1",
+			"c-in",
+			"b",
+			"not-a2",
+			"not-a1",
+			"a2",
+			"a1",
+			"output",
+			"input",
+			"in3",
+			"sum",
+			"c-in",
+			"b",
+			"a",
+			"e",
+			"d",
+			"c",
+			"s",
+			"c",
+			"b",
+			"a",
+			"value",
+			"table",
+			"x",
+			"=",
+			"adjoint-table",
+			"set",
+			"table",
+			"dispatch",
+			"d1",
+			"empty?",
+			"linked",
+			"node",
+			"NODE",
+			"node",
+			"delete-deque!",
+			"set-mcdr!",
+			"insert-deque!",
+			"q1",
+			"queue",
+			"print-queue",
+			"delete-queue!",
+			"insert-queue!",
+			"queue",
+			"empty-deque?",
+			"front-queue",
+			"empty-queue?",
+			"set-front-ptr!",
+			"proxy",
+			"new-password",
+			"acc",
+			"1024",
+			"test",
+			"poly2",
+			"poly1",
+			"mapreducer",
+			"mapper",
+			"\"",
+			"result",
+			"dict",
+			"add",
+			"\"",
+			" ",
+			"flatmap",
+			"pair",
+			"set",
+			"get-value",
+			" ",
+			"predicate",
+			"sheme-number",
+			"equal?",
+			"make-complex",
+			"number",
+			",",
+			"coerce",
+			"raise-procedures",
+			"equal?",
+			"(equal?",
+			"atan",
+			"sqrt",
+			"[*]",
+			"/*",
+			"*",
+			"real-part",
+			"    (put 'real-part POLAR real-part)\n",
+			"real-part",
+			"raise",
 			">",
 			"<",
 			"parent",
@@ -552,106 +862,7 @@
 			"x",
 			"union-set-merge",
 			"union-set",
-			"intersection-set-list",
-			"intersection-set",
-			"intersection-set-list",
-			" \\n",
-			"tree",
-			"x2",
-			"x1",
-			"union",
-			"b",
-			"a",
-			"after",
-			"before",
-			"expression?",
-			"e",
-			"after",
-			"symbol",
-			"before",
-			"aft",
-			"prev",
-			"seq",
-			"item",
-			"memq",
-			"seq",
-			"split",
-			"a2",
-			"a1",
-			"tail",
-			"exp",
-			"param",
-			"variable?",
-			"multiplicand",
-			"deriv",
-			"accumulate",
-			" + ",
-			".+",
-			"\\s+",
-			"b",
-			"a",
-			"struncture",
-			"branch",
-			"fringe",
-			"list-to-fringe",
-			"flattern",
-			"items",
-			"y",
-			"x",
-			" )",
-			"(define (cc amount coins)\n        (cond \n            (?null 0)\n            (else \n                (+  (cc amount (cdr coins))\n                    (cc (- amount ((list-ref coins (- (length coins) 1))))\n                        (car coins)\n                    )\n                )\n            )\n        )\n    )",
-			"items",
-			"count-change-list",
-			"function",
-			"=",
-			"((= ",
-			"change",
-			"first-denomination",
-			"evends",
-			"get",
-			"param",
-			"f",
-			"func",
-			"f",
-			"n",
-			"two",
-			"one",
-			"inc",
-			"n",
-			"x",
-			"p",
-			"q",
-			"p",
-			"z",
-			"builder",
-			"m",
-			"pair",
-			"second",
-			"first",
-			"pair",
-			"denum",
-			"d",
-			"n",
-			"d",
-			"n",
-			"\n;",
-			"demon",
-			"time",
-			"n",
-			"m",
-			")",
-			"rec",
-			"lisp",
-			"module1",
-			"Module1",
-			"module1",
-			"p",
-			"):;\n",
-			"def",
-			"et",
-			"labore",
-			"ut",
-			"sed"
+			"intersection-set-list"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -672,33 +883,83 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "chapter2/2.5/ex2.84.scm",
+					"file": "chapter3/3.5/ex3.52.scm",
 					"settings":
 					{
-						"buffer_size": 5351,
+						"buffer_size": 792,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								452,
+								434
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scheme/Scheme.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2223.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "chapter3/3.5/infinite-streams.scm",
+					"settings":
+					{
+						"buffer_size": 1466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1463,
+								1420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "chapter3/3.5/ex3.56.scm",
+					"settings":
+					{
+						"buffer_size": 882,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								843,
+								843
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scheme/Scheme.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -739,7 +1000,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 164.0
+		"height": 224.0
 	},
 	"replace":
 	{
@@ -766,6 +1027,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 154.0,
 	"status_bar_visible": true
 }
