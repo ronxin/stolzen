@@ -1,25 +1,28 @@
 Intro
 
-My name is Alexey Grigorev, I am 23 years old. Currently I am employed by a leading Russian IT company. I graduated in December 2010 from Priamurian State University after Shalom Aleichem, Russia, with bachelor degree in technology (?) with honors. 
+My name is Alexey Grigorev, I am 23 years old. Currently I am employed by a leading Russian IT company. I graduated in December 2010 from Priamurian State University after Shalom Aleichem, Russia, with bachelor degree in technology (?) with honors. I would like to apply for the Master's Degree in Erasmus Mundus program (NAME). 
 
+--
+My aim is to work in an international field related to chemistry. Therefore, I would like to gain deeper principles and also practical skills to start and manage innovative and appropriate projects, and hope someday I can help my country to improve in this field more efficiently.
 
 Academic background
 
 Main direction - database specialist for small enterprises. 
 
-The courses I took were chiefly devoted to database design for small enterprises, such as data management, knowledge representation in IT systems and corporate IT systems. My final graduation thesis was about creation of IT automated control system for enterprise "Sterkh", Birobidzhan. However, disciplines of the most interest for me were mathematical analysis, probability and statistics, and statical analysis of time series.
+In 2006 I decided to enter Far Easter State Academy for Humanities and Social Studies (afterwards renamed to Priamurian State University) in the city of Birobidzan, Russia, to study computer science and in 2010 I graduated with honors and received bachelor's degree. 
 
 I finished the curriculum with excellent marks in nearly all disciplines. 
 
+
+The courses I took were chiefly devoted to database design for small enterprises. (?) Data management, knowledge representation in IT systems and corporate IT systems. My final graduation thesis was about creation of IT automated control system for enterprise "Sterkh", Birobidzhan. However, disciplines of the most interest for me were mathematical analysis, probability and statistics, and statical analysis of time series.
+
 At the same time I pursued another degree - English teacher and I successfully graduated in 2011.
 
-Apart from studies, I actively engaged in many extracurricular activities. 
+Apart from studies, I was actively engaged in many extracurricular activities. My main research interests during studies were software engineering, resulted in Von Neumann machine model shown in "Programmer 2009" conference; image processing, resulted in a paper about copyright protection and watermarking shown in "Programmer 2010" conference; and finally data mining, with work around cluster analysis and time series procession shown in 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies.
 
-While a student, I eagerly took part in several research projects. My main research interests during studies were software engineering, resulted in Von Neumann machine model shown in "Programmer 2009" conference; image processing, resulted in a paper about copyright protection and watermarking shown in "Programmer 2010" conference; and finally data mining, with work around cluster analysis, time series procession and predictions shown in 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies.
+From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests, where in 2008 showed the best result amongst all PGU participants. Finally, In 2010 I competed in individual nation-wide programing contest where I ranked 4th among participants form Far East region of Russia.
 
-From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests, where in 2008 showed the best result amongst all PGU participants. Most ?. Finally, In 2010 I competed in individual nation-wide programing contest where I ranked 4th among participants form Far East region of Russia.
-
-My ... did not go unnoticed and as a recognition in the end of 2009 I received a governmental award for my achievements in studying and extracurricular activities.
+My accomplishments did not go unnoticed and as a recognition in the end of 2009 I received a prestigious governmental award for my achievements in studying and extracurricular activities.
 However among all the contests I have partaken in ...  I cherish? the most ... "the best graduate" competition in my Alma Mater, between all PGU's graduates from all faculties. It was hard, a lot of highly competent rivals with high chances of winning, but I managed to get the winning place(?).  
 
 
@@ -27,36 +30,37 @@ Professional background
 
 While a student, I worked as a junior laboratorian in Mathematical Simulation laboratory in (under?) my university. Image processing, cluster analysis. 
 
-Upon graduation I decided to take several years off in my studies. Reasons for this firstly, I wanted to acquire practical knowledge, and secondly, I needed to find out what I actually want to do. (?) I moved to Nizhniy Novgorod where I worked in several companies as a developer. In the first company - automation of e-commerce and storages - robotizing. In the second one - backtones (tones you hear in the background when you're calling to someone's mobile phone) e-commerce web system with content analysis etc. Throughout work I understood that data is everything. In order to satisfy clients, a company has to do an extensive research in the data, interact with social networks and offer the goods a client is likely to buy. 
+Upon graduation I decided to take several years off. There were two reasons for this: firstly, I wanted to acquire more practical knowledge, and secondly, I was driven by desire to find out what particular field is more interesting for me as well as more required for business' needs. 
 
-Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Trades from exchange have to be booked for commission calculation. Dealing with prodigious amounts of data.
-It all has once again proved that data analysis is crucial. 
+I moved to Nizhniy Novgorod where I worked in several companies as a software developer.
+The first company was developing a system of robotizing e-commerce storages, and in the second one I was creating a system for selling backtones (melodies you hear in the background when you're calling to a mobile phone). The companies are quite different, but there was something that they have in common. Namely, they all need to process large volume of data efficiently, quickly adapting to customers' needs. For example, it can be putting typically go-together products on the same rack or suggesting a tone similar to tones a customer has already bought making the next purchase likely. Extensive research 
 
-I do my best to be not limited by the scope of work. 
+In the first company - automation of e-commerce and storages - robotizing. In the second one - backtones (tones you hear in the background when you're calling to someone's mobile phone) e-commerce web system with content analysis etc. Throughout work I understood that data is everything. In order to satisfy clients, a company has to do an extensive research in the data, interact with social networks and offer the goods a client is likely to buy. 
 
-I am always eager to absorb any knowledge. Attend training, local communities, at work (architect community).
-Every once and again (sometimes) Agile process trainings - scrum, behavior driven development
-Tests are crucial for big systems - how to maintain large system with tests (development of large enterprise-level systems guided by tests)
-At the moment I am undergoing a training about data warehousing, data flows and Informatica PowerCenter.
+Now I am working in Poland in an investment bank. Trades from different exchanges across the globe have to be booked for commission calculation. Dealing with prodigious amounts of data. It has once again proved that data analysis is crucial. 
 
-Not limited to the scope of work. I actively contributed to open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. 
-I understand and value the value (?) of knowledge sharing and keep a professional blog where I post all my thoughts around IT, be it a (обзор) of a new technology, (переработанные информация или конспекты) of other things, implementation of algoriths and so on.
-I have a blog; keeping a professional blog where I share all my thought, knowledge about a particular technology etc, implementation of some algorithms. It started as a place where I could keep notes just for myself but eventually it evolved into ... web site. 
+Thus, throughout the working experience? it is... I can say that I have a significant insight into business' needs. From my point of view, in the foreseeable future data scientists - programmers with statistics skills - will be in increasingly high demand. Enterprises have gained prodigious amounts of information over the last decades and each year the number of data is increased twofold. Hence, data scientists are needed desperately to put this data in order. 
 
-Main languages: Java, Python. Recently I've had quite a lot of interest in functional languages, especially scheme as a language of learning functional paradigm of programming. I like the languages but I understand why it is important not to be bound to a certain language and constantly broadening my mind by learning new languages, technologies and approaches. Other things could be solver easily using other means. From different angles. Wisely and professionally use a proper instrument for a proper task. 
+Such colossal values of data cannot be processed by a single computer, and therefore computer clusters should be employed
 
-know what IT business needs from inside (insider information) 
-This gave me a good insight into current demands. 
-And for now I can say I have a significant insight into business' needs and know what is in high demand. From my point of view, in the foreseeable future in big demand will be data scientists: programmers with statistics skills. Enterprises have gained (?) lots of information for last decades and each year the number of data is increased twofold. Thus data scientists are needed desperately to put this data in order. These kinds of tasks obviously cannot be handled by a single computer due to its large amounts, so computing clusters will ... Companies like Google, Yandex, EMC, Facebook etc are highly interested to hire programmers with this kind of experience. 
+Companies like Google, Yandex, EMC, Facebook etc are becoming highly interested to hire programmers with this kind of experience. Working as a regular java developer I realize that I lack certain skills, both theoretical and applied. While I am constantly self-improving and learning, it is not enough - more solid education background is needed. There is no such place but University to - the best environment for learning. University provides people with the best possible environments for studying, if chosen correctly. 
 
-I work as a regular java developer and I see that I lack certain skills both theoretical and applied. (field experience). 
-While I am constantly working on self-improving and learning, there is no such place but University to - the best environment for learning. University provides people with the best possible environments for studying, if chosen correctly. 
+
+I do my best to be not limited only by the scope of work and I am always looking forward to absorb new knowledge. It means attending training, communities at work (architect community, agile community), local communities (like Nizhniy Novgorod java community). At the moment I am undergoing a training about data warehousing, data flows and Informatica PowerCenter.
+
+Besides, I have actively contributed to open source projects. For example, I played a team lead role in open source project jtalks.org, project for Russian-speaking java community. Open source can give you much: name, connections, experience in building enterprise-level application from scratch. Plus understanding of process, collaboration, experience in mentoring, etc. 
+
+I understand the value sharing knowledge and keep a professional blog where I post all my thoughts around IT, be it a review of a new technology, worked over summaries of books and technical articles, implementation of algorithms and so on. It started as a place where I could keep notes just for myself but eventually it evolved into a web site which around a hundred of people visit every day.
+
+The main programming language I use in my every day work is Java. However, I am not restricted only to it and actively use() other languages such as Python. 
+
+I like the technologies I use, but I realize that it is important not to be bound to a certain technology, therefore I constantly broaden my ming by learning new technology, language or approach. Recently I have had quite a lot of interested in functional programming, ... ! especially Scheme, as a language of learning functional programming paradigm.  Different problems could be solver easily using other means. From different angles. Wisely and professionally use a proper instrument for a proper task.
 
 To summarize,
 So in future I would like to concentrate on the following areas: data warehousing, big data, data mining, cloud computing and multi-agent environment, plus functional programming.
 
 
-My dream job would be a job of programmer with high inclination towards statistics and data analysis. With challenging tasks leaving enough information to write an article or make a presentation on a conference. And the study will contribute immensely to this. 
+My dream job would be a job of programmer with high inclination towards statistics and data analysis. With challenging tasks leaving enough information to write an article or make a presentation on a conference - to share the knowledge. And the study will contribute immensely to this. 
 
 
 
