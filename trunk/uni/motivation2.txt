@@ -7,56 +7,52 @@ Academic background
 
 Main direction - database specialist for small enterprises. 
 
-The courses I took were chiefly devoted to database design for small enterprises, such as database ... etc (NAMES!!!!). Coursework/thesis had to do with a commodity circulation information system. However, disciplines of most interest were Mathematical Analysis, Probation Theory and Statistics, Time series analysis. 
-
-My main interests during studies were software engineering, image processing (copyright protection, watermarking) and data mining (cluster analysis, time series procession and predictions). 
+The courses I took were chiefly devoted to database design for small enterprises, such as data management, knowledge representation in IT systems and corporate IT systems. My final graduation thesis was about creation of IT automated control system for enterprise "Sterkh", Birobidzhan. However, disciplines of the most interest for me were mathematical analysis, probability and statistics, and statical analysis of time series.
 
 I finished the curriculum with excellent marks in nearly all disciplines. 
 
-At the same time I .. pursued another degree in English - English teacher. I successfully graduated in 2011.
+At the same time I pursued another degree - English teacher and I successfully graduated in 2011.
 
-Not only successfully finished the curriculum (excellent mark in nearly all disciplines). But apart from studies, I actively participated in many extracurricular activities. Most remarkable are 
-Contests: From 2007 to 2010 I annually was a part of the university’s team in . 2007, 2008 - Mathematics contests 
+Apart from studies, I actively engaged in many extracurricular activities. 
 
-the best graduate
-Expos: 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies (cluster analysis)
-"Programmer 2009" (Von Neumann machine)
-"Programmer 2010" watermarking, copyright protection
+While a student, I eagerly took part in several research projects. My main research interests during studies were software engineering, resulted in Von Neumann machine model shown in "Programmer 2009" conference; image processing, resulted in a paper about copyright protection and watermarking shown in "Programmer 2010" conference; and finally data mining, with work around cluster analysis, time series procession and predictions shown in 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies.
 
-In the end of 2009 I received a governmental award for his achievements in studying and extracurricular activities. 
+From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests, where in 2008 showed the best result amongst all PGU participants. Most ?. Finally, In 2010 I competed in individual nation-wide programing contest where I ranked 4th among participants form Far East region of Russia.
 
-From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests. 
-2010 - individual nation-wide programming contest, where I ranked 4th among participants form Far East region of Russia. 
-However among all the contests I have participated in ...  I cherish? the most ... "the best graduate". 
-
-Participated in lots of researches: into
-
+My ... did not go unnoticed and as a recognition in the end of 2009 I received a governmental award for my achievements in studying and extracurricular activities.
+However among all the contests I have partaken in ...  I cherish? the most ... "the best graduate" competition in my Alma Mater, between all PGU's graduates from all faculties. It was hard, a lot of highly competent rivals with high chances of winning, but I managed to get the winning place(?).  
 
 
 Professional background
 
 While a student, I worked as a junior laboratorian in Mathematical Simulation laboratory in (under?) my university. Image processing, cluster analysis. 
 
-Upon graduation I decided to take a gap, because I wanted to acquire practical knowledge, 
+Upon graduation I decided to take several years off in my studies. Reasons for this firstly, I wanted to acquire practical knowledge, and secondly, I needed to find out what I actually want to do. (?) I moved to Nizhniy Novgorod where I worked in several companies as a developer. In the first company - automation of e-commerce and storages - robotizing. In the second one - backtones (tones you hear in the background when you're calling to someone's mobile phone) e-commerce web system with content analysis etc. Throughout work I understood that data is everything. In order to satisfy clients, a company has to do an extensive research in the data, interact with social networks and offer the goods a client is likely to buy. 
 
-Upon graduation I decided to take several years off in my studies. Reasons for this firstly, I wanted to acquire practical knowledge, and secondly, I needed to find out what I actually want to do. (?) I moved to Nizhniy Novgorod where I worked in several companies as a java developer. In the first company - automation of e-commerce and storages - robotizing. In the second one - backtones (tones you hear in the background when you're calling to someone's mobile phone) e-commerce web system with content analysis etc. Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Trades from exchange have to be booked for commission calculation.  Dealing with prodigious amounts of data.
-It all has proved that data analysis is crucial. 
+Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Trades from exchange have to be booked for commission calculation. Dealing with prodigious amounts of data.
+It all has once again proved that data analysis is crucial. 
 
-Not limited to the scope of work. I actively participated in open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. I have a blog; keeping a professional blog where I share all my thought, knowledge about a particular technology etc, implementation of some algorithms. It started as a place where I could keep notes just for myself but eventually it evolved into ... web site. 
-
-Main languages: Java, Python. Recently I've had quite a lot of interest in functional languages, especially scheme as a language of learning functional paradigm of programming. 
+I do my best to be not limited by the scope of work. 
 
 I am always eager to absorb any knowledge. Attend training, local communities, at work (architect community).
 Every once and again (sometimes) Agile process trainings - scrum, behavior driven development
 Tests are crucial for big systems - how to maintain large system with tests (development of large enterprise-level systems guided by tests)
-data warehousing, data flows, Informatica PowerCenter etc
+At the moment I am undergoing a training about data warehousing, data flows and Informatica PowerCenter.
+
+Not limited to the scope of work. I actively contributed to open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. 
+I understand and value the value (?) of knowledge sharing and keep a professional blog where I post all my thoughts around IT, be it a (обзор) of a new technology, (переработанные информация или конспекты) of other things, implementation of algoriths and so on.
+I have a blog; keeping a professional blog where I share all my thought, knowledge about a particular technology etc, implementation of some algorithms. It started as a place where I could keep notes just for myself but eventually it evolved into ... web site. 
+
+Main languages: Java, Python. Recently I've had quite a lot of interest in functional languages, especially scheme as a language of learning functional paradigm of programming. I like the languages but I understand why it is important not to be bound to a certain language and constantly broadening my mind by learning new languages, technologies and approaches. Other things could be solver easily using other means. From different angles. Wisely and professionally use a proper instrument for a proper task. 
 
 know what IT business needs from inside (insider information) 
 This gave me a good insight into current demands. 
 And for now I can say I have a significant insight into business' needs and know what is in high demand. From my point of view, in the foreseeable future in big demand will be data scientists: programmers with statistics skills. Enterprises have gained (?) lots of information for last decades and each year the number of data is increased twofold. Thus data scientists are needed desperately to put this data in order. These kinds of tasks obviously cannot be handled by a single computer due to its large amounts, so computing clusters will ... Companies like Google, Yandex, EMC, Facebook etc are highly interested to hire programmers with this kind of experience. 
 
 I work as a regular java developer and I see that I lack certain skills both theoretical and applied. (field experience). 
+While I am constantly working on self-improving and learning, there is no such place but University to - the best environment for learning. University provides people with the best possible environments for studying, if chosen correctly. 
 
+To summarize,
 So in future I would like to concentrate on the following areas: data warehousing, big data, data mining, cloud computing and multi-agent environment, plus functional programming.
 
 
@@ -67,9 +63,8 @@ My dream job would be a job of programmer with high inclination towards statisti
 Study objectives
 
 
-
-Thus, In have decided to pursue a Master of Science degree in (UNIVERSITY NAME) to strengthen my knowledge, with emphasize on this areas. 
-
+Thus, In have decided to pursue a Master of Science degree in (UNIVERSITY NAME) to strengthen my knowledge, with emphasize on these areas. 
+I am extremely interested in the courses (----NAME-----) provides 
 
 versatile technology stack 
 good knowledge of application portfolio within IT mainstream. Ability to make architectural decisions 
@@ -80,15 +75,16 @@ to accommodate all sides' needs
 
 It will not only strengthen my knowledge in the field, but also help me fulfill ...  
 
-I am extremely interested in the courses (----NAME-----) provides 
 
 Upon finishing the program I plan to pursue PhD and combine professional and teaching activities 
-I always have strong desire to share my experience. Besides, a skill can be perfected ... 
+I always have strong desire to share my experience.
 
+Language and cultural exchange. I am living in Poland and highly enjoying learning new Polish culture, traditions and language. ALthought it similar to Russian to a certain extent, there are a lot of interesting things to learn about.
+With this program, opportunity to learn (languages list) 
+ALready good background plus constant crave for knowledge. 
 I have a desire to do my post-master project on ... 
 
 With my strong academic background and relevant working experience, I am confident that I am qualified and able to perform well in this program. I also believe that I can make a significant contribution to this program. 
 
 Thank you very much for considering my application. I am looking forward to your positive response. 
-
 ...
