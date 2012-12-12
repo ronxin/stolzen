@@ -1,0 +1,53 @@
+My name is Alexey Grigorev, I am 23 years old. Currently I am employed by a leading Russian IT company. I graduated in December 2010 from Priamurian State University after Shalom Aleichem, Russia, with bachelor degree in technology (?) with honors. 
+
+Main direction - database specialist for small enterprises. 
+
+Not only successfully finished the curriculum (excellent mark in nearly all disciplines)
+During my studies, I actively participated in many extracurricular activities. 
+Most prominent: ...
+Contests: From 2007 to 2010 I annually was a part of the university’s team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest. 2007, 2008 - Mathematics contests 
+2010 - programming contest in Russian Collegiate Programming Contest, 4th result. 
+the best graduate
+Expos: 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies (cluster analysis)
+"Programmer 2009" (Von Neumann machine)
+"Programmer 2010" watermarking, copyright protection
+
+In the end of 2009 I received a governmental award for his achievements in studying and extracurricular activities.
+
+Upon graduation I moved to Nizhniy Novgorod where I worked in several companies as a java developer. Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Booking, ...
+Dealing with prodigious amounts of data.
+Upon graduation I decided to take a gap, because I wanted to acquire practical knowledge, 
+know what IT business needs from inside (insider information) 
+Currently ... in the foreseeable future in big demand will be data scientists: programmers with statistics skills. Enterprises have gained (?) lots of information for last decades and each year the number of data is increased twofold. Thus data scientists are in a big demand. I work as a regular java developer and I see that I lack certain skills both theoretical and applied. (field experience). Cannot be handled by a single computer, so computing clusters ... 
+
+This gave me a good insight into current demands. 
+
+Not limited to the scope of work. I actively participated in open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. 
+
+So in future I would like to concentrate on the following areas: data warehousing, big data, data mining, cloud computing and multi-agent environment, plus functional programming.
+
+Companies like Google, Yandex, EMC, Facebook etc are highly interested to hire programmers with this kind of experience. 
+
+My dream job would be a job of programmer with high inclination towards statistics and data analysis. With challenging tasks leaving enough information to write an article or make a presentation on a conference. And the study will contribute immensely to this. 
+
+Thus, In have decided to pursue a Master of Science degree in (UNIVERSITY NAME) to strengthen my knowledge, with emphasize on this areas. 
+
+
+versatile technology stack 
+good knowledge of application portfolio within IT mainstream. Ability to make architectural decisions 
+propagation of knowledge - conferences, articles.
+active listening
+to accommodate all sides' needs 
+
+
+It will not only strengthen my knowledge in the field, but also help me fulfill ...  
+
+
+
+I have a desire to do my post-master project on ... 
+
+With my strong academic background and relevant working experience, I am confident that I am qualified and able to perform well in this program. I also believe that I can make a significant contribution to this program. 
+
+Thank you very much for considering my application. I am looking forward to your positive response. 
+
+...
