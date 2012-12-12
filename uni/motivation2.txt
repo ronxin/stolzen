@@ -1,34 +1,72 @@
+Intro
+
 My name is Alexey Grigorev, I am 23 years old. Currently I am employed by a leading Russian IT company. I graduated in December 2010 from Priamurian State University after Shalom Aleichem, Russia, with bachelor degree in technology (?) with honors. 
+
+
+Academic background
 
 Main direction - database specialist for small enterprises. 
 
-Not only successfully finished the curriculum (excellent mark in nearly all disciplines)
-During my studies, I actively participated in many extracurricular activities. 
-Most prominent: ...
-Contests: From 2007 to 2010 I annually was a part of the university’s team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest. 2007, 2008 - Mathematics contests 
-2010 - programming contest in Russian Collegiate Programming Contest, 4th result. 
+The courses I took were chiefly devoted to database design for small enterprises, such as database ... etc (NAMES!!!!). Coursework/thesis had to do with a commodity circulation information system. However, disciplines of most interest were Mathematical Analysis, Probation Theory and Statistics, Time series analysis. 
+
+My main interests during studies were software engineering, image processing (copyright protection, watermarking) and data mining (cluster analysis, time series procession and predictions). 
+
+I finished the curriculum with excellent marks in nearly all disciplines. 
+
+At the same time I .. pursued another degree in English - English teacher. I successfully graduated in 2011.
+
+Not only successfully finished the curriculum (excellent mark in nearly all disciplines). But apart from studies, I actively participated in many extracurricular activities. Most remarkable are 
+Contests: From 2007 to 2010 I annually was a part of the university’s team in . 2007, 2008 - Mathematics contests 
+
 the best graduate
 Expos: 57th Scientific Collegiate Conference in Far Eastern State University of Social Studies (cluster analysis)
 "Programmer 2009" (Von Neumann machine)
 "Programmer 2010" watermarking, copyright protection
 
-In the end of 2009 I received a governmental award for his achievements in studying and extracurricular activities.
+In the end of 2009 I received a governmental award for his achievements in studying and extracurricular activities. 
 
-Upon graduation I moved to Nizhniy Novgorod where I worked in several companies as a java developer. Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Booking, ...
-Dealing with prodigious amounts of data.
+From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests. 
+2010 - individual nation-wide programming contest, where I ranked 4th among participants form Far East region of Russia. 
+However among all the contests I have participated in ...  I cherish? the most ... "the best graduate". 
+
+Participated in lots of researches: into
+
+
+
+Professional background
+
+While a student, I worked as a junior laboratorian in Mathematical Simulation laboratory in (under?) my university. Image processing, cluster analysis. 
+
 Upon graduation I decided to take a gap, because I wanted to acquire practical knowledge, 
+
+Upon graduation I decided to take several years off in my studies. Reasons for this firstly, I wanted to acquire practical knowledge, and secondly, I needed to find out what I actually want to do. (?) I moved to Nizhniy Novgorod where I worked in several companies as a java developer. In the first company - automation of e-commerce and storages - robotizing. In the second one - backtones (tones you hear in the background when you're calling to someone's mobile phone) e-commerce web system with content analysis etc. Now I am working in Poland in Russian IT company as a java developer in an investment bank project. Trades from exchange have to be booked for commission calculation.  Dealing with prodigious amounts of data.
+It all has proved that data analysis is crucial. 
+
+Not limited to the scope of work. I actively participated in open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. I have a blog; keeping a professional blog where I share all my thought, knowledge about a particular technology etc, implementation of some algorithms. It started as a place where I could keep notes just for myself but eventually it evolved into ... web site. 
+
+Main languages: Java, Python. Recently I've had quite a lot of interest in functional languages, especially scheme as a language of learning functional paradigm of programming. 
+
+I am always eager to absorb any knowledge. Attend training, local communities, at work (architect community).
+Every once and again (sometimes) Agile process trainings - scrum, behavior driven development
+Tests are crucial for big systems - how to maintain large system with tests (development of large enterprise-level systems guided by tests)
+data warehousing, data flows, Informatica PowerCenter etc
+
 know what IT business needs from inside (insider information) 
-Currently ... in the foreseeable future in big demand will be data scientists: programmers with statistics skills. Enterprises have gained (?) lots of information for last decades and each year the number of data is increased twofold. Thus data scientists are in a big demand. I work as a regular java developer and I see that I lack certain skills both theoretical and applied. (field experience). Cannot be handled by a single computer, so computing clusters ... 
-
 This gave me a good insight into current demands. 
+And for now I can say I have a significant insight into business' needs and know what is in high demand. From my point of view, in the foreseeable future in big demand will be data scientists: programmers with statistics skills. Enterprises have gained (?) lots of information for last decades and each year the number of data is increased twofold. Thus data scientists are needed desperately to put this data in order. These kinds of tasks obviously cannot be handled by a single computer due to its large amounts, so computing clusters will ... Companies like Google, Yandex, EMC, Facebook etc are highly interested to hire programmers with this kind of experience. 
 
-Not limited to the scope of work. I actively participated in open source projects. Open source project jtalks.org - team lead - for java community for Russian-speaking programmers. Dispatching system for factories. Open source - name, links, experience in building enterprise-level application from scratch. Process, code quality, collaboration, mentoring, etc. not just a team player. 
+I work as a regular java developer and I see that I lack certain skills both theoretical and applied. (field experience). 
 
 So in future I would like to concentrate on the following areas: data warehousing, big data, data mining, cloud computing and multi-agent environment, plus functional programming.
 
-Companies like Google, Yandex, EMC, Facebook etc are highly interested to hire programmers with this kind of experience. 
 
 My dream job would be a job of programmer with high inclination towards statistics and data analysis. With challenging tasks leaving enough information to write an article or make a presentation on a conference. And the study will contribute immensely to this. 
+
+
+
+Study objectives
+
+
 
 Thus, In have decided to pursue a Master of Science degree in (UNIVERSITY NAME) to strengthen my knowledge, with emphasize on this areas. 
 
@@ -42,7 +80,10 @@ to accommodate all sides' needs
 
 It will not only strengthen my knowledge in the field, but also help me fulfill ...  
 
+I am extremely interested in the courses (----NAME-----) provides 
 
+Upon finishing the program I plan to pursue PhD and combine professional and teaching activities 
+I always have strong desire to share my experience. Besides, a skill can be perfected ... 
 
 I have a desire to do my post-master project on ... 
 
