@@ -17,28 +17,39 @@ Apart from studies, I was actively engaged in many extracurricular activities. M
 
 From 2007 to 2010 I annually was a part of PGU's team in Far Eastern Sub-regional Quarter Finals of Northeastern European Regional Collegiate Programming Contest held by ACM. In 2007 and 2008 I participated in individual mathematical contests, where in 2008 showed the best result amongst all PGU participants. Finally, In 2010 I competed in individual nation-wide programing contest where I ranked 4th among participants form Far East region of Russia.
 
-My accomplishments did not go unnoticed and as a recognition in the end of 2009 I received a prestigious governmental award for my achievements in studying and extracurricular activities. However, among all the tournaments I have partaken in the most outstanding was "the best graduate" contest in my Alma Mater, between all PGU's graduates from all faculties - highly competent and competitive rivals, all with high chances of winning. But I managed to win by a narrow margin.
+My accomplishments did not go unnoticed and as a recognition in the end of 2009 I received a prestigious governmental award for my achievements in studying and extracurricular activities. 
+
+However, among all the tournaments I have partaken in the most outstanding was "the best graduate" contest in my Alma Mater, between all PGU's graduates from all faculties - highly competent and competitive rivals, all with high chances of winning. But I managed to win by a narrow margin.
 
 
 Professional background
 
 Theory without practice costs little. While a student, I worked as a junior programmer in Mathematical Simulation laboratory at my university, where I worked with ... image processing, cluster analysis. And as a part of my graduation thesis, I worked in Sterkh as a programmer where I designed a system for ... to automatize some of the enterprise workflows. 
 
-Upon graduation I decided to take a break from studying. There were two reasons for this: firstly, I wanted to acquire more practical knowledge, and secondly, I was driven by desire to find out what particular field is more interesting for me as well as more appealing for business. I moved to Nizhniy Novgorod where I worked in several companies as a software developer. The first company was developing a system of robotizing e-commerce storages, and in the second one we in charge of creating a system for selling ringback tones (melodies you hear in the background when you are calling to a mobile phone). The companies are quite different, but there was something that they have in common. Namely, they both need to process a large volume of data efficiently, quickly adapting to customers' needs, be it putting complimentary goods on the same rack or suggesting a tone which a customer is likely to buy.
+Upon graduation I decided to take a break from studying. There were two reasons for this: firstly, I wanted to acquire more practical knowledge, and secondly, I was driven by desire to find out what particular field is more interesting for me as well as more appealing for business. I moved to Nizhniy Novgorod where I worked in several companies as a software developer. 
 
-Now I am working in Poland at an investment bank. Trades from exchanges across the globe have to be booked for commission calculation. Financial institutions have to deal with prodigious amounts of data, every day processing billion and billion of trades. It has once again proved that data analysis is crucial.
+The first company was developing a system of robotizing e-commerce storages, and in the second one we in charge of creating a system for selling ringback tones (melodies you hear in the background when you are calling to a mobile phone). The companies are quite different, but there was something that they have in common. Namely, they both need to process a large volume of data efficiently, quickly adapting to customers' needs, be it putting complimentary goods on the same rack or suggesting a tone which a customer is likely to buy. Now I am working in Poland at an investment bank. Trades from exchanges across the globe have to be booked for commission calculation. Financial institutions have to deal with prodigious amounts of data, every day processing billion and billion of trades. It has once again proved that data analysis is crucial.
 
-Thus, it can be said I have gained a significant insight into the needs of business. From my point of view, in the foreseeable future data scientists - programmers with statistics skills - will be in increasingly high demand. Enterprises have gained prodigious amounts of information over the last decades and each year the number of data is increased twofold. Hence, data scientists are needed desperately to put this data in order. 
-
-I do my best to be not limited only by the scope of work and I am always looking forward to absorb new knowledge. It means attending training, communities at work (architect community, agile community), local communities (like Nizhniy Novgorod java community). At the moment I am undergoing a training about basics of data warehousing. 
+I do my best to be not limited only by the scope of work and I am always looking forward to absorbing new knowledge. It means attending training, communities at work (architect community, agile community), local communities (like Nizhniy Novgorod java community). At the moment I am undergoing a training about basics of data warehousing.
 
 Besides, I have actively contributed to open source projects. For example, I played a team lead role in open source project jtalks.org, project for Russian-speaking java community. Open source can give you much: name, connections, experience in building enterprise-level application from scratch. Plus understanding of process, collaboration, experience in mentoring, etc. 
 
-I understand the value sharing knowledge and keep a professional blog where I post all my thoughts around IT, be it a review of a new technology, worked over summaries of books and technical articles, implementation of algorithms and so on. It started as a place where I could keep notes just for myself but eventually it evolved into a web site which around a hundred of people visit every day.
+Forums and mailing lists to help people out. 
+
+I understand the value of sharing knowledge and keep a professional blog where I post all my thoughts around IT, be it a review of a new technology, worked over summaries of books and technical articles, implementation of algorithms and so on. It started as a place where I could keep notes just for myself but eventually it evolved into a web site which around a hundred of people visit every day.
 
 The main programming language I use in my every day work is Java. However, I am not restricted only to it and actively use() other languages such as Python. 
 
 I like the technologies I use, but I realize that it is important not to be bound to a certain technology, therefore I constantly broaden my ming by learning new technology, language or approach. Recently I have had quite a lot of interested in functional programming, ... ! especially Scheme, as a language of learning functional programming paradigm.  Different problems could be solver easily using other means. From different angles. Wisely and professionally use a proper instrument for a proper task.
+
+
+
+Study objectives
+
+It was a break and I want to continue 
+
+Thus, it can be said I have gained a significant insight into the needs of business. From my point of view, in the foreseeable future data scientists - programmers with statistics skills - will be in increasingly high demand. Enterprises have gained prodigious amounts of information over the last decades and each year the number of data is increased twofold. Hence, data scientists are needed desperately to put this data in order. 
+
 
 To summarize,
 So in future I would like to concentrate on the following areas: data warehousing, big data, data mining, cloud computing and multi-agent environment, plus functional programming.
@@ -48,7 +59,7 @@ My dream job would be a job of programmer with high inclination towards statisti
 
 
 
-Study objectives
+
 
 Such colossal values of data cannot be processed by a single computer, and therefore computer clusters should be employed
 
