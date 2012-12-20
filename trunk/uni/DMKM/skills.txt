@@ -1,0 +1,160 @@
+Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
+
+• 
+======================================================
+
+Social skills and competences:
+
+Social skills and competences refer to living and working with other people, in positions where communication is important and situations where teamwork is essential (for example culture and sports), in multicultural environments, etc.
+
+I am a good team player. From 2007 to 2010 I was a part of collegiate team in programming contests where I learned to collaborate efficiently. 
+In general, I possess good communication skills, gained through constant collaboration with my teammates, classmates, teachers and supervisors. 
+As a team player, I am able to
+• understand the value of collaboration
+• initiate and join discussions
+• express thoughts in a structured way, efficiently conveying the ideas
+• listen actively and ask clarifying questions
+• work out mutually agreeable solution (compromise or win-win)
+• provide an well-supported position and to perceive opposite opinion
+• admit mistakes, not taking a defensive position
+• involve other team members in problem resolution
+• propose options
+
+Plus, I can
+• use English fluently and spontaneously without much obvious searching for expressions
+
+Also,
+• I can easily acclimatize to a new culture: I have worked in the USA twice (summer 2009 and summer 2010), and I've been working in Poland for half a year.
+• I am eager to absorb other cultures. Apart from the US and Poland, I have been to China many times and I enjoyed learning their traditions. 
+
+
+
+======================================================
+
+
+Organizational skills and competences:
+Describe your organisational skills and competences, e.g.:
+• Leadership (currently responsible for a team of 10 people);
+• Sense of organisation (experience in logistics);
+• Good experience in project or team management.
+and say in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
+
+Most of my organization skills I gained participaing in an open source project as a team lead, where I managed a team of up 4-6 people.
+
+As a team lead, I am able to
+• lead a team
+• track team progress in achievement of current goals
+• understand team members needs and capabilities 
+• motivate people
+• set team goals and help team members achieve them
+• organize work in accordance with priorities of the goals
+
+Also, 
+• I have experience in supervising and training
+• When possible, I make additional efforts to create opportunities and suggests new ideas or approaches
+
+
+
+======================================================
+
+Technical skills and competences:
+Describe your technical skills and competences, e.g.:
+• Good command of quality control processes (I was responsible for the implementation of quality audit in my dept)
+Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.)
+setInfos('<b>What are we talking about?</b><br />Technical skills and competences refer to mastery of specific kinds of equipment, machinery, etc. other than computers, or to technical skills and competences in a specialized field (manufacturing industry, health, banking, etc.).',false);
+
+technical skills in software design
+code quality metrics, 
+Acts according to client expectations, i.e. meets quality, time, scope	Yes
+Tries to obtain information required for future as soon as possible	Yes
+Analyses tasks and proposes own solution (if sees better one)	Yes
+Tries to understand adjacent areas and business domain	Yes
+
+Financial knowledge?
+Works independently with technical and non-technical staff to gather business requirements and produces business use-cases  specifications for exiting or new applications
+
+Works jointly with technical staff within Customer on analysis of business requirements and development of functional specifications
+Has basic understanding of products and services covered by the system
+Has general understanding of investment banking business domain, gained through trainings at UBS
+Has general understanding of structure of the business, existing processes and systems	Yes
+
+Knows alternative development processes
+
+SCRUM/agile process
+Test Driven Development, Behavior Driven Development techniques of development 
+Ability to provide accurate estimates in familiar areas
+
+
+======================================================
+
+
+Computer skills and competences:
+
+MS office, including VBA 
+Open Office with scripting also
+LaTeX
+Sublime Text 2 
+Eclipse 
+
+Versatile technology stacks and techniques profile	Yes
+
+Knows how to use  core technology (syntax, language, SDK, etc)	Yes
+Chooses technical solution based on own experience	Not Observed
+Possesses general understanding of technology landscape within business area / IT stream.	Yes
+Understands  business and architectural interdependencies	Yes
+
+Programming language: java, java script, python
+Lots of java related technologies
+
+
+======================================================
+
+Aristic skills and competences:
+State here your artistic skills and competences which are an asset (music; writing; design, etc.) e.g.:
+Carpentry
+Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
+
+music (metal)
+
+======================================================
+
+Skills related to DMKM courses:
+
+data warehousing (recent training in our company)
+Probability and Statistics
+Statistical Analysis of Time Series
+Math in general
+Programming
+Some basics of Data mining
+Cluster analysis
+
+
+======================================================
+
+
+Other skills and competences:
+State here any other skill(s) and competence(s) which are an asset and are not mentioned under earlier headings (hobbies; sports, positions of responsibility in voluntary organizations), e.g.:Trekking
+Specify in what context they were acquired (through training, work, voluntary or leisure activities, etc.).
+
+know Polish a little bit (enough to survive in Poland)
+able to solve rubics cube :)
+enjoy reading, not only technical books, but also fictional, 
+took course on speed reading (up to 300 words per minute in English on familiar topic)_
+able to use google effectively (constant using, main source of information) 
+love cooking 
+like writing 
+
+
+======================================================
+
+Additional informations:
+
+Propagates knowledge, trainings, seminars etc.
+Able to set goals, and know how to achieve it 
+Competitive 
+Proactive
+Like taking part in communities and training
+always Eager to acquire new knowledge 
+keep a blog where I share my thoughts around IT
+Is able to efficiently perform in crisis situation	Not Observed
+Provisions problems and tries to resolve them on early stage	Not Observed
