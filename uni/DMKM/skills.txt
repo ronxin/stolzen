@@ -5,8 +5,6 @@ Specify in what context they were acquired (through training, work, seminars, vo
 
 Social skills and competences:
 
-Social skills and competences refer to living and working with other people, in positions where communication is important and situations where teamwork is essential (for example culture and sports), in multicultural environments, etc.
-
 I am a good team player. From 2007 to 2010 I was a part of collegiate team in programming contests where I learned to collaborate efficiently. 
 In general, I possess good communication skills, gained through constant collaboration with my teammates, classmates, teachers and supervisors. 
 As a team player, I am able to
@@ -28,18 +26,12 @@ Also,
 • I am eager to absorb other cultures. Apart from the US and Poland, I have been to China many times and I enjoyed learning their traditions. 
 
 
-
 ======================================================
 
-
 Organizational skills and competences:
-Describe your organisational skills and competences, e.g.:
-• Leadership (currently responsible for a team of 10 people);
-• Sense of organisation (experience in logistics);
-• Good experience in project or team management.
-and say in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
 
-Most of my organization skills I gained participaing in an open source project as a team lead, where I managed a team of up 4-6 people.
+
+Most of my organization skills I gained participating in an open source project as a team lead, where I managed a team of up 4-6 people.
 
 As a team lead, I am able to
 • lead a team
@@ -54,58 +46,55 @@ Also,
 • When possible, I make additional efforts to create opportunities and suggests new ideas or approaches
 
 
-
 ======================================================
 
 Technical skills and competences:
 Describe your technical skills and competences, e.g.:
 • Good command of quality control processes (I was responsible for the implementation of quality audit in my dept)
 Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.)
-setInfos('<b>What are we talking about?</b><br />Technical skills and competences refer to mastery of specific kinds of equipment, machinery, etc. other than computers, or to technical skills and competences in a specialized field (manufacturing industry, health, banking, etc.).',false);
+Technical skills and competences refer to mastery of specific kinds of equipment, machinery, etc. other than computers, or to technical skills and competences in a specialized field (manufacturing industry, health, banking, etc.)
 
-technical skills in software design
-code quality metrics, 
-Acts according to client expectations, i.e. meets quality, time, scope	Yes
-Tries to obtain information required for future as soon as possible	Yes
-Analyses tasks and proposes own solution (if sees better one)	Yes
-Tries to understand adjacent areas and business domain	Yes
+As a programmer, I possess technical skills in software design. Namely, I know how to:
+• gather software requirements
+• develop software
+• act according to business expectations, i.e. meet quality, time, scope
+• assess the code quality using metrics (test coverage, complexity, technical debt, etc) 
+• provide accurate estimates in familiar areas
+• follow Test Driven Development (TDD) and Behavior Driven Development (BDD) approaches of development 
+• use SCRUM/agile processes
+• use alternative development processes
 
-Financial knowledge?
-Works independently with technical and non-technical staff to gather business requirements and produces business use-cases  specifications for exiting or new applications
-
-Works jointly with technical staff within Customer on analysis of business requirements and development of functional specifications
-Has basic understanding of products and services covered by the system
-Has general understanding of investment banking business domain, gained through trainings at UBS
-Has general understanding of structure of the business, existing processes and systems	Yes
-
-Knows alternative development processes
-
-SCRUM/agile process
-Test Driven Development, Behavior Driven Development techniques of development 
-Ability to provide accurate estimates in familiar areas
+I have worked for an investment bank for half a year and through it I have acquired:
+• general understanding of investment banking business domain
+• general understanding of structure of the business, existing processes and systems
 
 
 ======================================================
 
-
 Computer skills and competences:
 
-MS office, including VBA 
-Open Office with scripting also
-LaTeX
-Sublime Text 2 
-Eclipse 
+As a programmer, I have knowledge about versatile technology stacks. Namely, I know how to:
+• use core technologies related to my work (Java syntax, language, JDK, etc)
+• use related technologies
+• use a different technology if it is more suitable for a current problem
+• learn new technologies
 
-Versatile technology stacks and techniques profile	Yes
+I have good experience in the following programming languages: 
+• Java and related technology stacks
+• Java Script and related
+• Python
 
-Knows how to use  core technology (syntax, language, SDK, etc)	Yes
-Chooses technical solution based on own experience	Not Observed
-Possesses general understanding of technology landscape within business area / IT stream.	Yes
-Understands  business and architectural interdependencies	Yes
+Also,
+• I can choose technical solution based on my own experience
+• I do my best not to be limited by the scope of work and learn new technologies (thought self-learning, trainings, community talks, etc)
 
-Programming language: java, java script, python
-Lots of java related technologies
-
+Apart from that:
+• MS Office, including VBA 
+• Open Office, including scripting
+• LaTeX
+• Sublime Text 2
+• Eclipse (IDE for Java)
+to name but a few
 
 ======================================================
 
@@ -114,20 +103,33 @@ State here your artistic skills and competences which are an asset (music; writi
 Carpentry
 Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
 
-music (metal)
+I can 
+• write (both in English and Russian); I keep a blog. IELTS writing - 7.5
+• design presentations (dozens during studies, several for giving talks at conferences and community gatherings)
+
+Plus,
+• I am a metal music fan
+• I like arts, and my favorite form of art is architecture
+
 
 ======================================================
 
 Skills related to DMKM courses:
 
-data warehousing (recent training in our company)
-Probability and Statistics
-Statistical Analysis of Time Series
-Math in general
-Programming
-Some basics of Data mining
-Cluster analysis
 
+As a graduate from a CS department, I possess knowledge about:
+• Probability and Statistics and Statistical Analysis of Time Series (my favorite subjects during studies)
+• Math in general (Plus, I frequented additional math study group at my university and participated in math contests)
+• Programming
+• Algorithms (through participating in collegiate programming contests)
+• Some basics of Data mining (self-learning mostly)
+• Cluster analysis (did a course work on that)
+and more.
+
+Additionally:
+• I have been perfecting my programming since I was 14 years old. And I love it.
+• Recently I have taken a training about Data Warehousing at my company
+• I have a constant desire to acquire knowledge
 
 ======================================================
 
@@ -136,25 +138,33 @@ Other skills and competences:
 State here any other skill(s) and competence(s) which are an asset and are not mentioned under earlier headings (hobbies; sports, positions of responsibility in voluntary organizations), e.g.:Trekking
 Specify in what context they were acquired (through training, work, voluntary or leisure activities, etc.).
 
-know Polish a little bit (enough to survive in Poland)
-able to solve rubics cube :)
-enjoy reading, not only technical books, but also fictional, 
-took course on speed reading (up to 300 words per minute in English on familiar topic)_
-able to use google effectively (constant using, main source of information) 
-love cooking 
-like writing 
+Additionally, as a versatile person, I 
+• know Polish a little bit (through surviving in Poland)
+• enjoy reading, not only technical books, but also fictional, and I
+• can read quickly, took a course on speed reading (up to 300 words per minute in English on familiar topics, IELTS reading - 9.0)
+• can use Google effectively (my main source of information)
+• love cooking
+• can solve a Rubik's cube :)
 
 
 ======================================================
 
 Additional informations:
 
-Propagates knowledge, trainings, seminars etc.
-Able to set goals, and know how to achieve it 
-Competitive 
-Proactive
-Like taking part in communities and training
-always Eager to acquire new knowledge 
-keep a blog where I share my thoughts around IT
-Is able to efficiently perform in crisis situation	Not Observed
-Provisions problems and tries to resolve them on early stage	Not Observed
+Additionally, I am eager to 
+• gain new knowledge 
+• propagate knowledge through talks, seminars etc.
+
+I am able to
+• set goals, and know how to achieve them
+• efficiently perform in crisis situation (able to meet deadlines)
+• provision problems and I try to resolve them on early stage
+
+I am
+• competitive (have partaken in dozens of contests) 
+• proactive (willing to change something I don't like)
+
+Plus,
+• I keep a blog where I share my thoughts around IT
+• and I like taking part in communities and training
+
