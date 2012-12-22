@@ -1,0 +1,9 @@
+university education in mathematics*:			
+Algebra and Geometry (90%), Discrete Mathematics (90%), 
+Calculus (100%), Analysis (100%), Probability and Statistics (100%), Informatics (100%), Physics (100%), Mathematics of logic (100%), Laplace and Fourier transform (100%), Statistical analysis of time series (100%)
+
+university education in computer science*:			
+Electrotechnics and Electronics (100%), Metrology, standardization and certification (100%), Information technologies (100%), Theory of information processes and systems (100%), Data Management (100%), Information networks (100%), Systems modeling (100%), PC and systems architecture (100%), Operational systems (100%), Programming technology (100%), Computer geometry and graphics (100%), Knowledge representation in IT systems (100%), Information safety and protection (100%), Corporate IT systems (100%), IT systems administering (100%), Intelligent IT systems (100%), Multimedia technologies (100%), Safety of Information systems (100%), Information system development (100%), Discrete mathematics algorithms (100%), High-level programming methods (100%), Mathematical IT (100%), Safety of computer-based systems (100%), Theory of computer-based equipment (100%)
+
+university education in Language & Linguistics*:
+Foreign Language (100%), Russian Language and Culture Speech (100%)
