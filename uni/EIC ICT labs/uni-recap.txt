@@ -1,0 +1,23 @@
+Graduated with honors
+
+Mathematical disciplines: Algebra and Geometry, Discrete Mathematics, Calculus, Analysis, Probability and Statistics, Informatics, Physics, Mathematics of Logic, Laplace and Fourier Transform, Statistical Analysis of Time Series
+
+IT disciplines: Electrotechnics and Electronics, Metrology, Standardization and Certification, Information technologies, Theory of Information Processes and Systems, Data Management, Information Networks, Systems Modeling, PC and Systems Architecture, Operational Systems, Programming Technology, Computer Geometry and Graphics, Knowledge Representation in IT systems, Information Safety and Protection, Corporate IT Systems, IT Systems Administering, Intelligent IT Systems, Multimedia Technologies, Safety of Information Systems, Information System Development, Discrete Mathematics Algorithms, High-Level Programming Methods, Mathematical IT, Safety of Computer-Based Systems, Theory of Computer-Based Equipment
+
+Course papers: Cluster Analysis and allocation of clusters, Local network designing and developing for FEASHS building #1, Customer Goods IT record system for Sterkh ltd (Birobidzhan)
+
+Final thesis: Sales Record IT system for Sterkh ltd. (Birobidzhan)
+
+Participated in collegiate contests:
+- mathematical contest in FESAHSS (2006)
+- ACM ICPC (annually from 2006 to 2010)
+- Far Eastern mathematical contest, Pacific State University (2007 and 2008)
+- Programming contest in Jiamusi State University, China (2008)
+- The talented youth governmental award (2009)
+- Best graduate in FESAHSS (2010)
+
+Spoke at conferences and participated in scientific contests:
+- Far Eastern Collegiate Conference 2009, Khabarovsk, "Data Mining and Cluster Analysis" 
+- Programmer 2009, Vladivostok, "Von Neumann machine model"
+- Programmer 2010, Vladivostok, "Watermarking for copyright protection"
+- Exponenta.ru contest, 2010, "Watermarking for copyright protection"
