@@ -1,4 +1,4 @@
-Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
+﻿Specify in what context they were acquired (through training, work, seminars, voluntary or leisure activities, etc.).
 
 • 
 ======================================================
@@ -141,7 +141,7 @@ Specify in what context they were acquired (through training, work, voluntary or
 Additionally, as a versatile person, I 
 • know Polish a little bit (through surviving in Poland)
 • enjoy reading, not only technical books, but also fictional, and I
-• can read quickly, took a course on speed reading (up to 300 words per minute in English on familiar topics, IELTS reading - 9.0)
+• can read quickly, took a course on speed reading (up to 400 words per minute in English on familiar topics, IELTS reading - 9.0)
 • can use Google effectively (my main source of information)
 • love cooking
 • can solve a Rubik's cube :)
