@@ -1,0 +1,471 @@
+Язык R, основы
+
+R - язык программирования для статистической обработки данных и работы с графикой. [...] R широко используется как статистическое программное обеспечение для анализа данных и фактически стал стандартом для статистических программ. [<a href="http://ru.wikipedia.org/wiki/R_%28%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%29">wikipedia</a>]
+
+Конспект лекций из <a href="https://www.coursera.org/">coursera</a>, <a href="https://www.coursera.org/course/compdata">Computing for Data Analysis</a>
+
+<h3>Установка</h3>
+
+Устанавливается с официального сайта http://cran.r-project.org/
+<a href="http://www.rstudio.com/ide/download/desktop">R Studio</a>
+
+<h3>Синтакс</h3>
+
+<pre lang="haskell">
+x <- 10 # assigment
+# comment
+x <- 1:20 # sequence
+</pre>
+
+<h3>Типы данных</h3>
+
+<b>Примитивы</b>
+<ul>
+	<li>logic - логический тип данных, TRUE и FALSE (или T и F)</li>
+	<li>characters - строковый тип данных</li>
+	<li>numeric - числовой (real)</li>
+	<li>integer - целочисленный</li>
+	<li>complex - комплексный</li>
+</ul>
+
+<b>Числа</b>
+
+doubles by default
+if integer is needed - use L
+
+Inf = 1 / 0
+-Inf
+NaN - not a number
+
+<b>Векторы</b>
+
+Вектор - базовый тип данных в R. 
+В векторе все данные одного типа 
+
+Создание
+
+<pre lang="haskell">
+x <- vector() # создает пустой новый вектор
+x <- vector("numeric", length = 10) # creates a vector filled with NA
+
+c() #concatenate - other function for creating vector
+
+#numeric
+c(0.5, 0.6) 
+
+#logical
+c(TRUE, FALSE)
+c(T, F)
+
+c("a", "b") #character
+
+c(1+0i, 2+4i) #complex
+</pre>
+
+<b>Матрицы</b>
+
+Матрицы - это векторы с размерностью
+
+nrow
+ncol
+
+создание
+<pre lang="r">
+m <- matrix(nrow = 2, ncol = 3)
+m <- matrix(1:6, nrow = 2, ncol = 3)
+</pre>
+
+заполняется из верхнего левого угла вниз: 
+<pre lang="r">
+m
+1 3 5
+2 4 6
+</pre>
+
+
+column-binding
+<pre lang="r">
+x <- 1:3
+y <- 10:12
+
+cbind(x, y)
+1 10
+2 11
+3 12
+
+rbind(x, y)
+1   2   3
+10 11 12
+</pre>
+
+
+<b>Списки</b>
+
+Список может содержать объекты разных типов данных
+
+<pre lang="r">
+x <- list(1, "a", T, 1+4i)
+</pre>
+
+attributes
+
+<b>Имена</b>
+
+names (dimnames)
+dimensions
+class
+length
+other user defined data
+attributes() - general function
+
+<b>factor</b>
+
+categorical data vector
+
+ordered
+unordered
+
+integer vector with each integer having a label
+self-describing
+
+<pre lang="r">
+x <- factor(c("yes", "yes", "no", "yes", "no") 
+
+table(x) => frequency
+
+unclass(x)
+2 2 1 2 2 1 #(2=yes, 1=no)
+</pre>
+
+<b>data frame</b>
+
+Является специальным типом списка, для хранения табличных данных.
+special attribute: row.names
+Такие функции, как read.table() и read.csv() возвращают data frame
+
+can be converted to matrix
+but it will be coerced
+
+<pre lang="r">
+x <- data.frame(foo = 1:4, bar = c(T, T, F, F))
+nrow(x)
+ncol(x)
+</pre>
+
+<b>Конвертация типов</b>
+
+Два типа:
+coercion
+
+finds "last common denom"
+
+<pre lang="r">
+y <- c(1.7, "a"): 1.7 -> "1.7", "a" (character)
+c(T, 2) -> 1, 2 (TRUE becomes 1)
+c("a", TRUE) -> "a", "TRUE" (T becomes "TRUE")
+</pre>
+
+explicit
+
+<pre lang="r">
+as.* function
+
+as.numeric()
+as.logical()
+as.character()
+as.complex()
+</pre>
+
+if no convertion possible, returns NA
+
+
+<b>missing values</b>
+
+NaN
+NA
+
+<pre lang="r">
+is.na()
+is.na(NA) => T
+is.na(NaN) => T
+
+is.nan()
+is.nan(NA) => F
+is.nan(NaN) = T
+
+is.na(c(1, NA, 2)) => F T F
+</pre>
+
+
+<b>naming</b>
+
+if named, will be printed with names
+
+vectors
+
+<pre lang="r">
+x <- 1:3
+names(x) => NULL
+names(x) <- c("foo", "bar", "n")
+names(x) => given names
+</pre>
+
+lists
+
+<pre lang="r">
+x <- list(a=1, b=2, c=3)
+</pre>
+
+matrices
+
+<pre lang="r">
+m <- matrix(1:4, nrow=2, ncol=2)
+dimnames(m) <- list(c("a", "b"), c("c", "d"))
+</pre>
+
+m =>
+        c  d
+a  1  3
+b  2  4
+
+<h3>Чтение и запись</h3>
+
+tabular
+
+read
+read.table
+
+arguments:
+file*
+header; logical - variable names in the first row?
+
+sep; separator ("," etc)
+
+colClasses types of classes in each column
+is not specified, R figures out the types
+
+nrows; number of rows to read; default is all the file
+
+comment; char, after which nothing is read; default is #
+
+skip; number of lines to skip
+
+<pre lang="r">
+data <- read.table("foo.txt")
+</pre>
+
+read.csv
+
+same as read.table, but default separator is ","
+
+for large files
+
+RTFM!
+
+make a rough calculation of RAM needed
+
+1.5 mln rows * 120 cols of numeric data
+1.5 mln * 120 * 8 bytes = 1.34 GB
+consider overhead! 1.43 * 2 ~ 2.7 GB
+
+comment.char = "" - faster
+
+colClasses set explicitly - much faster
+
+<pre lang="haskell">
+initial <- read.table("db.txt", nrows=100)
+classes <- sapply(initial, class) #automatically figured out classes
+head(initial) #just shows the fist 6 lines
+tabAll <- read.table("db.txt", colClasses=classes)
+</pre>
+
+<b>write</b>
+
+write.table
+write.csv
+
+R objects
+
+metadata, as R source
+editable!
+good for VCS
+but not very space efficient
+
+read
+source
+dget
+
+write
+dump
+dput
+
+<pre lang="r">
+# for one variable
+y <- data.frame(a=1, b="a")
+dput(y) => to the console
+dput(y, file="y.R")
+new.y <- dget("y.R")
+
+# for several variables
+x <- smth, y <- smth
+dump(c("x", "y"), file="data.R")
+rm(x, y) # removes x y
+source("data.R") 
+<pre lang="r">
+
+
+character
+
+readLines
+writeLines
+
+serialize/unserialize
+
+
+<b>File connections</b>
+
+file; plain file
+gzfile; gzip
+bzfile; bzip2
+url; to a web page
+
+<pre lang="r">
+con <- file("foo.txt", "r")
+data <- read.csv(con)
+close(con)
+# the same as read.csv("foo.txt")
+
+con <- gzfile("w.gz")
+x <- readLines(con, 10) #first 10 lines
+
+con <- url("http://...", "r")
+x <- readLines(con)
+</pre>
+
+<h3>Accessing subsets</h3>
+
+[
+returns the same type
+starts from 1
+
+[[
+for lists and data frames
+
+$
+from lists and data frames, but using name
+
+vectors
+
+<pre lang="r">
+x <- c("a", "b", "c", "c", "d", "a")
+x[1] => a
+x[1:4] => a b c d
+x[x > "a"] => b c c d
+# the same:
+u <- x > "a" => F T T T T F
+x[u] => b c c d
+#only trues
+</pre>
+
+matrix
+
+<pre lang="r">
+m[row, col]
+<pre lang="r">
+x <- matrix(1:6, 2, 3)
+x[1, 2] => 3
+x[2, 1] => 2
+
+m[1, ] => first row
+
+m[, 2] => secod col
+</pre>
+return VECTOR!
+
+<pre lang="r">
+x[1, 2, drop=F] => matrix of one element
+x[1, ,drop=F] => a matrix of one row
+</pre>
+
+lists
+
+<pre lang="r">
+x <- list(foo=1:4, bar=0.6)
+
+x[1] => sublist
+$foo
+[1] 1 2 3 4
+
+x[[1]] => (element) 1 2 3 4
+
+x$bar <=> x[["bar"]] => 0.6
+
+x["bar"] => sublist
+$bar
+[1] 0.6
+
+x[c(1, 3)] returns several cols
+
+name <- "bar"
+x[name] => smth
+x$name => NULL! ("name" doesn't exist)
+
+x[[c(1, 3)]] => 1st list, 3th el
+
+the same: x[[1]][[3]]
+</pre>
+
+partial matching
+
+<pre lang="r">
+x <- list(longname=1:5)
+x$lo => returns $longname
+x[["lo"]] => NULL
+x[["lo", exact=F]] => $longname
+</pre>
+
+<b>removing NAs</b>
+
+<pre lang="r">
+bad <- is.na(x)
+x[!bad] #note the inversion!
+
+good <- complete.cases(x, y)
+x[good]; y[good]
+
+r <- matrix
+good <- complete.cases(r)
+r[good, ]
+</pre>
+
+<b>vectorized operations</b>
+
+vector
+
+no need for looping!
+
+<pre lang="r">
+x <- 1:4; y <- 6:9
+x + y
+x > 2
+x >= 2
+y == 8
+x * y
+x / y
+</pre>
+
+matrix
+
+<pre lang="r">
+x <- matrix(1:4, 2, 2)
+y <- matrix(rep(10, 4)), 2, 2)
+
+x * y => element-wise
+
+x / y => element-wise
+
+x %*% y - true matrix multiplication
+</pre>
+
+
+http://tryr.codeschool.com/ 
