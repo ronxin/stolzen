@@ -6,12 +6,12 @@
 \usepackage{cmap}
 
 \usepackage{geometry}
-\geometry{left=1.7cm}
-\geometry{right=1.7cm}
-\geometry{top=1.5cm}
-\geometry{bottom=1.7cm}
+\geometry{left=2.5cm}
+\geometry{right=1.5cm}
+\geometry{top=2.5cm}
+\geometry{bottom=1.5cm}
 
-\newcommand{\group}[1] {\subsection{#1}} 
+\newcommand{\group}[1] {\section{#1}}
 \newcommand{\discipline}[1] {\textbf{#1} \\ }
 \newcommand{\desc}[1] { #1 \\ }
 
@@ -20,7 +20,7 @@
 \group{General module}
 
 \discipline{Foreign Language (English)}
-\desc{Development of all the critical skills needed for a foreign language: listening, speaking, reading, writing and grammar.}
+\desc{Development of all the critical skills needed for using a foreign language: listening, speaking, reading, writing and grammar.}
 
 \discipline{Physical Training}
 \desc{Elements of the healthy life, and how to optimize personal performance. General physical training, sports.}
@@ -34,8 +34,8 @@
 \discipline{Sociology}
 \desc{Sociology as a science, its functions. Social action and social interaction, culture, social communication, social groups and structures, family.}
 
-\discipline{A man in a cultural context (CPV)}
-\desc{What is the culture, its history, typology, culture and identity. What is the place of men in the culture.}
+\discipline{Human in Culture Context}
+\desc{What is the culture, its history, typology, culture and identity. The place of men in the culture.}
 
 \discipline{Law}
 \desc{The state and the law, their role in the society. The main legal systems. International law.}
@@ -52,8 +52,13 @@
 \discipline{Life Safety}
 \desc{People and the environment. The criteria of comfort. The dangers of technical systems. Means of reducing the harmful effects of traumatic and technical systems. Emergency situations.}
 
+\
 
-\group{Natural scientific module}
+\
+
+\
+
+\group{Natural Science module}
 
 \discipline{Physics}
 \desc{Mathematical physics, classical mechanics, electromagnetic theory, quantum mechanics, thermodynamics, optics and nuclear and particle physics.}
@@ -65,7 +70,7 @@
 \desc{The biosphere and the man. Global environmental problems, environmental principles of rational use of natural resources and the protection of the environment.}
 
 
-\group{Mathematical module}
+\group{Mathematics module}
 
 \discipline{Algebra and Geometry}
 \desc{Linear Algebra: basic structures, systems of linear equations, matrices and operations on them. Analytic Geometry: basic curves and figures, vectors.}
@@ -74,7 +79,7 @@
 \desc{Logical calculations, graphs, theory of algorithms, combinatorics.}
 
 \discipline{Algorithms for Discrete Mathematics}
-\desc{Algorithm, analysis of algorithms, the Turing machine, combinatorics, graphs, depth-first and breadth-first searches.}
+\desc{Algorithm, analysis of algorithms. The Turing machine. Combinatorics. Algorithms on graphs, depth-first and breadth-first searches.}
 
 \discipline{Mathematics of Logic}
 \desc{Logical structures, logical consequence, the principle of deduction, predicate logic, the principles of logic programming.}
@@ -86,7 +91,7 @@
 \desc{Differential and integral calculus, elements of function theory and functional analysis, differential equations.}
 
 \discipline{Laplace and Fourier transform}
-\desc{The basic concepts of complex analysis, Laurent series, zeros of an analytic functions. Residues and their applications. Fourier series, the Fourier integral. Laplace transform.}
+\desc{The basic concepts of complex analysis, Laurent series, zeros of functions. Residues and their applications. Fourier series, the Fourier integral. Laplace transform.}
 
 \discipline{Probability and Statistics}
 \desc{Mathematical foundations of probability theory. Discrete and continuous random variables, expectation and variance, basic distributions. The model of random processes, hypothesis testing, statistical methods of data processing.}
@@ -112,13 +117,17 @@
 \desc{The concept of information system. System analysis, types and models of information systems. Creation and decomposition of information systems. Information models for decision-making processes.}
 
 \discipline{Data Management}
-\desc{Databases and data base management systems (DBMS). Architecture and design of data storages. Representation of data structures in computer memory. An overview of commercial and free DBMS.}
+\desc{Databases and data base management systems (DBMS). Architecture and design of data storages. Representation of data structures in computer memory. Normal forms. SQL. An overview of commercial and free DBMS.}
 
 \discipline{Information Networks}
 \desc{Basic concepts of networks. Models and structure of information networks, methods of transmitting information. Software and hardware. The OSI model and the TCP/IP protocol. Security of information.}
 
-\discipline{Fundamentals of Control Theory (Foundation of Management Theory in the transcripts)}
-\desc{Information Technology and Control Theory, general principles: stability, controllability and observability. Mathematical models of objects and systems. Methods of analysis and synthesis of control systems. Digital control systems. Overview of Implementation of control algorithms in software systems. Practice in MATLAB Simulink.}
+\discipline{Fundamentals of Control Theory (``Foundation of Management Theory'' in the transcripts)}
+\desc{Information Technology and Control Theory, general principles: stability, controllability and observability. Mathematical models of objects and systems. Methods of analysis and synthesis of control systems. Digital control systems. Practice in MATLAB Simulink.}
+
+\
+
+\
 
 \discipline{System Modeling}
 \desc{The basic concepts of the modeling theory. Types of modeling. Simulation models of information processes, mathematical models. Formalization of information processes, building conceptual models. Modeling in GPSS World.}
@@ -138,52 +147,54 @@
 \discipline{Knowledge Representation in Information Systems}
 \desc{Basics of knowledge representation. Models, semantic networks and reasoning. Acquisition and analysis of knowledge, expert systems. Languages of artificial intelligence, logic programming model, practice in Lisp and Prolog.}
 
-\discipline{Information security and data protection !!!}
-\desc{The purpose, access control systems, methodology, telecommunications and network security, cryptography basics, watermarking as a means of information protection. Laboratory practice, cryptography C.}
+\discipline{Information safety and protection}
+\desc{Access control systems, telecommunications and network security. The introduction to cryptography, implementation of basic algorithms in C. Watermarking for information protection.}
 
-\discipline{Corporate Information Systems !!! Enterprise!}
-\desc{The structure of corporations and enterprises, the architecture of enterprise information systems (EIS), the application of EIS, modeling and designing, CIS programming, examples of KCS.}
+\discipline{Corporate IT Systems (IT for Enterprises)}
+\desc{The structure of enterprises, the architecture of enterprise information systems. MRP and ERP systems. Examples of ERP systems. Designing ERP systems. Basics of data warehousing.}
 
-\discipline{Administration in Information Systems}
-\desc{Functions, procedures and administration services, configuration management services, accounting and security, operation and maintenance of information systems, programming systems administration;}
+\discipline{IT systems administering}
+\desc{Administration services. Services of accounting and security. Maintenance of information systems. Administrating Windows and Linux operation systems. Bash and PowerShell scripting.}
 
-\discipline{Intelligent information systems}
-\desc{The basic concepts of artificial intelligence, information and data, expert systems. Information models of knowledge, semantic network, data processing rules. The methods of knowledge representation in databases of information systems.}
+\discipline{Intelligent IT systems}
+\desc{The basic concepts of artificial intelligence, information and data. Expert systems. Information models of knowledge, semantic network, data processing rules. The methods of knowledge representation in information systems.}
 
-\discipline{Multimedia Technology !!!}
-\desc{The concept of multimedia technology, classification and application of multimedia applications, types and file formats: text, images, audio, video. Virtual reality. Software, technology for creating multimedia products;}
+\discipline{Multimedia Technologies}
+\desc{The concept of multimedia technologies. Classification and application of multimedia technologies. Types and file formats: text, images, audio, video. Virtual reality. Software technologies for creating multimedia products.}
 
-\discipline{Reliability of information systems !!!}
-\desc{The basic definitions of reliability, fault classification, characteristics of reliability, reliability testing, and methods of increasing the reliability of information systems, the impact of the human operator for the operation of information systems.}
+\
 
-\discipline{The reliability of automated systems !!!}
-\desc{Basic concepts and components of reliability. Reliability CAM, Reliability restorable and renewable systems. Reliability and quality of the software}
+\discipline{Reliability of IT systems (``Safety of information systems'')}
+\desc{The basic definition of reliability. Faults and characteristics of reliability. Testing for reliability, and methods of increasing reliability of information systems. The human and information systems.}
 
-\discipline{Information systems !!!}
-\desc{General characteristics of the IC design process, functional model of a user interface, the structure of software modules, development of algorithms, performance analysis, project management: project documentation, design tools, IP, typing design solutions; Information system in Delphi.}
+\discipline{Reliability of automated systems (``Safety of computer-based systems'')}
+\desc{Basic concepts and components of reliability. The reliability of automated systems. The reliability of robust  and renewable systems. The reliability and the quality of software}
 
-\discipline{High-level programming techniques}
-\desc{The basic concepts of programming. The basic methodology of software engineering. Programming languages and systems. Main paradigms: Modular programming, Object-oriented programming. Debugging and testing programs.}
+\discipline{Information Systems}
+\desc{General characteristics of information systems. Designing and building a functional model of an information system. User interface. The structure of software modules of the IS. Algorithms. Performance analysis. Project management: documentation, designing tools. Typical design solutions. Creating an information system in Delphi.}
 
-\discipline{Automata Theory !!!}
-\desc{The concept of the state machine. The basic definitions. Of automatic functions. Deterministic function. Types of machines: Finite Automata, Structural machines, linear automata.}
+\discipline{High-Level Programming Methods}
+\desc{The basic concepts of programming. Main paradigms of programming: Modular programming, Object-oriented programming. Programming languages and systems. Testing and debugging. Programming in Delphi.}
 
-\discipline{Mathematical Information Technology !!!}
-\desc{An overview of computer mathematics: classification and structure, user interface, data types of mathematical systems, syntax: operators, functions, and expressions. On the example of MathCAD, Maple, Matlab}
+\discipline{Automata Theory}
+\desc{The concept of the state machine. Basic definitions. Deterministic functions. Types of machines: finite automata, structural machines, linear automata.}
+
+\discipline{Mathematical IT}
+\desc{An overview of mathematical systems: classification, structure, user interface, data types. Syntax: operators, functions, and expressions. Practice in MathCAD, Maple and MATLAB.}
 
 
 \group{Others}
 
-\discipline{Freshman adaptation system}
-\desc{}
+\discipline{Adaptation System for First-Year Students}
+\desc{Psychological and sociological aspects of studying at university. How to study effectively. How to deal with stress.}
 
-\discipline{Engineering Psychology !!!}
-\desc{As the result of an error, the theoretical analysis of professional activities. The concept of professional tasks simple and complex tasks in the work of the operator. Cognitive process in the operator's problem solving. Command and joint activities.}
+\discipline{Engineering Psychology}
+\desc{Errors and their implications. Theoretical analysis of professional activities. A programmer's professional activity: simple and complex tasks. Cognitive processes at work. The programmer as an integral part of a team.}
 
-\discipline{Technology careers !!!}
-\desc{Career, the basic concepts. The study of the labor market. Means of obtaining information about the labor market and how vocational education. Self-presentation. Prepare a resume.}
+\discipline{Career Technology}
+\desc{Career, its basic concepts. Research into the labor market. How to obtain information about the labor market. Self-presentation and building an attractive CV.}
 
-\discipline{Fundamentals of Scientific and Engineering Research !!!}
-\desc{based on research and engineering creativity. Search, storage, and processing of scientific and technical information. Experiment. Processing of the results of experimental studies. Statistical analysis of the primary experimental data.}
+\discipline{Fundamentals of Scientific and Engineering Research}
+\desc{The methodological foundation of researching and engineering creativity. Searching, storing and processing scientific and technical information. Experiments and their outcomes. Statistical analysis of the experimental data.}
 
 \end{document}
