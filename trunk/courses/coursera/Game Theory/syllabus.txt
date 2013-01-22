@@ -1,0 +1,14 @@
+Course Syllabus
+Week 1. Introduction:  Introduction, overview, uses of game theory, some applications and examples, and formal definitions of: the normal form, payoffs, strategies, pure strategy Nash equilibrium, dominated strategies.
+
+Week 2. Mixed-strategy Nash equilibria: Definitions, examples, real-world evidence.
+
+Week 3. Alternate solution concepts: iterative removal of strictly dominated strategies, minimax strategies and the minimax theorem for zero-sum game, correlated equilibria.
+
+Week 4. Extensive-form games: Perfect information games: trees, players assigned to nodes, payoffs, backward Induction, subgame perfect equilibrium, introduction to imperfect-information games, mixed versus behavioral strategies.
+
+Week 5. Repeated games: Repeated prisoners dilemma, finite and infinite repeated games, limited-average versus future-discounted reward, folk theorems, stochastic games and learning.
+
+Week 6. Coalitional games: Transferable utility cooperative games, Shapley value, Core, applications.
+
+Week 7. Bayesian games: General definitions, ex ante/interim Bayesian Nash equilibrium.
