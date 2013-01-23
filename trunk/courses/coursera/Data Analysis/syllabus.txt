@@ -1,0 +1,18 @@
+Course Content
+
+The structure of a data analysis (steps in the process, knowing when to quit, etc.)
+Types of data (census, designed studies, randomized trials)
+Types of data analysis questions (exploratory, inferential, predictive, etc.)
+How to write up a data analysis (compositional style, reproducibility, etc.)
+Obtaining data from the web (through downloads mostly)
+Loading data into R from different file types
+Plotting data for exploratory purposes (boxplots, scatterplots, etc.)
+Exploratory statistical models (clustering)
+Statistical models for inference (linear models, basic confidence intervals/hypothesis testing)
+Basic model checking (primarily visually)
+The prediction process
+Study design for prediction
+Cross-validation
+A couple of simple prediction models
+Basics of simulation for evaluating models
+Ways you can fool yourself and how to avoid them (confounding, multiple testing, etc.)
