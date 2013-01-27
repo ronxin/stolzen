@@ -1,0 +1,7 @@
+#sidebar TableOfContents
+
+* [Courses]
+  * Done
+    * [ComputingForDataAnalysis Computing for Data Analysis]
+  * On-going
+    * [DataAnalysis Data Analysis]
