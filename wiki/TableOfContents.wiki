@@ -1,5 +1,3 @@
-#sidebar TableOfContents
-
 * [Courses]
   * Done
     * [ComputingForDataAnalysis Computing for Data Analysis]
