@@ -1,13 +1,14 @@
 #summary Courses I am taking
 #sidebar TableOfContents
 
+== Coursera ==
 
-* Done
-  * [ComputingForDataAnalysis Computing for Data Analysis]
+=== Done ===
+* [ComputingForDataAnalysis Computing for Data Analysis]
 
-* On-going
-  * [DataAnalysis Data Analysis]
-  * [GameTheory Game Theory]
+=== On-going ===
+* [DataAnalysis Data Analysis]
+* [GameTheory Game Theory]
 
-* Coming
-  * [StartupEngineering Startup Engineering]
+=== Coming ===
+* [StartupEngineering Startup Engineering]
