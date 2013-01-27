@@ -1,10 +1,11 @@
 * [Courses]
-  * Done
+
+  = Done =
     * [ComputingForDataAnalysis Computing for Data Analysis]
 
-  * On-going
+  = On-going =
     * [DataAnalysis Data Analysis]
     * [GameTheory Game Theory]
 
-  * Coming
+  = Coming =
     * [StartupEngineering Startup Engineering]
