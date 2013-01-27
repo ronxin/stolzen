@@ -8,6 +8,7 @@
 
 === On-going ===
 *  [DataAnalysis Data Analysis]
+
 *  [GameTheory Game Theory]
 
 === Coming ===
