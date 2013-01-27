@@ -1,5 +1,5 @@
 #summary Courses I am taking
-
+#sidebar TableOfContents
 
 = Coursera =
 
