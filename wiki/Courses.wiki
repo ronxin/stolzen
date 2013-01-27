@@ -1,5 +1,5 @@
-#summary Courses I am taking, Table of contents
-#sidebar Courses
+#summary Courses I am taking
+#sidebar TableOfContents
 
 
 * Done
