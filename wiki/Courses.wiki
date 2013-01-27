@@ -4,12 +4,11 @@
 == Coursera ==
 
 === Done ===
-* [ComputingForDataAnalysis Computing for Data Analysis]
+*  [ComputingForDataAnalysis Computing for Data Analysis]
 
 === On-going ===
-* [DataAnalysis Data Analysis]
-
-* [GameTheory Game Theory]
+*  [DataAnalysis Data Analysis]
+*  [GameTheory Game Theory]
 
 === Coming ===
-* [StartupEngineering Startup Engineering]
+*  [StartupEngineering Startup Engineering]
