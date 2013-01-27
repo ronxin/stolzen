@@ -1,21 +1,13 @@
-#summary Courses I am taking
-#sidebar TableOfContents
-
-= Coursera =
-
-==Done==
-
-* ComputingForDataAnalysis
+#summary Courses I am taking, Table of contents
+#sidebar Courses
 
 
+* Done
+  * [ComputingForDataAnalysis Computing for Data Analysis]
 
-==On-going==
+* On-going
+  * [DataAnalysis Data Analysis]
+  * [GameTheory Game Theory]
 
-* GameTheory
-
-* DataAnalysis
-
-
-==To do==
-
-* StartupEngineering
+* Coming
+  * [StartupEngineering Startup Engineering]
