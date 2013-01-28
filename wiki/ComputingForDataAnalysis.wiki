@@ -1,9 +1,9 @@
-#summary One-sentence summary of this page.
+#summary My notes for Computing for Data Analysis coursera course.
 #labels coursera
 
-<wiki:toc max_depth="2" />
-
 Topic: Computing for Data Analysis
+
+<wiki:toc max_depth="2" />
 
 
 =Week1=
