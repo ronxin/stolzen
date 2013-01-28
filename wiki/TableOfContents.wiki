@@ -1,5 +1,4 @@
-[Courses]
-
+* [Courses]
   * Done
     * [ComputingForDataAnalysis Computing for Data Analysis]
   * On-going
@@ -7,6 +6,7 @@
     * [GameTheory Game Theory]
   * Coming 
     * [StartupEngineering Startup Engineering]
+* Books
   * Done
     * [LearnMoreStudyLess Learn More, Study Less]
     * [ScrumAndXp Scrum and XP (rus)]
