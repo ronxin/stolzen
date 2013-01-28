@@ -1,4 +1,4 @@
-=== [Courses] ===
+[Courses]
 
   * Done
     * [ComputingForDataAnalysis Computing for Data Analysis]
@@ -9,7 +9,7 @@
     * [StartupEngineering Startup Engineering]
 
 
-=== Books ===
+Books
 
   * Done
     * [LearnMoreStudyLess Learn More, Study Less]
