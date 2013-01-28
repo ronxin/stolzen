@@ -1,16 +1,16 @@
-* [Courses]
-  * Done
-    * [ComputingForDataAnalysis Computing for Data Analysis]
-  * On-going
-    * [DataAnalysis Data Analysis]
-    * [GameTheory Game Theory]
-  * Coming 
-    * [StartupEngineering Startup Engineering]
-* Books
-  * Done
-    * [LearnMoreStudyLess Learn More, Study Less]
-    * [ScrumAndXp Scrum and XP (rus)]
-    * [ScrumAndKanban Scrum and Kanban (rus)]
-    * [RefactorYourWetware Refactor Your Wetware]
-  * In progress
-    * none
+  * [Courses]
+    * Done
+      * [ComputingForDataAnalysis Computing for Data Analysis]
+    * On-going
+      * [DataAnalysis Data Analysis]
+      * [GameTheory Game Theory]
+    * Coming 
+      * [StartupEngineering Startup Engineering]
+  * Books
+    * Done
+      * [LearnMoreStudyLess Learn More, Study Less]
+      * [ScrumAndXp Scrum and XP (rus)]
+      * [ScrumAndKanban Scrum and Kanban (rus)]
+      * [RefactorYourWetware Refactor Your Wetware]
+    * In progress
+      * none
