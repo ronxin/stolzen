@@ -16,3 +16,5 @@
     * [ScrumAndXp Scrum and XP] (rus)
     * [ScrumAndKanban Scrum and Kanban] (rus)
     * [RefactorYourWetware Refactor Your Wetware]
+  * In progress
+    * none
