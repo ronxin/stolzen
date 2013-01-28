@@ -7,3 +7,12 @@
    * [GameTheory Game Theory]
  * Coming 
    * [StartupEngineering Startup Engineering]
+
+
+=== [Books] ===
+
+  * Done
+    * [LearnMoreStudyLess Learn More, Study Less]
+    * [ScrumAndXp Scrum and XP] (rus)
+    * [ScrumAndKanban Scrum and Kanban] (rus)
+    * [RefactorYourWetware Refactor Your Wetware]
