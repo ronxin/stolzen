@@ -1,0 +1,17 @@
+1. Please describe the platform (e.g. experiences, engagements, skills, drives, goals) from which you have the ambition to contribute to development of your home country. [600 chars max]
+
+Throughout my studies I obtained solid mathematical and programming background along with motivation to perfect it. Having graduated with distinction, I worked in several companies as a programmer, and now, from my academic and working experience, I can see that data analysis is crucial. Therefore, I want to become a data scientist - a programmer with good knowledge of statistics. Finding the meaning for data given its amounts is challenging, and there are a lot of problems that have yet to be addressed. Hence, by getting the proper education I will be able to drive innovation in my country.
+
+
+2. a) How would your choice of study program in Sweden affect your personal development? [400]
+This program would give me the unique opportunity to establish connection with both peer students and teaching staff, since the university is quite small. But "small" doesn't mean "bad", and I would get the most from excellent materials and would be able to develop my ideas. Last but not least, it will give me an opportunity to learn Swedish and broaden by mind my multicultural interaction.
+
+b) How would your choice of study program affect your professional / academic development [400]
+The university provides unique mixture of disciplines: statistics, computer science, finances and economics, all rolled into one, and I would benefit immensely from that. Not only would it affect my academic development, but also professional, through working with cutting edge BI technologies in close collaboration with industry. Therefore, I will be able to put all gained skills into action.
+
+
+3. a) Give one example of challenges or possibilities important for your country today [600]
+From my point of view, nowadays my country faces severe shortage of skilled professionals in data processing areas, despite being a home for many world-class statisticians. Governmental and private institutions have collected prodigious amounts of data, and there are few people to handle it. What is worse, not enough experienced people in the area means not enough teachers, and it is compounded by lack of available translated materials for those who are interested in self-education.
+
+b) Describe how your intended studies in Sweden could contribute to addressing this challenge [600]
+Firstly, I myself can directly address the lack of skilled professionals by becoming one. Not only do I like to acquire knowledge, but also to share it. That is why I keep a blog where I post everything I learn, making gained expertize available to Russian speaking public, which will address the lack of materials. Moreover, the idea of online education is especially appealing to me, and by studying at the pioneer at this area in Sweden I will get invaluable and unique insight into this process and promote it in my country, thus spreading ideas further for all interested people.
