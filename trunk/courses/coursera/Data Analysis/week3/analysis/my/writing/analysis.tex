@@ -1,0 +1,95 @@
+\documentclass[a4paper,14pt]{extarticle}
+
+\usepackage[T1]{fontenc}
+\usepackage{sans}
+
+\usepackage{indentfirst}
+\frenchspacing
+
+\usepackage{geometry}
+\geometry{left=3cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+
+\begin{document}
+
+\section*{Increased earthquake depth is associated with increased magnitude}
+
+\section{Introduction}
+
+Earthquakes are natural disasters that have major economic, political, and health consequences on the regions of the world they affect \cite{wikiearthquake}. Two variables that play a key role in determining the human impact of an earthquake are earthquake magnitude and earthquake depth. Earthquake magnitude is a measure of the amount of energy that an earthquake releases [2]. Earthquake depth is a measure of how deep under the surface of the earth an earthquake occurred [2]. Earthquakes that occur at shallower depths or with larger magnitudes are more likely to cause major damage.
+
+Understanding the relationship of earthquake magnitude to depth can help us characterize earthquakes and their potential for damage. Here we performed an analysis to determine if there was a significant association between earthquake size and earthquake depth. Using exploratory analysis and standard multiple regression techniques we show that there is a significant relationship between earthquake magnitude and depth, even after adjusting for important confounders such as the latitude and longitude at which those earthquakes occur. Our analysis suggests that increased earthquake magnitude is associated with increased depth. Our results suggest that there are relatively few earthquakes that have both the damaging characteristics of large magnitude and shallow depth.
+
+
+\section{Methods}
+
+\subsection{Data Collection}
+
+For our analysis we used the data on all earthquakes recorded in the U.S. Geological Survey data set from January 24 2013 to January 31 2013. The data were downloaded from data.gov on January 31, 2013 using the R programming language \cite{r-language}.
+
+\subsection{Exploratory Analysis}
+
+Exploratory analysis was performed by examining tables and plots of the observed data. We identified transformations to perform on the raw data on the basis of plots and knowledge of the scale of measured variables. Exploratory analysis was used to 
+
+\begin{enumerate}
+  \item identify missing values,
+  \item verify the quality of the data, and 
+  \item determine the terms used in the regression model relating earthquake magnitude to earthquake depth.
+\end{enumerate}
+
+\subsection{Statistical Modeling}
+
+To relate earthquake magnitude to earthquake depth we performed a standard multivariate linear regression model [4]. Model selection was performed on the basis of our exploratory analysis and prior knowledge of the relationship between geography and earthquake magnitude. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations [5].
+
+\subsection{Reproducibility}
+
+All analyses performed in this manuscript are reproduced in the R markdown file earthquakesFinal.Rmd \cite{r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from data.gov changes based on the date.
+
+
+\section{Results:}
+
+The earthquakes data used in this analysis contains information on the source network that measured the earthquake (Src), the time of the earthquake (TME), the number of sites that measured the earthquake (NST), the location - longitude (Lon) and latitude (Lat), the magnitude (EM, measured on the Richter scale) and the depth (ED, measured in kilometers from the surface) [7]. We identified no missing values in the data set we collected and all measured variables were observed to be inside the standard ranges. Earthquakes in this data set also did not seem to show major patterns over time in magnitude or depth.
+
+Most earthquakes had a small (less than 3 on the Richter scale - 85\% of quakes) or medium (3-5 on the Richter scale - 11\% of quakes) magnitude. The distribution of earthquake depths was heavily right skewed. Based on the distribution of the earthquake depths we recognized that a transform was necessary to improve the performance of linear regression techniques; we performed a log base 10 transform of the earthquake depths. Subsequent analyses focus on this transformed depth variable.
+
+We first fit a regression model relating earthquake magnitude to earthquake depth. The residuals showed patterns of non-random variation. We attempted to explain those patterns by fitting models including potential confounders. Our final regression model was:
+
+EM  = b0 + b1 log10(ED) + f(Lat) + g(Lon) + h(NST) + e
+
+where b0 is an intercept term and b1 represents the change in earthquake magnitude on the Richter scale associated with a change of 1 unit in log base 10 kilometers for earthquakes at the same latitude, longitude, and measured by the same number of stations. The terms f(Lat), g(Lon), and h(NST) represent factor models with 5 different levels each for latitude, longitude, and number of measurement sites. The error term e represents all sources of unmeasured and unmodeled random variation in earthquake magnitude. Our final regression model appeared to remove most of the non-random patterns of variation in the residuals.
+
+We observed a highly statistically significant (P = 8e-15) association between earthquake magnitude and earthquake depth. A change of one unit in log base 10 kilometers of depth corresponded to a change of b1 = 0.41 on the Richter scale (95\% Confidence Interval: 0.31, 0.51). So for example, for two earthquakes at the same latitude, longitude, and measured at the same number of stations, we would expect an earthquake measured at a depth of 10 kilometers to be 0.57 units higher on the Richter scale than one measured at a depth of 1 kilometer. We would expect the same difference between earthquakes measured at depths of 10 and 100 kilometers and so forth.
+
+
+\section{Conclusions:}
+
+Our analysis suggests that there is a significant, positive association between earthquake magnitude and earthquake depth. Our analysis estimates the relationship using a linear model relating log base 10 depth to magnitude. Therefore, our estimated association is not linear on the depth scale. Even so, there appears to be a strong relationship between the two variables. We also observed that other variables such as latitude, longitude and number of observing stations are associated with both earthquake magnitude and earthquake depth. Including these variables in the regression model relating magnitude to depth improves the model fit, but does not remove the significant positive relationship between the variables.
+
+While our analysis is an interesting first step it is based on a limited sample of earthquakes from only one week in January 2013. A larger collection of representative earthquakes may be more appropriate for understanding the relationship between earthquake magnitude and depth. Our analysis may be of interest to scientists seeking to better understand earthquakes. But for policy makers, an important - and difficult - area of future research would be to develop accurate predictive models of earthquake depth and magnitude that can be used to evaluate the potential human consequence of these natural disasters.
+
+
+\newpage
+
+
+\begin{thebibliography}{9}
+
+\bibitem{wikiearthquake} Wikipedia "Earth quake" Page. URL:
+  http://en.wikipedia.org/wiki/Earthquake. Accessed 1/31/2013.
+
+\bibitem{r-language}
+  R Core Team (2012). "R: A language and environment for statistical computing." URL: http://www.R-project.org
+
+\bibitem{r-markdown}
+  R Markdown Page. URL: http://www.rstudio.com/ide/docs/authoring/using\_markdown. Accessed 1/31/2013
+
+
+\end{thebibliography}
+
+3. 
+4. Seber, George AF, and Alan J. Lee. Linear regression analysis. Vol. 936. Wiley, 2012.
+5. Ferguson, Thomas S. A Course in Large Sample Theory: Texts in Statistical Science. Vol. 38. Chapman \& Hall/CRC, 1996.
+7. USGS Real Time Data and Feeds Page. URL: http://earthquake.usgs.gov/earthquakes/feed/. Accessed 1/31/2013.
+
+\end{document} 
