@@ -14,11 +14,61 @@
 
 \begin{document}
 
-\section*{Increased earthquake depth is associated with increased magnitude}
+\section*{Increased interest rate is associated with increased the requested amount,
+debt-to-income ratio and loan length.}
 
 \section{Introduction}
 
-Earthquakes are natural disasters that have major economic, political, and health consequences on the regions of the world they affect \cite{wikiearthquake}. Two variables that play a key role in determining the human impact of an earthquake are earthquake magnitude and earthquake depth. Earthquake magnitude is a measure of the amount of energy that an earthquake releases [2]. Earthquake depth is a measure of how deep under the surface of the earth an earthquake occurred [2]. Earthquakes that occur at shallower depths or with larger magnitudes are more likely to cause major damage.
+An interest rate is the rate at which interest is paid by borrowers for the use of money that they borrow from a lender \cite{source:wiki.interestrate}.
+
+Interest rates are vital tool for regulating ...
+
+There are several important variables, each of which plays a role in the ... 
+
+
+amount requested is the the amount (in dollars) requested in the loan application 
+
+amount funded by investors is the	amount	(in	dollars)	loaned	to	the	individual 	
+
+interest rate is the	lending	interest	rate.		
+
+loan length is the length of time (in months) of the loan 	
+
+loan purpose is the	purpose	of the loan as stated by the applicant 
+
+debt-to-income ratio is the	percentage of consumer's gross income that goes	
+toward	paying	debts	\footnote{http://en.wikipedia.org/wiki/Debt-to-income\_ratio}
+
+state is The abbreviation	for	the	U.S. state	of	residence	of	the	loan	applicant	
+\footnote{http://www.50states.com/abbreviations.htm\#.UQ8hxFp2PKo}
+
+FICO.range is	a	range	indicating	the	applicants	FICO 	score.	This	is	a	measure	of	the	
+creditworthiness	of	the	 applicant.\footnote{http://en.wikipedia.org/wiki/Credit\_score\_in\_the\_United\_States}
+	
+Open.CREDIT.Lines 	–	The	number	of	open	lines	 of	credit	the	applicant	had	at	the	
+time	of	application.	
+
+Revolving.CREDIT.Balance	–	The	total	amount	outstanding	all	lines	of	credit	
+\footnote{http://www.ehow.com/about\_7550001\_revolving-credit-balance.html}
+	
+Inquiries.in.the.Last.6.Months 	–	When	a	person	applies	for	credit,	they	authorize	
+the	lender	to	“inquire”	about	their	creditworthiness.	This	is	the	number	of	such	
+authorized	queries	in	the	6	months	before	the	loan	was	issued	
+\footnote{http://www.myfico.com/crediteducation/creditinquiries.aspx}
+	
+Employment.Length	–	Length	of	time	employed	at	current	job.	 
+
+%Earthquakes are natural disasters that have major economic, political, and health consequences on the regions of the world they affect . Two variables that play a key role in determining the human impact of an earthquake are earthquake magnitude and earthquake depth. Earthquake magnitude is a measure of the amount of energy that an earthquake releases [2]. Earthquake depth is a measure of how deep under the surface of the earth an earthquake occurred [2]. Earthquakes that occur at shallower depths or with larger magnitudes are more likely to cause major damage.
+
+% FICO score!
+
+Understanding the relationship of interest rate with other variables can help us characterize loans and ... Here we performed an analysis to determine if there was a significant association between the ... of interest rate and other variables such as the requested amount, debt-to-income ratio,
+the length of the loan and its purpose. Using exploratory analysis and standard multiple regression techniques we show that there is a relationship between ... 
+
+The confounders are amount funded by investors and FICO score
+
+Our analysis suggests that there are ... 
+
 
 Understanding the relationship of earthquake magnitude to depth can help us characterize earthquakes and their potential for damage. Here we performed an analysis to determine if there was a significant association between earthquake size and earthquake depth. Using exploratory analysis and standard multiple regression techniques we show that there is a significant relationship between earthquake magnitude and depth, even after adjusting for important confounders such as the latitude and longitude at which those earthquakes occur. Our analysis suggests that increased earthquake magnitude is associated with increased depth. Our results suggest that there are relatively few earthquakes that have both the damaging characteristics of large magnitude and shallow depth.
 
@@ -27,25 +77,29 @@ Understanding the relationship of earthquake magnitude to depth can help us char
 
 \subsection{Data Collection}
 
-For our analysis we used the data on all earthquakes recorded in the U.S. Geological Survey data set from January 24 2013 to January 31 2013. The data were downloaded from data.gov on January 31, 2013 using the R programming language \cite{r-language}.
+For our analysis we used a data sample consisting of 2,500 peer-to-peer loans issued through the Leading Club\footnote{https://www.lendingclub.com/home.action}. The data was already prepared for the ``Data Analysis'' course by the tutor and was downloaded using the provided link\footnote{https://spark-public.s3.amazonaws.com/dataanalysis/loansData.csv} on February 10, 2013 with the R programming language \cite{source:r-language}.
+
+%The data above consist of a sample of 2,500 peer-to-peer loans issued through the Lending Club (https://www.lendingclub.com/home.action). The interest rate of these loans is determined by the Lending Club on the basis of characteristics of the person asking for the loan such as their employment history, credit history, and creditworthiness scores.
+
+%For our analysis we used the data on all earthquakes recorded in the U.S. Geological Survey data set from January 24 2013 to January 31 2013. The data were downloaded from data.gov on January 31, 2013 using the R programming language.
 
 \subsection{Exploratory Analysis}
 
-Exploratory analysis was performed by examining tables and plots of the observed data. We identified transformations to perform on the raw data on the basis of plots and knowledge of the scale of measured variables. Exploratory analysis was used to 
+Exploratory analysis was performed by examining tables and plots of the observed data. We identified transformations to perform on the raw data on the basis of plots and knowledge of the scale of measured variables. Exploratory analysis was used to
 
 \begin{enumerate}
   \item identify missing values,
-  \item verify the quality of the data, and 
-  \item determine the terms used in the regression model relating earthquake magnitude to earthquake depth.
+  \item verify the quality of the data, and
+  \item determine the terms used in the regression model relating interest rate to amount requested, debt-to-income ratio and loan length.
 \end{enumerate}
 
 \subsection{Statistical Modeling}
 
-To relate earthquake magnitude to earthquake depth we performed a standard multivariate linear regression model [4]. Model selection was performed on the basis of our exploratory analysis and prior knowledge of the relationship between geography and earthquake magnitude. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations [5].
+To relate earthquake magnitude to earthquake depth we performed a standard multivariate linear regression model \cite{source:book-linear.regression}. Model selection was performed on the basis of our exploratory analysis and prior knowledge of the relationship between geography and earthquake magnitude. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations \cite{source:book-some.shit}.
 
 \subsection{Reproducibility}
 
-All analyses performed in this manuscript are reproduced in the R markdown file earthquakesFinal.Rmd \cite{r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from data.gov changes based on the date.
+All analyses performed in this manuscript are reproduced in the R markdown file \texttt{loansFinal.Rmd} \cite{source:r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from the ``Data Analysis'' coursera website might change.
 
 
 \section{Results:}
@@ -65,7 +119,8 @@ We observed a highly statistically significant (P = 8e-15) association between e
 
 \section{Conclusions:}
 
-Our analysis suggests that there is a significant, positive association between earthquake magnitude and earthquake depth. Our analysis estimates the relationship using a linear model relating log base 10 depth to magnitude. Therefore, our estimated association is not linear on the depth scale. Even so, there appears to be a strong relationship between the two variables. We also observed that other variables such as latitude, longitude and number of observing stations are associated with both earthquake magnitude and earthquake depth. Including these variables in the regression model relating magnitude to depth improves the model fit, but does not remove the significant positive relationship between the variables.
+Our analysis suggests that there is a significant, positive association between .... 
+Our analysis estimates the relationship using a linear model relating log base 10 depth to magnitude. Therefore, our estimated association is not linear on the depth scale. Even so, there appears to be a strong relationship between the two variables. We also observed that other variables such as latitude, longitude and number of observing stations are associated with both earthquake magnitude and earthquake depth. Including these variables in the regression model relating magnitude to depth improves the model fit, but does not remove the significant positive relationship between the variables.
 
 While our analysis is an interesting first step it is based on a limited sample of earthquakes from only one week in January 2013. A larger collection of representative earthquakes may be more appropriate for understanding the relationship between earthquake magnitude and depth. Our analysis may be of interest to scientists seeking to better understand earthquakes. But for policy makers, an important - and difficult - area of future research would be to develop accurate predictive models of earthquake depth and magnitude that can be used to evaluate the potential human consequence of these natural disasters.
 
@@ -75,21 +130,23 @@ While our analysis is an interesting first step it is based on a limited sample 
 
 \begin{thebibliography}{9}
 
-\bibitem{wikiearthquake} Wikipedia "Earth quake" Page. URL:
-  http://en.wikipedia.org/wiki/Earthquake. Accessed 1/31/2013.
+\bibitem{source:wiki.interestrate} Wikipedia "Interest rate" Page. URL:
+  http://en.wikipedia.org/wiki/Interest\_rate. Accessed 2013/02/14.
 
-\bibitem{r-language}
-  R Core Team (2012). "R: A language and environment for statistical computing." URL: http://www.R-project.org
+\bibitem{source:r-language}
+  R Core Team (2012). "R: A language and environment for statistical computing." URL: http://www.R-project.org. Accessed 2013/02/13.
 
-\bibitem{r-markdown}
-  R Markdown Page. URL: http://www.rstudio.com/ide/docs/authoring/using\_markdown. Accessed 1/31/2013
+\bibitem{source:r-markdown}
+  R Markdown Page. URL: http://www.rstudio.com/ide/docs/authoring/using\_markdown. Accessed 2013/02/14
 
+\bibitem{source:book-linear.regression} 
+  Seber, George AF, and Alan J. Lee. Linear regression analysis. Vol. 936. Wiley, 2012.
 
+\bibitem{source:book-some.shit}
+  Ferguson, Thomas S. A Course in Large Sample Theory: Texts in Statistical Science. Vol. 38. Chapman \& Hall/CRC, 1996.
 \end{thebibliography}
 
-3. 
-4. Seber, George AF, and Alan J. Lee. Linear regression analysis. Vol. 936. Wiley, 2012.
-5. Ferguson, Thomas S. A Course in Large Sample Theory: Texts in Statistical Science. Vol. 38. Chapman \& Hall/CRC, 1996.
+
 7. USGS Real Time Data and Feeds Page. URL: http://earthquake.usgs.gov/earthquakes/feed/. Accessed 1/31/2013.
 
 \end{document} 

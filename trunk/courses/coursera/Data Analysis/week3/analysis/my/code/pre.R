@@ -205,4 +205,114 @@ detach(loans)
 loans1 = loans[, c("Interest.Rate", "Amount.Requested", "Loan.Length", 
           "Loan.Purpose", "Debt.To.Income.Ratio")]
 
+attach(loans1)
 
+lm1 = lm(Interest.Rate ~ Amount.Requested)
+plot(Interest.Rate ~ jitter(Amount.Requested), col="blue", pch=19, cex=0.3)
+abline(lm1)
+
+
+# try to see what will happen if we apply cluster analysis
+d = dist(loans1)
+h = hclust(d)
+
+myplclust <- function(hclust,lab = hclust$labels, lab.col = rep(1, length(hclust$labels)),
+                      hang=0.1, ...) { 
+  y <- rep(hclust$height, 2)
+  x <- as.numeric(hclust$merge)
+  
+  y <- y[which(x<0)]
+  x <- x[which(x<0)]
+  x <- abs(x)
+  y <- y[order(x)]
+  x <- x[order(x)]
+  
+  plot(hclust, labels=FALSE, hang=hang, ...)
+  
+  text(x=x, y=y[hclust$order]-(max(hclust$height)*hang),
+       labels=lab[hclust$order], col=lab.col[hclust$order], 
+       srt=90, adj=c(1, 0.5), xpd=NA, ...)
+}
+
+
+myplclust(h, lab.col=as.numeric(loans1$Loan.Purpose))
+myplclust(h, lab.col=as.numeric(loans1$Loan.Length))
+
+
+plot(h)
+
+# rect.hclust(h, h=10000, border="red")
+# rect.hclust(h, h=15000, border="red")
+# rect.hclust(h, h=9000, border="red")
+# rect.hclust(h, h=8000, border="red")
+rect.hclust(h, h=6000, border="red")
+
+clusters = cutree(h, h=6000)
+unique(clusters)
+
+
+boxplot(Interest.Rate ~ clusters)
+boxplot(Amount.Requested ~ clusters)
+boxplot(Debt.To.Income.Ratio ~ clusters)
+
+plot(Interest.Rate ~ Amount.Requested, col=clusters)
+# need to scale data
+
+
+
+detach(loans1)
+
+loans2 = loans1
+
+loans2$Amount.Requested = scale(loans2$Amount.Requested)
+loans2$Interest.Rate = scale(loans2$Interest.Rate)
+loans2$Debt.To.Income.Ratio = scale(loans2$Debt.To.Income.Ratio)
+
+d = dist(loans2)
+h = hclust(d)
+
+plot(h)
+
+rect.hclust(h, h=5, border="red")
+
+clusters = cutree(h, h=5)
+table(clusters)
+
+attach(loans2)
+
+boxplot(Interest.Rate ~ clusters)
+# lets order clustes by medians of interest rate
+sorted.clusters = sort.by.medians(Interest.Rate, as.factor(clusters))
+sorted.clusters = as.numeric(sorted.clusters)
+
+boxplot(Interest.Rate ~ sorted.clusters)
+
+boxplot(Amount.Requested ~ sorted.clusters)
+boxplot(Debt.To.Income.Ratio ~ sorted.clusters)
+
+plot(Interest.Rate ~ Amount.Requested, col=clusters, pch=19)
+
+detach(loans2)
+
+
+clusters = sorted.clusters
+table(clusters)
+
+
+plot(loans1$Interest.Rate ~ loans1$Amount.Requested, col=clusters, pch=19)
+plot(loans1$Interest.Rate ~ loans1$Debt.To.Income.Ratio, col=clusters, pch=19)
+plot(loans1$Amount.Requested ~ loans1$Debt.To.Income.Ratio, col=clusters, pch=19)
+
+# let's try using only quantatitive (scaled) variables
+
+loans3 = loans2[, c("Interest.Rate", "Amount.Requested", "Debt.To.Income.Ratio")]
+
+svd1 = svd(loans3)
+
+plot(svd1$u[,1], col=clusters, pch=19)
+plot(svd1$u[,2], col=clusters, pch=19)
+
+plot(svd1$u, col=clusters, pch=19)
+
+# maximal contributor
+plot(svd1$v[,2], pch=19)
