@@ -1,0 +1,141 @@
+interview
+
+With Paolo Terenziani, 14.02.2013 14:00 EST
+
+P: You've been working hard. [... etc.] I have to ask you some initial bureaucratic questions. Have you spent more than 12 months in Europe in the last 5 years? 
+
+A: No, not yet. But I do live in Poland now, but it's been less than 1 year. 
+
+P: Okay. And have you applied for more than 3 Erasmus Mundus masters? 
+
+A: No
+
+P: Just one, just this one? 
+
+A: No, I also have applied to IT4BI program. 
+
+P: Oh I know, the one in Brussels?
+
+A: Yes
+
+P: Okay. And have you already had in the past some Erasmus Mundus' scholarships? 
+
+A: No, I haven't
+
+P: Okay, so you're eligible. It's just the first step. Now more interesting questions. Can you briefly tell me about your knowledge in computer science and math and then more specifically in some of the topics related to the master? 
+
+A: Okay. So, I have always been interested in mathematics and in programming and my major was "Information technologies" at University. And among all mathematical disciplines I liked the most... The most I liked statistics because... somehow... it's something tangible, something that can be applied to real data. Also, hmm... I have had a lot of experience in programming, I participated in many programming contests, so I can say that I am good programmer. Hmm...
+
+P: Which languages?
+
+A: My... I currently focus on Java and related technologies like... not only Java, but also Scala and Groovy. Also recently I have become quite interested in the R programming language, which is very interested, but I haven't had, like, real professional experience in this. 
+
+P: And what is your knowledge about data structures and algorithms? 
+
+A: Well, I had some classes on algorithms at my University, and also, as I participated in the ACM contests for programmers, I needed to know algorithms very well. And so... my knowledge now is not as good as it used to be at University, because I'm not exposed to this heavily... heavy calculations... when I have to know from[sic] heart these algorithms. But I can recall something from my university...
+
+P: And some experience in Data Mining or... ?
+
+A: Yes. 
+
+P: ... form of learning, in general... 
+
+A: .... I had... I have had pretty much experience in these areas. Well... Started from my university when I was working at Laboratory of Mathematical Simulation, and goal of my team was to predict the behavior of typhoons... And my scope of work was to apply some image processing ... hm... apparatus to... pictures from satellites and using statistical... statistical apparatus to retrieve somehow am... to find clusters, to find hm... center of masses in these typhoons, so it was heavily mathematical ... job.  Also, hm... for example, at my... hm... in my experience I worked for Kiva Systems. hmmm... company... 
+
+P: Sorry, what systems?
+
+A: Once again, when I started working as a java programmist, hm... I was working at Auriga company. and they outsourced... they are kinda outsourcing company and they...  the company I was working for was Kiva Systems. They provide some smart solutions for self-organized warehouses. I'm not sure if you have heard of them, but they recently become acquired by Amazon. So...
+
+P: I saw from your curriculum vitae what you have also been in Boston University? 
+
+A: Yes, that's true, yes. So shall I continue working... oh... I mean, elaborating this thing about Kiva Systems? 
+
+P: Hm... No, no, thank you. 
+
+A: Oh... Okay.
+
+P: hm hm okay
+
+A: So, yes, I did work in Boston University, it was "work and travel" program. 
+
+P: And... What are now your main interests?
+
+A: Sorry... Could you please repeat?
+
+P: What are now your main interests?
+
+A: Aha. So... I am really into this... into... what I see is that a lot of institutions and enterprises have collected very large amounts of data. And I want to become a data scientist. So, I mean, I want to be a programmer with good knowledge of statistics and good knowledge of data mining and et cetera. So my interest is algorithms of... for intelligent applications, intelligent algorithms. I also invest some time in self-learning, self-education, I am taking courses on coursera, you probably know this website. I already took the basics of the R programming language, now I am taking data analysis course and I'm going to take data... data science course. So I am pretty interested in this topic and also I do read... I do like reading books and now I am reading "Algorithms of the Intelligent Web" book which is very interesting and I really like this. 
+
+P: Do you already have some idea of the job you want to do in the future, after the Master? 
+
+A: Yes, I do. Oh... actually what I want to do after getting the Master's degree is I want to continue my education, which means I'd like to apply to some kind of doctoral... doctoral program. .... So... This would be work when I have to learn something, to study, also I'd like to teach people, because I like the idea of sharing knowledge. And it would be something like researching. 
+
+P: So your main idea could be to stay in the academic...
+
+A: Yes
+
+P: (something not distinguishable) researching... 
+
+A: Yes, that's true.
+
+P: And... specifically, what do you expect from the master?
+
+A: Hm... Okay. So, I want to take master to become a data scientist. I mean, to be... to work in the field of data analysis and processing. And... the reason why I want to apply to master's 's that even though I work hard on self-education, it's not enough, and I see that good education background is needed, and that is why I'd like to apply to master's program. And... what is more er... what I really miss is collaboration with people. With people who share the same passion for... for... for things I like. I mean, if I like data mining, someone who... who likes data mining... for example... We can meet... 
+
+P: (something indistinguishable)
+
+A: ... You see what I mean, right? 
+
+P: I see your point. Yes, it's stimulating. 
+
+A: Yes, yes. So I have lots of ideas and the... the best environment to implement them is university. 
+
+P: I would say that ... from students that I teach in the master and from that point of view it's very nice, because I see those students, which really talk with each other, study with each other, so it's really very nice for a teacher...
+
+A: Aha
+
+P: to see students which are really engaged in the topic and about that. So from that point of view, really you have chosen a good master.
+
+A: Yeah, thank you!
+
+P: Just a last question. Can you attend the master even if you don't get the scholarship or you need this help?
+
+A: I'm afraid if I don't get scholarship, I won't be able to cover... cover any expenses, which means I won't be able to participate in the program, unless I... I can find any other funding options. 
+
+P: Okay okay, it's not a problem and there's also the possibility for being in a list of people that can [...] for the master. Okay... So that's not an opportunity you have. 
+
+A: Aha [no idea what he is talking about]
+
+G: But I'd say that you're the good opportunitist
+
+A: Thanks [what? who?]
+
+P: So... at least from my point of view. So... congratulations for now and... as far as I know, the meeting of the teachers who will survey our evaluations for choosing will be next week. 
+
+A: Aha.
+
+P: So probably at the end of the next week, but I cannot say for sure, but maybe at the end of next week you may already have results. 
+
+A: Oh that's great.
+
+P: I'm not sure about that. But for sure I wanted to wish you all the best for it. You deserve that. 
+
+A: Thanks.
+
+P: Do you have some questions? 
+
+A: Yes, I do. Well, actually when I applied to this program, I am pretty sure that I selected that "I apply to the program and to the scholarship", but when I recently check website I was surprised to found [lol what's up with my grammar??] that by some mistake -- I don't know -- the option was that "I apply to the program, but not to the scholarship". That obviously must be a mistake and... is there anything I can do about this?
+
+P: I think the process you're engaged in is also for the scholarship 
+
+A: so...
+
+P: because in my questionary there is also the question if you can go on without the scholarship or not, which means that you're applying for the scholarship. 
+
+A: ah okay, thank you, that's a relief. 
+
+P: okay hghghg. I think that's it for now. Thank you...
+
+A: Thank you very much!.. aha. good bye!
+
+P: bye bye!
