@@ -1,4 +1,4 @@
-\documentclass[a4paper,14pt]{extarticle}
+\documentclass[a4paper,12pt]{extarticle}
 
 \usepackage[T1]{fontenc}
 \usepackage{sans}
@@ -14,64 +14,21 @@
 
 \begin{document}
 
-\section*{Increased interest rate is associated with increased the requested amount,
-debt-to-income ratio and loan length.}
+\section*{Increased interest rate is associated with increased the requested amount, loan length and
+debt-to-income ratio}
 
 \section{Introduction}
 
-An interest rate is the rate at which interest is paid by borrowers for the use of money that they borrow from a lender \cite{source:wiki.interestrate}.
+An interest rate is the rate at which interest is paid by borrowers for the use of money that they borrow from a lender \cite{source:wiki.interestrate} and typically expressed as an annual percentage rate. Interest rates rise and fall, and these changes or anticipated changes in interest rates can have an effect on businesses' decisions with regard to their borrowing requirements. Interest rates changes are important because they affect individuals by, businesses, financial markets and government policy making \cite{source:ehow.importance2}.
 
-Interest rates are vital tool for regulating ...
+When lenders allow borrowers use their money, it is in their best interests to ensure that the money are safe and will be returned back, and they use measures of creditworthiness, such as FICO score, for it. A person's FICO score will range between 300 and 850. In general, a FICO score above 650 indicates that the individual has a very good credit history. People with scores below 620 will often find it substantially more difficult to obtain financing at a favorable rate \cite{source:ficoscore}.
 
-There are several important variables, each of which plays a role in the ... 
+Understanding the relationship of interest rate with other variables can help us characterize loans and what variables contribute to the final interest rate number. Here we performed an analysis to determine if there was a significant association between \emph{interest rate} and other variables such as \emph{requested amount}, \emph{granted amount}, \emph{debt-to-income ratio}, \emph{state}, \emph{open credit lines}, \emph{revolving credit balance}, \emph{inquiries in the last six months} and \emph{employment length}.
 
-
-amount requested is the the amount (in dollars) requested in the loan application 
-
-amount funded by investors is the	amount	(in	dollars)	loaned	to	the	individual 	
-
-interest rate is the	lending	interest	rate.		
-
-loan length is the length of time (in months) of the loan 	
-
-loan purpose is the	purpose	of the loan as stated by the applicant 
-
-debt-to-income ratio is the	percentage of consumer's gross income that goes	
-toward	paying	debts	\footnote{http://en.wikipedia.org/wiki/Debt-to-income\_ratio}
-
-state is The abbreviation	for	the	U.S. state	of	residence	of	the	loan	applicant	
-\footnote{http://www.50states.com/abbreviations.htm\#.UQ8hxFp2PKo}
-
-FICO.range is	a	range	indicating	the	applicants	FICO 	score.	This	is	a	measure	of	the	
-creditworthiness	of	the	 applicant.\footnote{http://en.wikipedia.org/wiki/Credit\_score\_in\_the\_United\_States}
-	
-Open.CREDIT.Lines 	–	The	number	of	open	lines	 of	credit	the	applicant	had	at	the	
-time	of	application.	
-
-Revolving.CREDIT.Balance	–	The	total	amount	outstanding	all	lines	of	credit	
-\footnote{http://www.ehow.com/about\_7550001\_revolving-credit-balance.html}
-	
-Inquiries.in.the.Last.6.Months 	–	When	a	person	applies	for	credit,	they	authorize	
-the	lender	to	“inquire”	about	their	creditworthiness.	This	is	the	number	of	such	
-authorized	queries	in	the	6	months	before	the	loan	was	issued	
-\footnote{http://www.myfico.com/crediteducation/creditinquiries.aspx}
-	
-Employment.Length	–	Length	of	time	employed	at	current	job.	 
-
-%Earthquakes are natural disasters that have major economic, political, and health consequences on the regions of the world they affect . Two variables that play a key role in determining the human impact of an earthquake are earthquake magnitude and earthquake depth. Earthquake magnitude is a measure of the amount of energy that an earthquake releases [2]. Earthquake depth is a measure of how deep under the surface of the earth an earthquake occurred [2]. Earthquakes that occur at shallower depths or with larger magnitudes are more likely to cause major damage.
-
-% FICO score!
-
-Understanding the relationship of interest rate with other variables can help us characterize loans and ... Here we performed an analysis to determine if there was a significant association between the ... of interest rate and other variables such as the requested amount, debt-to-income ratio,
-the length of the loan and its purpose. Using exploratory analysis and standard multiple regression techniques we show that there is a relationship between ... 
-
-The confounders are amount funded by investors and FICO score
-
-Our analysis suggests that there are ... 
+Using exploratory analysis and standard multiple regression techniques we show that there is a relationship between some of these variables. Our results suggests that there is a strong association between \emph{interest rate} and \emph{requested amount}, \emph{loan length}, \emph{loan purpose} and \emph{debt-to-income ratio}. And finally, we analyze the actual FICO score in order to check our model.
 
 
-Understanding the relationship of earthquake magnitude to depth can help us characterize earthquakes and their potential for damage. Here we performed an analysis to determine if there was a significant association between earthquake size and earthquake depth. Using exploratory analysis and standard multiple regression techniques we show that there is a significant relationship between earthquake magnitude and depth, even after adjusting for important confounders such as the latitude and longitude at which those earthquakes occur. Our analysis suggests that increased earthquake magnitude is associated with increased depth. Our results suggest that there are relatively few earthquakes that have both the damaging characteristics of large magnitude and shallow depth.
-
+% The confounders are amount funded by investors and FICO score
 
 \section{Methods}
 
@@ -79,74 +36,93 @@ Understanding the relationship of earthquake magnitude to depth can help us char
 
 For our analysis we used a data sample consisting of 2,500 peer-to-peer loans issued through the Leading Club\footnote{https://www.lendingclub.com/home.action}. The data was already prepared for the ``Data Analysis'' course by the tutor and was downloaded using the provided link\footnote{https://spark-public.s3.amazonaws.com/dataanalysis/loansData.csv} on February 10, 2013 with the R programming language \cite{source:r-language}.
 
-%The data above consist of a sample of 2,500 peer-to-peer loans issued through the Lending Club (https://www.lendingclub.com/home.action). The interest rate of these loans is determined by the Lending Club on the basis of characteristics of the person asking for the loan such as their employment history, credit history, and creditworthiness scores.
-
-%For our analysis we used the data on all earthquakes recorded in the U.S. Geological Survey data set from January 24 2013 to January 31 2013. The data were downloaded from data.gov on January 31, 2013 using the R programming language.
-
 \subsection{Exploratory Analysis}
 
 Exploratory analysis was performed by examining tables and plots of the observed data. We identified transformations to perform on the raw data on the basis of plots and knowledge of the scale of measured variables. Exploratory analysis was used to
 
 \begin{enumerate}
-  \item identify missing values,
+  \item identify and remove missing values,
   \item verify the quality of the data, and
-  \item determine the terms used in the regression model relating interest rate to amount requested, debt-to-income ratio and loan length.
+  \item determine the terms used in the regression model relating \emph{interest rate} to \emph{amount requested}, \emph{debt-to-income ratio} and \emph{loan length}.
 \end{enumerate}
 
 \subsection{Statistical Modeling}
 
-To relate earthquake magnitude to earthquake depth we performed a standard multivariate linear regression model \cite{source:book-linear.regression}. Model selection was performed on the basis of our exploratory analysis and prior knowledge of the relationship between geography and earthquake magnitude. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations \cite{source:book-some.shit}.
+To relate \emph{interest rate} to other variables we performed a standard multivariate linear regression model \cite{source:book-linear.regression}. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations \cite{source:book-some.shit}.
 
 \subsection{Reproducibility}
 
 All analyses performed in this manuscript are reproduced in the R markdown file \texttt{loansFinal.Rmd} \cite{source:r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from the ``Data Analysis'' coursera website might change.
 
 
-\section{Results:}
+\section{Results}
 
-The earthquakes data used in this analysis contains information on the source network that measured the earthquake (Src), the time of the earthquake (TME), the number of sites that measured the earthquake (NST), the location - longitude (Lon) and latitude (Lat), the magnitude (EM, measured on the Richter scale) and the depth (ED, measured in kilometers from the surface) [7]. We identified no missing values in the data set we collected and all measured variables were observed to be inside the standard ranges. Earthquakes in this data set also did not seem to show major patterns over time in magnitude or depth.
+The loans data used in this analysis contains information on the source network that measured:
+\emph{amount requested} -- the requested amount (in dollars),
+\emph{amount funded by investors} -- the loaned amount (in dollars),
+\emph{interest rate} (in percents),
+\emph{loan length} -- the length of time of the loan (in months),
+\emph{loan purpose},
+\emph{debt-to-income ratio}\footnote{http://en.wikipedia.org/wiki/Debt-to-income\_ratio} (in percents),
+\emph{state},
+\emph{home ownership},
+\emph{monthly income} (in dollars),
+\emph{FICO range} \cite{source:ficoscore},
+\emph{open credit lines} -- the number of open lines of credit at the time of application,
+\emph{revolving credit balance} -- the total amount of debt (in dollars),
+\emph{inquiries in the last 6 months} and
+\emph{employment length} (in years).
 
-Most earthquakes had a small (less than 3 on the Richter scale - 85\% of quakes) or medium (3-5 on the Richter scale - 11\% of quakes) magnitude. The distribution of earthquake depths was heavily right skewed. Based on the distribution of the earthquake depths we recognized that a transform was necessary to improve the performance of linear regression techniques; we performed a log base 10 transform of the earthquake depths. Subsequent analyses focus on this transformed depth variable.
+We identified that in two observations there were missing values in the data set we collected and they therefore were removed. Data columns with percent character (``\%'') needed to be preprocessed, transformed to numeric variables and divided by 100 to represent percents to make it possible to work with it in R. All measured variables were observed to be inside the standard ranges. Potential confounders such as \emph{amount funded by investors} (close to 1 correlation with amount requested) and \emph{FICO score} (we know a-priori that it correlates with interest rate) were excluded from the model.
 
-We first fit a regression model relating earthquake magnitude to earthquake depth. The residuals showed patterns of non-random variation. We attempted to explain those patterns by fitting models including potential confounders. Our final regression model was:
+\emph{Interest rate} when first seen did not seem to show major patterns against \emph{requested amount}, but it was possible to fit a straight line with correlation coefficient 0.33 between them. When \emph{requested amount} was cut into five interval and compared with interest rate, it was obvious that it did follow a pattern [figure 1a]: the more money requested the higher interest rate. Also, there was found an apparent correlation between \emph{interest rate} and \emph{loan length}: the longer the period the higher the rate. Also, relationships with \emph{loan purpose} (renewable energy, education and car tend to have the lowest interest rate and dept consolidation is with the highest) and \emph{debt-to-income ratio} (the increase in one leads to increase in other) were discovered.
 
-EM  = b0 + b1 log10(ED) + f(Lat) + g(Lon) + h(NST) + e
+We first fit a regression model relating \emph{interest rate} to \emph{amount requested}. The residuals showed patterns of non-random variation [figure 1b]. We attempted to explain those patterns by fitting models including potential confounders and non-relevant variables. Our final regression model was:
 
-where b0 is an intercept term and b1 represents the change in earthquake magnitude on the Richter scale associated with a change of 1 unit in log base 10 kilometers for earthquakes at the same latitude, longitude, and measured by the same number of stations. The terms f(Lat), g(Lon), and h(NST) represent factor models with 5 different levels each for latitude, longitude, and number of measurement sites. The error term e represents all sources of unmeasured and unmodeled random variation in earthquake magnitude. Our final regression model appeared to remove most of the non-random patterns of variation in the residuals.
+$$IR  = b_0 + b_1 * AR + f_1(Len) + f_2(P) + b_3 * D/I + e$$
 
-We observed a highly statistically significant (P = 8e-15) association between earthquake magnitude and earthquake depth. A change of one unit in log base 10 kilometers of depth corresponded to a change of b1 = 0.41 on the Richter scale (95\% Confidence Interval: 0.31, 0.51). So for example, for two earthquakes at the same latitude, longitude, and measured at the same number of stations, we would expect an earthquake measured at a depth of 10 kilometers to be 0.57 units higher on the Richter scale than one measured at a depth of 1 kilometer. We would expect the same difference between earthquakes measured at depths of 10 and 100 kilometers and so forth.
+where $b_0$ is an intercept term and $b_1$ represents the change in \emph{interest rate} $IR$ associated with a change of one unit in \emph{amount requested}. The term $f_1(Len)$ for \emph{loan length} represents a factor model with two levels and $f_2(P)$ for \emph{loan purpose} represent a factor model with 14 levels. The term $b_3$ represents a change in \emph{interest rate} associated with a change of one unit in \emph{debt-to-income ratio} $D/I$. The error term $e$ represents all sources of unmeasured and unmodeled random variation in interest rate. Our final regression model appeared to remove a lot of the non-random patterns of variation in the residuals [figure 1c].
+
+We observed statistically significant associations between \emph{interest rate} and \emph{amount requested} ($P$ < 2e-16) and between \emph{interest rate} and \emph{debt-to-income rate} ($P$ = 3.3e-12). A change of one unit in amount requested corresponded to a change of $b_1$ = 8.76e-07 (the value is very low since $IR \in [0..1]$ and values of amount requested are high (up to $35 000$) with 95\% confidence interval (6.681e-07 .. 1.084e-06). Likewise, a change of one unit in \emph{debt-to-income} ratio resulted in a change of $b_2$ = 6.96e-02 with 95\% confidence interval (5.009e-02 .. 8.908e-02). The correlation coefficient between the model and interest rate is 0.51.
 
 
-\section{Conclusions:}
+\section{Conclusions}
 
-Our analysis suggests that there is a significant, positive association between .... 
-Our analysis estimates the relationship using a linear model relating log base 10 depth to magnitude. Therefore, our estimated association is not linear on the depth scale. Even so, there appears to be a strong relationship between the two variables. We also observed that other variables such as latitude, longitude and number of observing stations are associated with both earthquake magnitude and earthquake depth. Including these variables in the regression model relating magnitude to depth improves the model fit, but does not remove the significant positive relationship between the variables.
+There appears to be a strong relationship between the variables in the regression model: \emph{amount requested}, \emph{debt-to-income ratio}, \emph{loan purpose} and \emph{loan length} are associated with interest rate.
 
-While our analysis is an interesting first step it is based on a limited sample of earthquakes from only one week in January 2013. A larger collection of representative earthquakes may be more appropriate for understanding the relationship between earthquake magnitude and depth. Our analysis may be of interest to scientists seeking to better understand earthquakes. But for policy makers, an important - and difficult - area of future research would be to develop accurate predictive models of earthquake depth and magnitude that can be used to evaluate the potential human consequence of these natural disasters.
+However, if taking \emph{FICO score} in consideration, a correlation coefficient between it and \emph{interest rate} is 0.7, which suggests that there is room for further improvement in the performed analysis.
 
+While our analysis is an interesting first step it is based on a limited sample of data. A larger collection of representative loans may be more appropriate for understanding the relationship between interest rate and other variables. Our analysis may be of interest to scientists seeking to better understand the principles of financial markets.
 
 \newpage
 
 
 \begin{thebibliography}{9}
 
-\bibitem{source:wiki.interestrate} Wikipedia "Interest rate" Page. URL:
+\bibitem{source:wiki.interestrate} Wikipedia ``Interest rate" Page. URL:
   http://en.wikipedia.org/wiki/Interest\_rate. Accessed 2013/02/14.
 
+\bibitem{source:ehow.importance2}
+  ``Importance of Interest Rates'' web page. URL:
+  http://www.ehow.com/info\_8155955\_importance-interest-rates.html.
+  Accessed 2013/02/14.
+
+\bibitem{source:ficoscore}
+  ``FICO Score'' web page at Investopedia. URL:
+  http://www.investopedia.com/terms/f/ficoscore.asp
+  Accessed 2013/02/14.
+
 \bibitem{source:r-language}
-  R Core Team (2012). "R: A language and environment for statistical computing." URL: http://www.R-project.org. Accessed 2013/02/13.
+  R Core Team (2012). ``R: A language and environment for statistical computing." URL: http://www.R-project.org. Accessed 2013/02/13.
 
 \bibitem{source:r-markdown}
   R Markdown Page. URL: http://www.rstudio.com/ide/docs/authoring/using\_markdown. Accessed 2013/02/14
 
-\bibitem{source:book-linear.regression} 
+\bibitem{source:book-linear.regression}
   Seber, George AF, and Alan J. Lee. Linear regression analysis. Vol. 936. Wiley, 2012.
 
 \bibitem{source:book-some.shit}
   Ferguson, Thomas S. A Course in Large Sample Theory: Texts in Statistical Science. Vol. 38. Chapman \& Hall/CRC, 1996.
 \end{thebibliography}
-
-
-7. USGS Real Time Data and Feeds Page. URL: http://earthquake.usgs.gov/earthquakes/feed/. Accessed 1/31/2013.
 
 \end{document} 
