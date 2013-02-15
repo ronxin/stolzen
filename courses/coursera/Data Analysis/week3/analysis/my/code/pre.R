@@ -19,9 +19,12 @@ loans$Debt.To.Income.Ratio = as.numeric(sub(pattern="%", replacement="",
 # also there are some NAs, lets remove them
 loans = loans[complete.cases(loans), ]
 
+
+
 # 2 observations with NA gone
 
 attach(loans)
+
 
 #
 # Explanatiory analysis
@@ -211,6 +214,35 @@ lm1 = lm(Interest.Rate ~ Amount.Requested)
 plot(Interest.Rate ~ jitter(Amount.Requested), col="blue", pch=19, cex=0.3)
 abline(lm1)
 
+plot(Interest.Rate, lm1$residuals, col = Loan.Length, pch = 19, cex=0.7)
+# appears to be non-random pattern here
+plot(Interest.Rate, lm1$residuals, col = Loan.Purpose, pch = 19, cex=0.7)
+# harder to say if there is a pattern
+
+
+# Now fit a model with factor adjustment for loan purpuse, loan length, 
+# and debt-to-income raion
+
+
+lm2 = lm(Interest.Rate ~ Amount.Requested + Loan.Length + 
+           Loan.Purpose + Debt.To.Income.Ratio)
+
+
+plot(Interest.Rate, lm2$residuals, col = Loan.Length, pch = 19, cex=0.7)
+# far better!
+plot(Interest.Rate, lm2$residuals, col = Loan.Purpose, pch = 19, cex=0.5)
+plot(Interest.Rate, lm2$residuals, col = Debt.To.Income.Ratio.Cut, pch = 19, 
+     cex=0.5)
+# also some patterns
+
+# estimates and confidence intervals
+summary(lm2)
+
+# correlation:
+sqrt(summary(lm2)$r.square)
+
+confint(lm2)
+
 
 # try to see what will happen if we apply cluster analysis
 d = dist(loans1)
@@ -316,3 +348,10 @@ plot(svd1$u, col=clusters, pch=19)
 
 # maximal contributor
 plot(svd1$v[,2], pch=19)
+
+
+FICO.Range.min = as.numeric(sapply(strsplit(as.character(loans$FICO.Range), "-"), function(x) x[1]))
+
+lm.fico = lm(Interest.Rate ~ FICO.Range.min)
+summary(lm.fico)
+sqrt(summary(lm.fico)$r.squared)
