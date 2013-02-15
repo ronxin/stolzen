@@ -346,15 +346,17 @@ boxplot(Interest.Rate ~ Amount.Requested.Cut, varwidth = TRUE,
         ylab="interest rate",
         col=brewer.pal(5, name="Dark2"))
 
-plot(Interest.Rate, lm1$residuals, col = Loan.Length, pch=19,
+plot(lm1$residuals, Interest.Rate, col = Loan.Length, pch=19,
      main="(b)",
      xlab="no adjustment resuduals",
      ylab="interest rate")
 
-plot(Interest.Rate, lm2$residuals, col = Loan.Length, pch=19,
+plot(lm2$residuals,Interest.Rate, col = Loan.Length, pch=19,
      main="(c)",
      xlab="full model resuduals",
      ylab="interest rate")
+
+dev.copy2pdf(file="finalfigure.pdf", height = 4, width = 3 * 4, out.type="pdf")
 
 mypar(mfrow = c(1, 1))
 ```
