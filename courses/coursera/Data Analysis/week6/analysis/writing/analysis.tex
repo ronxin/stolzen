@@ -14,41 +14,25 @@
 
 \begin{document}
 
-\section*{Caption}
+\section*{Predicting activities of smartphone holders}
 
 \section{Introduction}
 
-Mobile phones have been around for decades and nowadays this is an common and integral part of our life, penetrating nearly 90\% of the global population. \cite{sourse:wiki.mobile.phones} Smart phones is a new generation of mobile phones, which provide not just means for making calls and sending text messages, but act rather as mobile personal computers. Contemporary devices are equipped with smart software and a handful of sensors, which could be utilized to make predictions about about virtually all next actions the holders are about to make. 
+Mobile phones have been around for decades and nowadays this is a common and integral part of our life, penetrating nearly 90\% of the global population. \cite{sourse:wiki.mobile.phones} Smart phones is a new generation of mobile phones, which provide not just means for making calls and sending text messages, but act rather as mobile personal computers. Contemporary devices are equipped with smart software and a handful of sensors, which could be utilized to make predictions about about virtually all actions the holders are about to make. One of the possible applications of smartphones is recognizing current activities.
 
-One of the possible ... is recognizing current activities , as a means of life assisting techniques?   
+Understanding the relationship between variables can help us make classification and predict a current activity the smartphone holder is performing. Activities can be the following: standing, sitting, laying, walking, walking downstairs or walking upstairs.
 
-So ... in our life that it is commonplace. 
+Here we performed an analysis to determine if there is a significant association the variables and which ones could be used for classification. Using exploratory analysis and standard classification techniques we show that there is a relationship between some of these variables. Namely, body and gravity acceleration signals, jerk signals and velocity from the gyroscope are all used in the built model. 
 
-Understanding the relationship between variables can help us characterize ... and what variables could be taken into account when classifying ... 
-
-Here we performed an analysis to determine if there is a significant association between ... and other variables and which ones could be used for classification   
-
-Using exploratory analysis and standard classification techniques we show that there is a relationship between some of these variables. Our results suggest that there is a strong suggestion between ...
-
-% An interest rate is the rate at which interest is paid by borrowers for the use of money that they borrow from a lender \cite{source:wiki.interestrate} and typically expressed as an annual percentage rate. Interest rates rise and fall, and these changes or anticipated changes in interest rates can have an effect on businesses' decisions with regard to their borrowing requirements. Interest rates changes are important because they affect individuals by, businesses, financial markets and government policy making \cite{source:ehow.importance2}.
-
-% When lenders allow borrowers use their money, it is in their best interests to ensure that the money are safe and will be returned back, and they use measures of creditworthiness, such as FICO score, for it. A person's FICO score will range between 300 and 850. In general, a FICO score above 650 indicates that the individual has a very good credit history. People with scores below 620 will often find it substantially more difficult to obtain financing at a favorable rate \cite{source:ficoscore}.
-
-% Understanding the relationship of interest rate with other variables can help us characterize loans and what variables contribute to the final interest rate number. Here we performed an analysis to determine if there was a significant association between \emph{interest rate} and other variables such as \emph{requested amount}, \emph{granted amount}, \emph{debt-to-income ratio}, \emph{state}, \emph{open credit lines}, \emph{revolving credit balance}, \emph{inquiries in the last six months} and \emph{employment length}.
-
-% Using exploratory analysis and standard multiple regression techniques we show that there is a relationship between some of these variables. Our results suggests that there is a strong association between \emph{interest rate} and \emph{requested amount}, \emph{loan length}, \emph{loan purpose} and \emph{debt-to-income ratio}. And finally, we analyze the actual FICO score in order to check our model.
-
-
-% The confounders are amount funded by investors and FICO score
 
 \section{Methods}
 
 \subsection{Data Collection}
 
-For our analysis we used a data sample consisting of 
-%2,500 peer-to-peer loans issued through the Leading Club\footnote{https://www.lendingclub.com/home.action}. 
-[add link to the cookbook and to the machine learning website]
+The data contains 7352 observations with 561 variable from 21 subject, each wearing a smartphone Samsung Galaxy S II on their waist and performing one of the following six activities: walking, walking upstairs, walking downstairs, sitting, standing and laying. The captured data is 3-axial linear acceleration and 3-axial angular velocity. Also, the data is labeled manually making it possible to ensure that the prediction model we build works correctly \cite{source:machineleariningrepo}. 
+
 The data was already prepared for the ``Data Analysis'' course by the tutor and was downloaded using the provided link\footnote{https://spark-public.s3.amazonaws.com/dataanalysis/samsungData.rda} on March 7, 2013 with the R programming language \cite{source:r-language}.
+
 
 \subsection{Exploratory Analysis}
 
@@ -57,16 +41,13 @@ Exploratory analysis was performed by examining tables and plots of the observed
 \begin{enumerate}
   \item identify and remove missing values,
   \item verify the quality of the data, and
-  \item determine the terms used to classify activities ... .
+  \item determine the terms used to classify activities current activities.
 \end{enumerate}
 
 \subsection{Supervised Machine Learning}
 
-% To relate \emph{interest rate} to other variables we performed a standard multivariate linear regression model \cite{source:book-linear.regression}. Coefficients were estimated with ordinary least squares and standard errors were calculated using standard asymptotic approximations \cite{source:book-some.shit}.
+To relate current activities to other variables we performed several classification techniques: support vector machines \cite{sourse:dminr.svm}, random forests \cite{sourse:rblogger.classification} and Naive Bayes classifier \cite{sourse:dminr.naivebayes} as well as their combinations. For estimating the quality of models confusion matrices were used as well as positive predictive value, negative predictive value, sensitivity and specificity \cite{source:wiki.estimates}.
 
-\subsection{Cross-validating}
-
-Why is needed
 
 \subsection{Reproducibility}
 
@@ -75,43 +56,34 @@ All analyses performed in this manuscript are reproduced in the R markdown file 
 
 \section{Results}
 
+The data used in this analysis contains information that measured:
+body and gravity acceleration signals (coordinates X, Y and Z),
+jerk signals (coordinates X, Y and Z) and
+velocity from the gyroscope (coordinates X, Y and Z). 
 
-% The loans data used in this analysis contains information on the source network that measured:
-% \emph{amount requested} -- the requested amount (in dollars),
-% \emph{amount funded by investors} -- the loaned amount (in dollars),
-% \emph{interest rate} (in percents),
-% \emph{loan length} -- the length of time of the loan (in months),
-% \emph{loan purpose},
-% \emph{debt-to-income ratio}\footnote{http://en.wikipedia.org/wiki/Debt-to-income\_ratio} (in percents),
-% \emph{state},
-% \emph{home ownership},
-% \emph{monthly income} (in dollars),
-% \emph{FICO range} \cite{source:ficoscore},
-% \emph{open credit lines} -- the number of open lines of credit at the time of application,
-% \emph{revolving credit balance} -- the total amount of debt (in dollars),
-% \emph{inquiries in the last 6 months} and
-% \emph{employment length} (in years).
+We identified that no observations contain missing values in the data set we collected and therefore nothing was removed. 
+All measured variables were observed to be inside the standard ranges. There are plenty of potential confounder as all data is already pre-processed and contains many additional fields such as Fast Fourier Transform (FFT) calculation or the Euclidean norm \cite{source:machineleariningrepo}. 
 
-We identified that in two observations there were missing values in the data set we collected and they therefore were removed. Data columns with percent character (``\%'') needed to be preprocessed, transformed to numeric variables and divided by 100 to represent percents to make it possible to work with it in R. All measured variables were observed to be inside the standard ranges. Potential confounders such as \emph{amount funded by investors} (close to 1 correlation with amount requested) and \emph{FICO score} (we know a-priori that it correlates with interest rate) were excluded from the model.
+Finally, the data set was divided into two parts: training (17 subjects) and testing (remaining 4 subjects). The models were applied to the first dataset and tested on the second.
 
-\emph{Interest rate} when first seen did not seem to show major patterns against \emph{requested amount}, but it was possible to fit a straight line with correlation coefficient 0.33 between them. When \emph{requested amount} was cut into five interval and compared with interest rate, it was obvious that it did follow a pattern [figure 1a]: the more money requested the higher interest rate. Also, there was found an apparent correlation between \emph{interest rate} and \emph{loan length}: the longer the period the higher the rate. Also, relationships with \emph{loan purpose} (renewable energy, education and car tend to have the lowest interest rate and dept consolidation is with the highest) and \emph{debt-to-income ratio} (the increase in one leads to increase in other) were discovered.
+For classification we applied several techniques: support vector machines \cite{sourse:dminr.svm}, random forests \cite{sourse:rblogger.classification} and Naive Bayes classifier \cite{sourse:dminr.naivebayes}. Also, we tried to combine predictors and use the ``majority vote'' approach.
 
-We first fit a regression model relating \emph{interest rate} to \emph{amount requested}. The residuals showed patterns of non-random variation [figure 1b]. We attempted to explain those patterns by fitting models including potential confounders and non-relevant variables. Our final regression model was:
+From our analysis we could infer that most significant influence is caused by 
 
-$$IR  = b_0 + b_1 * AR + f_1(Len) + f_2(P) + b_3 * D/I + e$$
+\begin{enumerate}
+  \item x coordinate of body jerk signals [figure 1b], 
+  \item x and y coordinates of gravity acceleration [figure 1c],
+  \item body acceleration magnitude (FFT of body acceleration)
+\end{enumerate}
 
-where $b_0$ is an intercept term and $b_1$ represents the change in \emph{interest rate} $IR$ associated with a change of one unit in \emph{amount requested}. The term $f_1(Len)$ for \emph{loan length} represents a factor model with two levels and $f_2(P)$ for \emph{loan purpose} represent a factor model with 14 levels. The term $b_3$ represents a change in \emph{interest rate} associated with a change of one unit in \emph{debt-to-income ratio} $D/I$. The error term $e$ represents all sources of unmeasured and unmodeled random variation in interest rate. Our final regression model appeared to remove a lot of the non-random patterns of variation in the residuals [figure 1c].
-
-We observed statistically significant associations between \emph{interest rate} and \emph{amount requested} ($P$ < 2e-16) and between \emph{interest rate} and \emph{debt-to-income rate} ($P$ = 3.3e-12). A change of one unit in amount requested corresponded to a change of $b_1$ = 8.76e-07 (the value is very low since $IR \in [0..1]$ and values of amount requested are high (up to $35 000$) with 95\% confidence interval (6.681e-07 .. 1.084e-06). Likewise, a change of one unit in \emph{debt-to-income} ratio resulted in a change of $b_2$ = 6.96e-02 with 95\% confidence interval (5.009e-02 .. 8.908e-02). The correlation coefficient between the model and interest rate is 0.51.
+Support vector machines (SVM) technique showed the best result (error rate is 0.05), random forest approach yielded 0.09 accuracy [figure 1a] and Naive Bayes classification mistakes with 0.14 error rate. Surprisingly, combination of these three showed worse results (with error rate about 0.7), and therefore it was decided to rely completely on SVM classifier.
 
 
 \section{Conclusions}
 
-There appears to be a strong relationship between the variables in the regression model: \emph{amount requested}, \emph{debt-to-income ratio}, \emph{loan purpose} and \emph{loan length} are associated with interest rate.
+There appears to be a strong relationship between the variables in our model: x coordinate of body jerk signals, x coordinate of gravity acceleration, y coordinate of gravity acceleration and body acceleration magnitude are best for predicting current activities.
 
-However, if taking \emph{FICO score} in consideration, a correlation coefficient between it and \emph{interest rate} is 0.7, which suggests that there is room for further improvement in the performed analysis.
-
-While our analysis is an interesting first step it is based on a limited sample of data. A larger collection of representative loans may be more appropriate for understanding the relationship between interest rate and other variables. Our analysis may be of interest to scientists seeking to better understand the principles of financial markets.
+While our analysis is an interesting first step it is based on a limited sample of data. A larger collection of representative observations may be more appropriate for understanding the relationship between icurrent activities and other variables. Our analysis may be of interest to scientists seeking to better understand the principles behind predicting activities using smartphone sensors.
 
 \newpage
 
@@ -121,13 +93,26 @@ While our analysis is an interesting first step it is based on a limited sample 
 \biditem{source:wiki.mobile.phones}
   Wikipedia article on mobile phones, http://en.wikipedia.org/wiki/Mobile\_phone. Accessed 2013/03/07
 
+\bibitem{source:machineleariningrepo}
+  Machine Learning Repository: Human Activity Recognition Using Smartphones Data Set, http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. Accessed 2013/03/07
+
 \bibitem{source:r-language}
   R Core Team (2012). ``R: A language and environment for statistical computing." URL: http://www.R-project.org. Accessed 2013/03/07.
+
+\bibitem{source:wiki.estimates}
+  ``Sensitivity and specificity''. URL: http://en.wikipedia.org/wiki/Sensitivity\_and\_specificity. Accessed 2013/03/07.
 
 \bibitem{source:r-markdown}
   R Markdown Page. URL: http://www.rstudio.com/ide/docs/authoring/using\_markdown. Accessed 2013/03/07
 
+\bibitem{sourse:dminr.svm}
+  WikiBook: ``Data Mining Algorithms in R'' Classification: SVM, http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/Classification/SVM. Accessed 2013/03/07
 
+\bibitem{sourse:dminr.naivebayes}
+  WikiBook: ``Data Mining Algorithms in R'' Classification: Naive Bayes,  http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/Classification/Na\%C3\%AFve\_Bayes
+
+\bibitem{sourse:rblogger.classification}
+  R-Bloggers article: ``Classification Trees'', http://www.r-bloggers.com/classification-trees/. Accessed 2013/03/07
 
 \end{thebibliography}
 

@@ -1,0 +1,1 @@
+download the file from https://spark-public.s3.amazonaws.com/dataanalysis/samsungData.rda
