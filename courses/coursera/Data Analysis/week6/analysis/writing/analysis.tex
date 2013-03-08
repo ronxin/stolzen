@@ -18,18 +18,18 @@
 
 \section{Introduction}
 
-Mobile phones have been around for decades and nowadays this is a common and integral part of our life, penetrating nearly 90\% of the global population. \cite{sourse:wiki.mobile.phones} Smart phones is a new generation of mobile phones, which provide not just means for making calls and sending text messages, but act rather as mobile personal computers. Contemporary devices are equipped with smart software and a handful of sensors, which could be utilized to make predictions about about virtually all actions the holders are about to make. One of the possible applications of smartphones is recognizing current activities.
+Mobile phones have been around for decades and nowadays this is a common and integral part of our life, penetrating nearly 90\% of the global population. \cite{source:wiki.mobile.phones} Smart phones is a new generation of mobile phones, which provide not just means for making calls and sending text messages, but act rather as mobile personal computers. Contemporary devices are equipped with smart software and a handful of sensors, which could be utilized to make predictions about about virtually all actions the holders are about to make. One of the possible applications of smartphones is recognizing current activities.
 
 Understanding the relationship between variables can help us make classification and predict a current activity the smartphone holder is performing. Activities can be the following: standing, sitting, laying, walking, walking downstairs or walking upstairs.
 
-Here we performed an analysis to determine if there is a significant association the variables and which ones could be used for classification. Using exploratory analysis and standard classification techniques we show that there is a relationship between some of these variables. Namely, body and gravity acceleration signals, jerk signals and velocity from the gyroscope are all used in the built model. 
+Here we performed an analysis to determine if there is a significant association the variables and which ones could be used for classification. Using exploratory analysis and standard classification techniques we show that there is a relationship between some of these variables. Namely, body and gravity acceleration signals, jerk signals and velocity from the gyroscope are all used in the built model.
 
 
 \section{Methods}
 
 \subsection{Data Collection}
 
-The data contains 7352 observations with 561 variable from 21 subject, each wearing a smartphone Samsung Galaxy S II on their waist and performing one of the following six activities: walking, walking upstairs, walking downstairs, sitting, standing and laying. The captured data is 3-axial linear acceleration and 3-axial angular velocity. Also, the data is labeled manually making it possible to ensure that the prediction model we build works correctly \cite{source:machineleariningrepo}. 
+The data contains 7352 observations with 561 variable from 21 subject, each wearing a smartphone Samsung Galaxy S II on their waist and performing one of the following six activities: walking, walking upstairs, walking downstairs, sitting, standing and laying. The captured data is 3-axial linear acceleration and 3-axial angular velocity. Also, the data is labeled manually making it possible to ensure that the prediction model we build works correctly \cite{source:machineleariningrepo}.
 
 The data was already prepared for the ``Data Analysis'' course by the tutor and was downloaded using the provided link\footnote{https://spark-public.s3.amazonaws.com/dataanalysis/samsungData.rda} on March 7, 2013 with the R programming language \cite{source:r-language}.
 
@@ -51,7 +51,7 @@ To relate current activities to other variables we performed several classificat
 
 \subsection{Reproducibility}
 
-All analyses performed in this manuscript are reproduced in the R markdown file \texttt{loansFinal.Rmd} \cite{source:r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from the ``Data Analysis'' coursera website might change.
+All analyses performed in this manuscript are reproduced in the R markdown file \texttt{final.Rmd} \cite{source:r-markdown}. To reproduce the exact results presented in this manuscript the cached version of the analysis must be performed, as the data available from the ``Data Analysis'' coursera website might change.
 
 
 \section{Results}
@@ -59,19 +59,19 @@ All analyses performed in this manuscript are reproduced in the R markdown file 
 The data used in this analysis contains information that measured:
 body and gravity acceleration signals (coordinates X, Y and Z),
 jerk signals (coordinates X, Y and Z) and
-velocity from the gyroscope (coordinates X, Y and Z). 
+velocity from the gyroscope (coordinates X, Y and Z).
 
-We identified that no observations contain missing values in the data set we collected and therefore nothing was removed. 
-All measured variables were observed to be inside the standard ranges. There are plenty of potential confounder as all data is already pre-processed and contains many additional fields such as Fast Fourier Transform (FFT) calculation or the Euclidean norm \cite{source:machineleariningrepo}. 
+We identified that no observations contain missing values in the data set we collected and therefore nothing was removed.
+All measured variables were observed to be inside the standard ranges. There are plenty of potential confounder as all data is already pre-processed and contains many additional fields such as Fast Fourier Transform (FFT) calculation or the Euclidean norm \cite{source:machineleariningrepo}.
 
 Finally, the data set was divided into two parts: training (17 subjects) and testing (remaining 4 subjects). The models were applied to the first dataset and tested on the second.
 
 For classification we applied several techniques: support vector machines \cite{sourse:dminr.svm}, random forests \cite{sourse:rblogger.classification} and Naive Bayes classifier \cite{sourse:dminr.naivebayes}. Also, we tried to combine predictors and use the ``majority vote'' approach.
 
-From our analysis we could infer that most significant influence is caused by 
+From our analysis we could infer that most significant influence is caused by
 
 \begin{enumerate}
-  \item x coordinate of body jerk signals [figure 1b], 
+  \item x coordinate of body jerk signals [figure 1b],
   \item x and y coordinates of gravity acceleration [figure 1c],
   \item body acceleration magnitude (FFT of body acceleration)
 \end{enumerate}
@@ -83,14 +83,14 @@ Support vector machines (SVM) technique showed the best result (error rate is 0.
 
 There appears to be a strong relationship between the variables in our model: x coordinate of body jerk signals, x coordinate of gravity acceleration, y coordinate of gravity acceleration and body acceleration magnitude are best for predicting current activities.
 
-While our analysis is an interesting first step it is based on a limited sample of data. A larger collection of representative observations may be more appropriate for understanding the relationship between icurrent activities and other variables. Our analysis may be of interest to scientists seeking to better understand the principles behind predicting activities using smartphone sensors.
+While our analysis is an interesting first step it is based on a limited sample of data. A larger collection of representative observations may be more appropriate for understanding the relationship between current activities and other variables. Our analysis may be of interest to scientists seeking to better understand the principles behind predicting activities using smartphone sensors.
 
 \newpage
 
 
 \begin{thebibliography}{9}
 
-\biditem{source:wiki.mobile.phones}
+\bibitem{source:wiki.mobile.phones}
   Wikipedia article on mobile phones, http://en.wikipedia.org/wiki/Mobile\_phone. Accessed 2013/03/07
 
 \bibitem{source:machineleariningrepo}
@@ -109,7 +109,7 @@ While our analysis is an interesting first step it is based on a limited sample 
   WikiBook: ``Data Mining Algorithms in R'' Classification: SVM, http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/Classification/SVM. Accessed 2013/03/07
 
 \bibitem{sourse:dminr.naivebayes}
-  WikiBook: ``Data Mining Algorithms in R'' Classification: Naive Bayes,  http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/Classification/Na\%C3\%AFve\_Bayes
+  WikiBook: ``Data Mining Algorithms in R'' Classification: Naive Bayes,  http://en.wikibooks.org/wiki/Data\_Mining\_Algorithms\_In\_R/Classification/ \\ Na\%C3\%AFve\_Bayes. Accessed 2013/03/07
 
 \bibitem{sourse:rblogger.classification}
   R-Bloggers article: ``Classification Trees'', http://www.r-bloggers.com/classification-trees/. Accessed 2013/03/07

@@ -1,7 +1,7 @@
 
 load("data/samsungData.rda")
 
-namesnames(samsungData) 
+names(samsungData) 
 length(names(samsungData))
 
 table(complete.cases(samsungData))
@@ -63,7 +63,10 @@ table(prediction.svm, samsungTesting[, 479])
 
 
 # trees
-require(tree)
+if (!require(tree)) {
+  install.packages("tree")
+  library(tree)
+}
 
 tree1 = tree(activity ~ ., data=samsungTraining)
 summary(tree1)
@@ -164,16 +167,21 @@ cx = 1.3
 mypar(mfrow = c(1, 3))
 
 
-plot(pruned, col="blue", type="uniform")
-text(pruned, cex=1, col="black")
+plot(pruned, col="blue", type="uniform", main="(a)")
+text(pruned, cex=0.6, col="black", main="(a)")
 
 plot(tGravityAcc.max.Y ~ fBodyAccJerk.std.X, data=samsungTesting, col=actual, pch=19, 
      ylim=c(-0.3, 0.0),
      xlab="body jerk",
-     ylab="gravity acceleration")
+     ylab="gravity acceleration",
+     main="(b)")
 
 plot(tGravityAcc.max.Y ~ tGravityAcc.min.X, data=samsungTesting, col=actual, pch=19,
      xlim=c(0.75, 1),
      ylim=c(-0.3, 0.2),
      ylab="gravity acceleration y",
-     xlab="gravity acceleration x")
+     xlab="gravity acceleration x",
+     main="(c)")
+
+
+dev.copy2pdf(file="finalfigure.pdf", height = 4, width = 3 * 4, out.type="pdf")
