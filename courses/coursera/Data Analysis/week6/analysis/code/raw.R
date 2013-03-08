@@ -146,7 +146,23 @@ error(best, actual)
 # best is SVM
 
 
-par(mfrow=c(1,3))
+
+install.packages("RColorBrewer")
+library(RColorBrewer)
+
+
+## Set up a function that makes colors prettier
+mypar <- function(a = 1, b = 1, brewer.n = 8, brewer.name = "Dark2", ...) {
+  par(mar = c(2.5, 2.5, 1.6, 1.1), mgp = c(1.5, 0.5, 0))
+  par(mfrow = c(a, b), ...)
+  palette(brewer.pal(brewer.n, brewer.name))
+}
+
+## Set size of axes
+cx = 1.3
+
+mypar(mfrow = c(1, 3))
+
 
 plot(pruned, col="blue", type="uniform")
 text(pruned, cex=1, col="black")
