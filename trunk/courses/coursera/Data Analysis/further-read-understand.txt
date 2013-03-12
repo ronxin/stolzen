@@ -1,2 +1,3 @@
 Dimention Reduction: Plincipal components analysis; singular value decomposition. factor analysis?
 Linear modelling: factor variables; multiple variables. Anova, TukeySHD
+Smooting and Bootstrapping
