@@ -1,0 +1,86 @@
+Assignment question 1
+
+(Categorical variables) 
+Question 2 on the pre-course survey asked about the importance of some possible reasons for enrolling in the course. Consider the following two reasons: 
+(1) "This class teaches skills that will help my job/career" and 
+(2) "Because this course is offered by a prestigious university." 
+
+Use Tables 2, 4, and 5 of the pdf document to answer the following two questions. 
+
+Which of these two reasons seems to be most important to students in the class? And, do the reasons for enrolling differ depending on level of education?
+
+---
+
+The option (1) looks more important than (2), according to Table 2:
+
+First, the median value in the former is 4.0, and in the latter is 3.0, which means that more people think that the first option is more important,
+second, values in first quartile support that (4.0 vs 2.0), and
+finally, the 3rd quartile for the former is 5.0, which means that at least 25% of the students think that (1) is the most important (score 5) - it's not possible to infer the same conclusion for the 2nd option.
+Additionally, people who already have a degree tend to think that course is good for job/career (and gave it scores of 4 or 5), as suggested by Table 4, but the majority from all the categories think that (2) is not very important (and on average gave it the score of 3).
+
+
+Words: 149 / 500
+
+===
+
+Assignment question 2
+
+(One categorical and one quantitative variable) 
+For this question, we are interested in variables that are related to the total number of other MOOCs the student is enrolled in. Consider the following 2 variables: 
+(1) level of education and 
+(2) rating of the importance of "course is offered by a prestigious university". 
+
+Use Table 3 and Figures 3 and 4 to draw conclusions about the relationships between each of these 2 variables and the total number of other MOOCs the student is enrolled in. 
+
+Support your comments by referring to appropriate summary statistics and features of relevant plots.
+
+---
+
+There don't seem to be any relationship between (2) and the total number of MOOCs: 
+* Between all the groups (Table 3) the median value doesn't vary much: for all groups but last (one who gave (2) the score of 5) the values center around 3. 
+* However, according to Figure 4, all the groups have approximately the same number of outliers, which slightly pulls down the mean values to approximately 4 MOOCs per person. This also suggests that values don't differ significantly.
+
+On the other hand, there appears to be relationship between (1) and the number of MOOCs.
+* Between all the groups (Table 3) participants whose level of education is less than high school (group #1) have the highest number of courses per person: 4.5 on average. The next group (#2, who finished High School) are lest interested in MOOCs and their median is centered around 2.0. All other participants on average are additionally doing 3 MOOCs at the time.
+* The plot (Figure 5) supports this conclusion and also suggests that the biggest number of outliers is between the degreed participants - there are a few people with degree who extensively taking MOOCs.
+
+
+Words: 196 / 500
+
+===
+
+
+Assignment question 3
+
+(Two quantitative variables) 
+For this question, we are interested in whether the variables 
+"total number of other MOOCs enrolled in" and 
+"age" 
+are related to 
+the score on the background knowledge quiz. 
+
+Use Table 1 and Figures 1 and 2 to comment on the relationships you observe. Support your comments by referring to appropriate correlations and features of relevant plots.
+
+---
+
+According to Table 1 there is no linear relationship between any of those three variables: the linear correlation coefficients (1) between age and number of MOOCs, (2) between age and knowledge score and, finally, (3) between knowledge score and number of MOOCs are all close to zero.
+
+Figures 1 and 2 support that conclusion: it is apparently hard to fit a regression line in the observed values. 
+
+
+Words: 64 / 500
+
+===
+
+Assignment question 4
+
+To what group of people can you generalize any observations you made about these data? Why?
+
+---
+
+The observation made on these data can be used to infer conclusions about the general population, i.e. about all the participants of the "Statistics: Making Sense of Data" MOOC. 
+
+The reason why it is possible is that the sample is representative and was chosen at random (used Simple Random Sampling) - and therefore is not biased.  
+
+
+Words: 56 / 500
