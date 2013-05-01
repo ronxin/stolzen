@@ -161,14 +161,13 @@ object Anagrams {
         acc
       } else {
         val (ch, cnt) :: tail = left
-        val newCount = cnt - acc(ch)
+        val newCount = acc(ch) - cnt
 
         if (newCount == 0) {
           accumulator(acc - ch, tail) 
         } else {
           accumulator(acc + (ch -> newCount), tail) 
         }
-
       }
     }
 
@@ -217,21 +216,37 @@ object Anagrams {
    *  Note: There is only one anagram of an empty sentence.
    */
   def sentenceAnagrams(sentence: Sentence): List[Sentence] = {
-//    val goodOccurences = findGoodOccurences(sentenceOccurrences(sentence))
-//    for (occ <- goodOccurences) yield dictionaryByOccurrences(occ)
-    List()
+    if (sentence.isEmpty) {
+      List(List())
+    } else {
+      def process(list: List[Occurrences], sentence: Sentence): List[Sentence] = {
+        if (list isEmpty) {
+          List(sentence)
+        } else {
+          val head :: tail = list
+          val notYetUsed = dictionaryByOccurrences(head)// filterNot(sentence contains _)
+          notYetUsed.flatMap(el => process(tail, el :: sentence))
+        }
+      }
+
+      val good = findGoodOccurences(sentenceOccurrences(sentence), allOccurrences)
+      good.flatMap(el => process(el, List()))
+    }
   }
   
-  def findGoodOccurences(left: Occurrences, all: List[Occurrences]): List[Occurrences] = {
-    if (left.isEmpty) List() else {
-      val isGood = goodFor(left)
-      
-//      val a = for {
-//        word <- all if isGood(word)
-//        
-//      } yield word :: findGoodOccurences(subtract(left, word), all)
-
-    		  List()
+  def findGoodOccurences(left: Occurrences, all: List[Occurrences]): List[List[Occurrences]] = {
+    def sub(word: Occurrences) = {
+      val subLeft = subtract(left, word)
+      val subGood = findGoodOccurences(subLeft, all)
+	  subGood.map(list => word :: list)
+    }
+    
+    if (left.isEmpty) {
+      List(List()) 
+    } else {
+      val isGoodPredicate = goodFor(left)
+      val goodWords = all filter isGoodPredicate
+      goodWords.flatMap(sub)
     }
   }
     

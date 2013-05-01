@@ -10,14 +10,15 @@ import Anagrams._
 @RunWith(classOf[JUnitRunner])
 class AnagramsSuite extends FunSuite {
 
-  test("wordOccurrences: abcd") {
-    assert(wordOccurrences("abcd") === List(('a', 1), ('b', 1), ('c', 1), ('d', 1)))
+  def wo = wordOccurrences(_)
+  
+  test("wo: abcd") {
+    assert(wo("abcd") === List(('a', 1), ('b', 1), ('c', 1), ('d', 1)))
   }
 
-  test("wordOccurrences: Robert") {
-    assert(wordOccurrences("Robert") === List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1)))
+  test("wo: Robert") {
+    assert(wo("Robert") === List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1)))
   }
-
 
 
   test("sentenceOccurrences: abcd e") {
@@ -30,17 +31,17 @@ class AnagramsSuite extends FunSuite {
     assert(expected === actual)
   }
 
-  ignore("dictionaryByOccurrences.get: eat") {
+  test("dictionaryByOccurrences.get: eat") {
     assert(dictionaryByOccurrences.get(List(('a', 1), ('e', 1), ('t', 1))).map(_.toSet) === Some(Set("ate", "eat", "tea")))
   }
 
 
 
-  ignore("word anagrams: married") {
+  test("word anagrams: married") {
     assert(wordAnagrams("married").toSet === Set("married", "admirer"))
   }
 
-  ignore("word anagrams: player") {
+  test("word anagrams: player") {
     assert(wordAnagrams("player").toSet === Set("parley", "pearly", "player", "replay"))
   }
 
@@ -51,6 +52,16 @@ class AnagramsSuite extends FunSuite {
     val r = List(('r', 1))
     val lad = List(('a', 1), ('d', 1), ('l', 1))
     assert(subtract(lard, r) === lad)
+  }
+
+  test("subtract: rrbb - rb") {
+	val rbbr = wo("rbbr")
+	val sub = wo("rb")
+	val expected = wo("rb")
+	
+	val actual = subtract(rbbr, sub) 
+	
+    assert(actual === expected)
   }
 
 
@@ -122,25 +133,28 @@ class AnagramsSuite extends FunSuite {
     assert(sentenceAnagrams(sentence).toSet === anas.toSet)
   }  
   
+  test("sentence anagrams: Heather") {
+    val actual = sentenceAnagrams(List("Heather"))
+    println(actual.toSet.size)
+    println(actual.toSet)
+  }
+  
   test("findGoodOccurences when only one element") {
-    val all = List(List(('r', 1)))
-    val toFind = List(('r', 1))
+    val all = List(wo("r"))
+    val toFind = wo("r")
     
+    val expected = List(List(wo("r")))
     val result = findGoodOccurences(toFind, all)
-    assert(result === all)
+    assert(result === expected)
   }
 
   test("findGoodOccurences when several element") {
-    val all = List(wordOccurrences("abcd"), wordOccurrences("rbbr"), wordOccurrences("rb"), wordOccurrences("br"))
-    println(all)
-    val toFind = wordOccurrences("bbrr")
-    println(toFind)
-
+    val all = List(wo("abcd"), wo("rbbr"), wo("rb"), wo("br"))
+    val toFind = wo("bbrr")
     val result = findGoodOccurences(toFind, all)
-    println(result)
+    val expected = List(List(wo("rbbr")), List(wo("rb"), wo("br")))
 
-    val expected = List(wordOccurrences("rbbr"), wordOccurrences("rb"), wordOccurrences("br"))
-    assert(result === all)
+    assert(result.toSet === expected.toSet)
   }
   
   test("good for") {
