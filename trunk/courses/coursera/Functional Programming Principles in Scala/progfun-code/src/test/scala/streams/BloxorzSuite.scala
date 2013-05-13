@@ -57,6 +57,7 @@ class BloxorzSuite extends FunSuite {
     new Level1 {
       assert(terrain(Pos(0, 0)), "0,0")
       assert(!terrain(Pos(4, 11)), "4,11")
+      assert(!terrain(Pos(5, 9)), "5,9")
       assert(!terrain(Pos(-1, -1)), "-1,-1")
     }
   }
@@ -138,14 +139,15 @@ class BloxorzSuite extends FunSuite {
 
   test("level 1, 3 first steps for pathsFromStart") {
     new Level1 {
-      val actual = pathsFromStart.drop(1).take(3).toList
+      val actual = pathsFromStart.drop(1).take(4).toList
       
       val expected = List(
-          (Block(Pos(1, 2), Pos(1, 3)), List(Right)),
-          (Block(Pos(2, 1), Pos(3, 1)), List(Down)),
-          (Block(Pos(0, 2), Pos(0, 3)), List(Up, Right))
+        (Block(Pos(1, 2), Pos(1, 3)), List(Right)),
+        (Block(Pos(2, 1), Pos(3, 1)), List(Down)),
+        (Block(Pos(1, 4), Pos(1, 4)), List(Right, Right)),
+        (Block(Pos(2, 2), Pos(2, 3)), List(Down, Right))
       )
-      
+
       assert(expected == actual)
     }
   }

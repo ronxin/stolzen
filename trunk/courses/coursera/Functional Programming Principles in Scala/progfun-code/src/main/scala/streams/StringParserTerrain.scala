@@ -55,9 +55,9 @@ trait StringParserTerrain extends GameDef {
   def terrainFunction(levelVector: Vector[Vector[Char]]): Terrain = {
     def result(pos: Pos): Boolean = {
       if (pos.row >= 0 && pos.row < levelVector.length) {
-        val row = levelVector.drop(pos.row - 1).head
+        val row = levelVector(pos.row)
         if (pos.col >= 0 && pos.col < row.length) {
-          row.drop(pos.col - 1).head != '-'
+          row(pos.col) != '-'
         } else {
           false
         }
@@ -85,7 +85,6 @@ trait StringParserTerrain extends GameDef {
         accumulate(level.tail, row + 1)
       }
     }
-    
     accumulate(levelVector, 0)
   }
 
