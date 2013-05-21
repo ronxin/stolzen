@@ -1,0 +1,107 @@
+y|y|n|n|y|y|y|y|6.54885e-05
+y|y|n|y|n|n|y|n|0.0
+y|y|n|y|n|n|y|y|0.0
+y|y|n|y|n|y|y|n|0.0
+y|y|n|y|n|y|y|y|0.0
+y|y|n|y|y|n|y|n|2.45e-08
+y|y|n|y|y|n|y|y|1.2005e-06
+y|y|n|y|y|y|y|n|1.35e-08
+y|y|n|y|y|y|y|y|6.615e-07
+sqlite> select * from joint where a='y' and s='n' and d='y' group by t, l, b;
+y|n|n|n|y|n|y|y|0.0
+y|n|n|n|y|y|y|y|0.0
+y|n|n|y|y|n|y|y|2.28095e-05
+y|n|n|y|y|y|y|y|1.25685e-05
+y|y|n|n|y|n|y|y|0.0001188495
+y|y|n|n|y|y|y|y|6.54885e-05
+y|y|n|y|y|n|y|y|1.2005e-06
+y|y|n|y|y|y|y|y|6.615e-07
+sqlite> select *, sum(p) from joint where a='y' and s='n' and d='y' group by t, l, b;
+Error: no such column: p
+sqlite> 
+sqlite> drop view if exists joint;
+sqlite> 
+sqlite> create view joint as 
+   ...>     select 
+   ...>         a.a,
+   ...>         t.t,
+   ...>         s.s,
+   ...>         l.l,
+   ...>         e.e,
+   ...>         b.b,
+   ...>         d.d,
+   ...>         x.x,
+   ...>         a.p * t.p * s.p * l.p * e.p * b.p * d.p * x.p as p
+   ...>     from
+   ...>         asia a,
+   ...>         tuberculosis t,
+   ...>         smoking s,
+   ...>         lungcancer l,
+   ...>         eithertublungorcancer e,
+   ...>         bronchitis b,
+   ...>         dyspnoea d,
+   ...>         xray x
+   ...>     where
+   ...>         t.a = a.a and
+   ...>         l.s = s.s and
+   ...>         b.s = s.s and
+   ...>         e.t = t.t and
+   ...>         e.l = l.l and
+   ...>         d.e = e.e and
+   ...>         d.b = b.b and
+   ...>         x.e = e.e;
+sqlite> select *, sum(p) from joint where a='y' and s='n' and d='y' group by t, l, b;
+y|n|n|n|y|n|y|y|0.0|0.000329175
+y|n|n|n|y|y|y|y|0.0|0.0011286
+y|n|n|y|y|n|y|y|2.28095e-05|2.3275e-05
+y|n|n|y|y|y|y|y|1.25685e-05|1.2825e-05
+y|y|n|n|y|n|y|y|0.0001188495|0.000121275
+y|y|n|n|y|y|y|y|6.54885e-05|6.6825e-05
+y|y|n|y|y|n|y|y|1.2005e-06|1.225e-06
+y|y|n|y|y|y|y|y|6.615e-07|6.75e-07
+sqlite> select t, l, b, sum(p) from joint where a='y' and s='n' and d='y' group by t, l, b;
+n|n|n|0.000329175
+n|n|y|0.0011286
+n|y|n|2.3275e-05
+n|y|y|1.2825e-05
+y|n|n|0.000121275
+y|n|y|6.6825e-05
+y|y|n|1.225e-06
+y|y|y|6.75e-07
+sqlite> select t, sum(p) from joint where a='y' and s='n' and d='y' group by t;n|0.001493875
+y|0.00019
+sqlite> select l, sum(p) from joint where a='y' and s='n' and d='y' group by l;
+n|0.001645875
+y|3.8e-05
+sqlite> select b, sum(p) from joint where a='y' and s='n' and d='y' group by b;
+n|0.00047495
+y|0.001208925
+sqlite> select 't', sum(p) from joint where a='y' and s='n' and d='y' and t='y';
+t|0.00019
+sqlite> select t, sum(p) from joint where a='n' and s='y' and x='y' and d='n' group by t;
+n|0.020552697
+y|0.00087318
+sqlite> select l, sum(p) from joint where a='n' and s='y' and x='y' and d='n' group by l;
+n|0.012694077
+y|0.0087318
+sqlite> select b, sum(p) from joint where a='n' and s='y' and x='y' and d='n' group by b;
+n|0.014283918
+y|0.007141959
+sqlite> select t, sum(p) from joint where a='y' and s='n' group by t;n|0.004891075
+y|0.00025
+sqlite> select b, sum(p) from joint where a='y' and s='n' group by b;
+n|0.0035
+y|0.001641075
+sqlite> select l, sum(p) from joint where a='y' and s='n' group by l;
+n|0.005091075
+y|5.0e-05
+sqlite> select t, sum(p) from joint where a='y' and s='n' and d='y' and x='y' group by t;
+n|0.00010826675
+y|0.0001862
+sqlite> select b, sum(p) from joint where a='y' and s='n' and d='y' and x='y' group by b;
+n|0.00015931825
+y|0.0001351485
+sqlite> select l, sum(p) from joint where a='y' and s='n' and d='y' and x='y' group by l;
+n|0.00025722675
+y|3.724e-05
+sqlite> ls
