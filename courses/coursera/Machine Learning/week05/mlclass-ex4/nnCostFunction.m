@@ -70,22 +70,22 @@ K = num_labels;
 J = 0;
 for j = 1:m,
 	x_i = X(j, :);
-	x_i = [0 x_i];
+	x_i = [0; x_i'];
 
-	for k = 1:K,
-		y_i = zeros(1, K);
-		y_i(k) = 1;
-		z1 = x_i * Theta1';
-		a1 = sigmoid(z1);
+	y_i = zeros(1, K);
+	y_i(y(j)) = 1;
 
-		a1 = [0 a1];
-		z2 = a1 * Theta2';
-		a2 = sigmoid(z2);
+	z1 = Theta1 * x_i;
+	a1 = sigmoid(z1);
 
-		h_x = a2;
+	a1 = [0; a1];
+	z2 = Theta2 * a1;
+	a2 = sigmoid(z2);
 
-		J = J - (y_i' * log(h_x) + (1 - y_i)' * log(1 - h_x));	
-	end;
+	h_x = a2;
+	cost = - (y_i * log(h_x) + (1 - y_i) * log(1 - h_x)); 
+
+	J = J + cost;
 end;
 
 J = J / m;
