@@ -63,27 +63,24 @@ Theta2_grad = zeros(size(Theta2));
 %               and Theta2_grad from Part 2.
 %
 
-
-
 K = num_labels;
 
 J = 0;
 for j = 1:m,
-	x_i = X(j, :);
-	x_i = [0; x_i'];
-
 	y_i = zeros(1, K);
 	y_i(y(j)) = 1;
 
-	z1 = Theta1 * x_i;
-	a1 = sigmoid(z1);
+	x_i = X(j, :);
 
-	a1 = [0; a1];
-	z2 = Theta2 * a1;
+	a1 = [0; x_i'];
+	z2 = Theta1 * a1;
 	a2 = sigmoid(z2);
 
-	h_x = a2;
-	cost = - (y_i * log(h_x) + (1 - y_i) * log(1 - h_x)); 
+	a2 = [0; a2];
+	z3 = Theta2 * a2;
+	h_x = sigmoid(z3);
+
+	cost = - y_i * log(h_x) - (1 - y_i) * log(1 - h_x); 
 
 	J = J + cost;
 end;
