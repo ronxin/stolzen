@@ -6,14 +6,15 @@ import operator
 
 mr = MapReduce.MapReduce()
 
-
 def mapper(record):
-  friend1 = record[0]
-  friend2 = record[1]
-  mr.emit_intermediate(friend1, friend2)
+  person = record[0]
+  friend = record[1]
+  mr.emit_intermediate('%s:%s' % (person, friend), (person, friend))
+  mr.emit_intermediate('%s:%s' % (friend, person), (friend, person))
 
 def reducer(key, list_of_values):
-  mr.emit((key, len(list_of_values)))
+  if (len(list_of_values) == 1):
+    mr.emit(list_of_values[0])
 
 if __name__ == '__main__':
   inputdata = open(sys.argv[1])
