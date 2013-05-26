@@ -1,9 +1,6 @@
 import MapReduce
 import sys
 
-import itertools 
-import operator
-
 mr = MapReduce.MapReduce()
 
 def mapper(record):
