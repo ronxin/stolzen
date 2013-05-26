@@ -3,14 +3,14 @@ import sys
 
 mr = MapReduce.MapReduce()
 
-
 def mapper(record):
-  friend1 = record[0]
-  friend2 = record[1]
-  mr.emit_intermediate(friend1, friend2)
+  key = record[0]
+  value = record[1]
+  trimmed = value[:-10]
+  mr.emit_intermediate(trimmed, 'dupa')
 
 def reducer(key, list_of_values):
-  mr.emit((key, len(list_of_values)))
+  mr.emit(key)	
 
 if __name__ == '__main__':
   inputdata = open(sys.argv[1])
