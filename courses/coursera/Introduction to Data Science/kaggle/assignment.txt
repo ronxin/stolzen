@@ -1,0 +1,61 @@
+==================================================
+
+For your selected competition, write a few sentences describing the competition problem as you interpreted it.  You want your writeup to be self-contained so your peer-reviewer does not need to go to Kaggle to study the competition description.  Clarity is more important than detail.  What's the overall goal?  What does the data look like?  How will the answers be evaluated?
+
+Example: "The task is to predict whether a given passenger survived the sinking of the Titanic based on various attributes including age, location of the passenger's cabin on the ship, family members, the fare they paid, and other information.  Solutions are evaluated by comparing the percentage of correct answers on a test dataset."
+
+Answer:
+
+In this task, based on data from the Titanic Disaster (age, sex, socio-economic status, etc), we are asked to analyze what sorts of people were likely to survive. Solutions are evaluated by comparing the percentage of correct answers on a test dataset.
+
+==================================================
+
+Write a few sentences describing how you approached the problem.  What techniques did you use? 
+
+Example: "I split the data by gender and handled each class separately.  For the females, I trivially classified all of them as "survived."  For the males, I trained a random forest as a classifier.  I ignored the pclass atribute that indicated the location of the passenger's cabin because I didn't think it was relevant."
+
+Answer:
+
+I firstly took a look at the data in order to see if there were any errors and if it needed to be pre-processed. Then I split the given training set onto two parts: training set and a set for cross-validating. 
+
+As for the approach, I used a decision tree for sex, pclass, fare, age and sibsp parameters and got a tree with 10 terminal nodes. Then the tree was pruned to 7 nodes for better explanation of the tree as well as for avoiding overfitting. Finally, I trained a random forest on this data and compared the results. 
+
+
+==================================================
+
+
+Write a few sentences describing how you implemented your approach.  What languages and libraries did you use? What challenges did you run into?
+
+Example: "I partitioned the data by gender manually using Excel.  I used Weka to build the random forest."
+
+Answer:
+
+I used the R language for all the steps: preparation, training and testing. For decision trees I used "trees" library and for random forests, "randomForest" library. 
+
+As for the challenges, I needed to do something with NA values, as random forests didn't work well with them. At first, I tried just to omit incomplete cases (rows with NAs), but it turned out that it's better to replace them with the average value. 
+
+
+==================================================
+
+Write a few sentences assessing your approach.  Did it work?  What do you think the problems were?
+
+Example: "My approach did not work so well, achieving a score of 0.65.  This is less than the sample solution.  I suspect I should not have ignored the pclass attribute."
+
+Answer:
+
+My approach worked relatively well. As a score, I used F1-score (which is a combination of precision and recall, see https://www.kaggle.com/wiki/MeanFScore). I got the following F-1 scores: 0.740, 0.734, 0.738 for the decision tree, the pruned tree and the random forest, respectively. 
+
+When I submitted my results, for the tree I got 0.746, for the pruned tree - 0.755 (note the improvement), and, finally, for random forests, 0.755, which, surprisingly, was not better then a pruned tree.  
+
+Although, as the score suggests, there is room for improvement, I could've used support vector machines, neural networks or other more advanced algorithms for better prediction. 
+
+==================================================
+
+
+Write a few sentences describing how you improved on your solution, and whether or not it worked.
+
+Example: "I included the pclass attribute and ignored the ticket number attribute.  However, my score was actually lower the second time!"
+
+Answer:
+
+I wasn't able to use SVD, but I tried Neural Networks ("nnet" package), and it turned out that the F1-score was 0.743, which is even lower than for the pruned decision tree. However, in the contest, I got 0.765, and improved my previous best score by 0.00957.
