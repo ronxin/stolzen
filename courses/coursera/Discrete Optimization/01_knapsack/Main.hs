@@ -1,6 +1,6 @@
 module Main where
 
-import Knapsack(solve)
+import DynamicProgramming(dpSolve)
 
 
 s2i :: String -> Integer
@@ -12,10 +12,13 @@ i2s = show
 readInput :: String -> [Integer]
 readInput input = map s2i (words input)
 
-writeOutput :: [Integer] -> String
-writeOutput = tail . concatMap ((' ':) . i2s)
+join :: [Integer] -> String
+join = tail . concatMap ((' ':) . i2s)
+
+writeOutput :: (Integer, [Integer]) -> String
+writeOutput (x, out) = i2s x ++ " 1\n" ++ join out
 
 
 main = do
     input <- getContents
-    putStr $ writeOutput $ solve $ readInput input
+    putStr $ writeOutput $ dpSolve $ readInput input
