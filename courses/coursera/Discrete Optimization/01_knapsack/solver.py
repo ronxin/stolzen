@@ -11,7 +11,7 @@ def solveIt(inputData):
     with tempfile.TemporaryFile("w+") as dataFile:
         dataFile.write(inputData)
         dataFile.seek(0)
-        return subprocess.check_output([executable], shell=True, stdin=dataFile)
+        return subprocess.check_output([executable, "-O2"], shell=True, stdin=dataFile)
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

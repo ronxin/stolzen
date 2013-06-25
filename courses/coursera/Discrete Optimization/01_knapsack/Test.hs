@@ -20,12 +20,10 @@ assertEquals actual expected
     | actual == expected = return ()
     | otherwise = error $ "assertEquals: " ++ (show actual) ++ " /= " ++ (show expected)
 
+
+
 assertTrue :: Bool -> IO ()
-assertTrue value 
-    | True = return ()
-    | False = error $ "assertTrue: expected True got False"
+assertTrue value = assertEquals value True
 
 assertFalse :: Bool -> IO ()
-assertFalse value 
-    | False = return ()
-    | True = error $ "assertFalse: expected False got True"
+assertFalse value = assertEquals value False

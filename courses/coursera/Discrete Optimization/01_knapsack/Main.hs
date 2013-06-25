@@ -1,7 +1,7 @@
 module Main where
 
-import DynamicProgramming(dpSolve)
-
+--import DynamicProgramming(dpSolve)
+import BranchAndBound(bbSolve)
 
 s2i :: String -> Integer
 s2i = read
@@ -21,4 +21,4 @@ writeOutput (x, out) = i2s x ++ " 1\n" ++ join out
 
 main = do
     input <- getContents
-    putStr $ writeOutput $ dpSolve $ readInput input
+    putStr $ writeOutput $ bbSolve $ readInput input
