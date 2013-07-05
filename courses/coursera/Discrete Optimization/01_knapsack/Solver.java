@@ -9,11 +9,7 @@ public class Solver implements Runnable {
 
     @Override
     public void run() {
-        solve().printTo(out);
-    }
-
-    public Knapsack.KnapsackResult solve() {
-        return readInput().solve();
+        readInput().solve().printTo(out);
     }
 
     public Knapsack readInput() {

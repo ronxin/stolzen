@@ -65,9 +65,9 @@ itemComparator i1 i2 = compare (-val1) (-val2)
 
 {- for pring-debugging -}
 -- debug
---knapsack' calc_opt items k best acc_val acc_opt acc_items = 
---    traceShow (items, k, best, acc_val, acc_opt, acc_items, "->", result) $ result
---        where result = knapsack calc_opt items k best acc_val acc_opt acc_items
+{-knapsack' calc_opt items k best acc_val acc_opt acc_items = 
+    traceShow (items, k, best, acc_val, acc_opt, acc_items, "->", result) $ result
+        where result = knapsack calc_opt items k best acc_val acc_opt acc_items-}
 knapsack' = knapsack
 
 
@@ -78,22 +78,22 @@ knapsack _ [] k best acc_val acc_opt acc_items
     | otherwise = Just (acc_val, acc_opt, acc_items)
 
 knapsack calc_opt items k best acc_val acc_opt acc_items = 
-    if (k < 0) then Nothing else 
-    if (weight <= k) then
-        if (new_opt <= new_best) then
+    if k < 0 || best > acc_opt then Nothing else 
+    if weight <= k then
+        if new_opt <= new_best then
             left
         else 
             something
-    else 
+    else
         something
     where item:rest = items
           (_, value, weight) = item
           left = knapsack' calc_opt rest (k - weight) best (acc_val + value) acc_opt (item : acc_items)
-          new_opt = calc_opt k (rest ++ acc_items)
           best_from_left = let Just (_, s, _) = left in s
           new_best = if isNothing left then best else max best best_from_left
+          new_opt = calc_opt k (rest ++ acc_items)
           right = knapsack' calc_opt rest k new_best acc_val new_opt acc_items
-          something = if (isNothing right) then left else right
+          something = if (isJust right) then right else left
 
 
 {- wrapper -}
