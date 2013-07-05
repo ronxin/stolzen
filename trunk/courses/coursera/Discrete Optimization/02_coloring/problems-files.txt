@@ -1,0 +1,6 @@
+Coloring Problem 1: ./data/gc_50_3 - best from 6
+Coloring Problem 2: ./data/gc_70_7 - best from 17
+Coloring Problem 3: ./data/gc_100_5 - best from 16 
+Coloring Problem 4: ./data/gc_250_9 - best from 78
+Coloring Problem 5: ./data/gc_500_1 - best from 16 
+Coloring Problem 6: ./data/gc_1000_5 - best from 100

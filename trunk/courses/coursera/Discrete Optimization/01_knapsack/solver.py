@@ -3,15 +3,13 @@ import cStringIO as StringIO
 import sys
 import tempfile
 
-# executable = "cat"
-executable = "Main.exe"
-
 
 def solveIt(inputData):
     with tempfile.TemporaryFile("w+") as dataFile:
         dataFile.write(inputData)
         dataFile.seek(0)
-        return subprocess.check_output([executable, "-O2"], shell=True, stdin=dataFile)
+        return subprocess.check_output(['java', '-cp', './lib/*', 'optimization.coloring.Solver'], shell=True, stdin=dataFile)
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

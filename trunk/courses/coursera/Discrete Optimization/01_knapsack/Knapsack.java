@@ -16,12 +16,16 @@ public class Knapsack {
         return branchAndBound();
     }
 
+    public KnapsackResult dynamic() {
+        return new DynamicOptimized(capacity, items).solve();
+    }
+
     public KnapsackResult branchAndBound() {
         return new BranchAndBounds(capacity, items).solve();
     }
 
     public static class KnapsackResult {
-        private final int value;
+        protected final int value;
         protected final BitSet result;
         private final int size;
 
@@ -51,10 +55,6 @@ public class Knapsack {
                 }
             }
             return res;
-        }
-
-        public int getValue() {
-            return value;
         }
     }
 
