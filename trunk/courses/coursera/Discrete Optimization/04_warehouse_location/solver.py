@@ -14,7 +14,7 @@ def solveIt(inputData):
         dataFile.write(inputData)
         dataFile.seek(0)
         libs = ';'.join(glob('./lib/*'))
-        return subprocess.check_output(['java', '-cp', libs, 'optimization.tsm.Solver', algo], shell=True, 
+        return subprocess.check_output(['java', '-cp', libs, 'optimization.wl.Solver', algo], shell=True, 
             stdin=dataFile)
 
 
