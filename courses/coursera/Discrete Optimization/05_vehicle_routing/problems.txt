@@ -1,0 +1,6 @@
+VRP1 - /data/vrp_16_3_1 - at least 280 
+VRP2 - /data/vrp_26_8_1 - at least 630 
+VRP3 - /data/vrp_51_5_1 - at least 540 
+VRP4 - /data/vrp_101_10_1 - at least 830 
+VRP5 - /data/vrp_200_16_1 - at least 1400 
+VRP6 - /data/vrp_421_41_1 - at least 2000 
