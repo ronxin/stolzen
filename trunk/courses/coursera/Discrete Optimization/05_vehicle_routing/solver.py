@@ -7,16 +7,15 @@ import tempfile
 from glob import glob
 
 
-algo = 'bb'
+algo = 'randomizedgreedy'
 
 def solveIt(inputData):
     with tempfile.TemporaryFile("w+") as dataFile:
         dataFile.write(inputData)
         dataFile.seek(0)
         libs = ';'.join(glob('./lib/*'))
-        return subprocess.check_output(['java', '-cp', libs, 'optimization.tsm.Solver', algo], shell=True, 
+        return subprocess.check_output(['java', '-cp', libs, 'optimization.vrp.Solver', algo], shell=True, 
             stdin=dataFile)
-
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

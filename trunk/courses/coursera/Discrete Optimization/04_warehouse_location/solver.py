@@ -7,7 +7,7 @@ import tempfile
 from glob import glob
 
 
-algo = 'greedy'
+algo = 'greedyuncapacitated'
 
 def solveIt(inputData):
     with tempfile.TemporaryFile("w+") as dataFile:

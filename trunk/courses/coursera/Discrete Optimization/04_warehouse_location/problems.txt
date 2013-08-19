@@ -1,0 +1,8 @@
+Warehouse Location Problem 1: /data/wl_16_1
+Warehouse Location Problem 2: /data/wl_25_2 - best from 796650
+Warehouse Location Problem 3: /data/wl_50_1 - best from 793441 
+Warehouse Location Problem 4: /data/wl_100_4
+Warehouse Location Problem 5: /data/wl_200_1
+Warehouse Location Problem 6: /data/wl_500_1
+Warehouse Location Problem 7: /data/wl_1000_1 - best from 6120 
+Warehouse Location Problem 8: /data/wl_2000_1 - best from 13000 
